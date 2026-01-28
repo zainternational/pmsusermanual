@@ -1,0 +1,8 @@
+{
+  "label": "Reservations",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Create, view, and manage reservations. List, Arrivals, Departures, Waitlist, Cancellations."
+  }
+}

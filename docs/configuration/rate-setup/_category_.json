@@ -1,0 +1,8 @@
+{
+  "label": "Rate Setup",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Rates, rate classes, rate categories, markets, sources, packages, currencies, and exchange rates."
+  }
+}

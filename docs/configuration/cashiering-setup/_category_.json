@@ -1,0 +1,8 @@
+{
+  "label": "Cashiering Setup",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Transaction codes, payment types, routing codes, cashiers, articles, exchange rates, and service charges."
+  }
+}

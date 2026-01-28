@@ -1,0 +1,8 @@
+{
+  "label": "General Setup",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "Hotel information, system date, users, user groups, departments, job titles, license, cash register, TrackIt, and transportation types."
+  }
+}
