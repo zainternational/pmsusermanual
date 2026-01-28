@@ -34,8 +34,11 @@ const config = {
 
   // GitHub pages deployment config.
   // Must match the GitHub repo: https://github.com/<organizationName>/<projectName>
+  // When GitHub Pages source is set to 'gh-pages' branch, baseUrl must be '/pmsusermanual/'
+  // When GitHub Pages source is set to 'main' branch (serving from /docs), baseUrl would be '/pmsusermanual/docs/'
   organizationName: 'zainternational',
   projectName: 'pmsusermanual',
+  deploymentBranch: 'gh-pages', // Explicitly set deployment branch
 
   onBrokenLinks: 'throw',
 
