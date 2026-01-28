@@ -22,10 +22,9 @@ const config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // Production URL for the user manual (docs subdomain)
-  url: 'https://docs.hotelium.com.mm',
-  // Site is served at the root of the docs subdomain
-  baseUrl: '/',
+  // GitHub Pages: site is at https://zainternational.github.io/pmsusermanual/
+  url: 'https://zainternational.github.io',
+  baseUrl: '/pmsusermanual/',
 
   // Explicit trailingSlash for GitHub Pages (avoids redirects and SEO issues)
   trailingSlash: true,
