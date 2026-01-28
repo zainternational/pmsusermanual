@@ -1,8 +1,0 @@
-{
-  "label": "Reservation Setup",
-  "position": 2,
-  "link": {
-    "type": "generated-index",
-    "description": "Room types, rooms, reservation types, discount reasons, room move, trace/origin/alert codes, and related reference data for reservations."
-  }
-}

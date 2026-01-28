@@ -1,8 +1,0 @@
-{
-  "label": "Reports",
-  "position": 8,
-  "link": {
-    "type": "generated-index",
-    "description": "Predefined reports for reservations, front desk, billing, housekeeping, and night audit."
-  }
-}

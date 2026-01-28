@@ -1,8 +1,0 @@
-{
-  "label": "Configuration",
-  "position": 5,
-  "link": {
-    "type": "generated-index",
-    "description": "Configuration: Reservation Setup, Profile Setup, Rate Setup, Cashiering Setup, Housekeeping Setup, General Setup (aligned with PMS UI)."
-  }
-}
