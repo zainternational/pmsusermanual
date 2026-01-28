@@ -31,8 +31,8 @@ const config = {
   trailingSlash: true,
 
   // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Hotelium',
+  // Must match the GitHub repo: https://github.com/<organizationName>/<projectName>
+  organizationName: 'zainternational',
   projectName: 'pmsusermanual',
 
   onBrokenLinks: 'throw',
