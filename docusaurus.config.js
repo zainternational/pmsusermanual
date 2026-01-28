@@ -27,6 +27,9 @@ const config = {
   // Site is served at the root of the docs subdomain
   baseUrl: '/',
 
+  // Explicit trailingSlash for GitHub Pages (avoids redirects and SEO issues)
+  trailingSlash: true,
+
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Hotelium',

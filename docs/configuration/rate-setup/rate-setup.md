@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 id: rate-plan
+slug: rate-plan
 ---
 
 # Rate Setup
