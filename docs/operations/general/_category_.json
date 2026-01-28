@@ -1,0 +1,8 @@
+{
+  "label": "General",
+  "position": 9,
+  "link": {
+    "type": "generated-index",
+    "description": "General operations such as user activity logs."
+  }
+}

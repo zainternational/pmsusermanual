@@ -1,0 +1,8 @@
+{
+  "label": "Cashiering",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Guest billing, payments, and cashier sessions. Transaction (folio), Cashier Shift, Quick Checkout."
+  }
+}

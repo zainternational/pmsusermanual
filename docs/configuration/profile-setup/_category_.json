@@ -1,0 +1,8 @@
+{
+  "label": "Profile Setup",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Reference data for individual, company, and travel agent profiles: preferences, VIP levels, loyalty tiers, titles, languages, nationalities, regions, countries, and more."
+  }
+}
