@@ -10,7 +10,7 @@ Rate setup covers rates, rate setup, rate classes, rate categories, markets, sou
 
 | Sub-menu | Purpose |
 |----------|---------|
-| [Rate Setup](/docs/configuration/rate-setup/rate-setup) | Rate plan (name, validity, conditions). |
+| [Rate Setup](/docs/configuration/rate-setup/rate-plan) | Rate plan (name, validity, conditions). |
 | [Rate Classes](/docs/configuration/rate-setup/rate-classes) | Broad grouping of rates (e.g. BAR, Corporate). |
 | [Rate Categories](/docs/configuration/rate-setup/rate-categories) | Finer grouping (e.g. Weekday, Weekend). |
 | [Rates](/docs/configuration/rate-setup/rates) | Add or edit rates, room type, date range, amount. |
