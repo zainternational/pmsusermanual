@@ -11,6 +11,9 @@ const require = createRequire(import.meta.url);
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+// Must match GitHub Pages path so all asset URLs use this prefix
+const baseUrl = '/pmsusermanual/';
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Hotelium PMS Manual',
@@ -24,7 +27,7 @@ const config = {
 
   // GitHub Pages: site is at https://zainternational.github.io/pmsusermanual/
   url: 'https://zainternational.github.io',
-  baseUrl: '/pmsusermanual/',
+  baseUrl,
 
   // Explicit trailingSlash for GitHub Pages (avoids redirects and SEO issues)
   trailingSlash: true,
@@ -36,8 +39,9 @@ const config = {
 
   onBrokenLinks: 'throw',
 
+  // Script path must include baseUrl (custom scripts are not auto-prefixed)
   scripts: [
-    { src: '/js/back-to-top.js', defer: true },
+    { src: `${baseUrl}js/back-to-top.js`, defer: true },
   ],
 
   // Even if you don't use internationalization, you can use this field to set
