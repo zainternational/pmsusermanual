@@ -6,7 +6,7 @@ import styles from './styles.module.css';
 /** Quick links aligned with pmsbackend and pmsfrontend features */
 const SectionLinks = [
   {
-    title: 'Quick start',
+    title: 'Quick started',
     description: 'Do these steps in order: login → dashboard → one reservation → check-in → folio.',
     to: '/docs/quickstart',
   },
