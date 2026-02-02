@@ -16,7 +16,7 @@ const baseUrl = '/pmsusermanual/';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Hotelium PMS Manual',
+  title: 'Hotelium PMS Manual test',
   tagline: 'Hotelium Property Management System User Manual',
   favicon: 'img/favicon.ico',
 
