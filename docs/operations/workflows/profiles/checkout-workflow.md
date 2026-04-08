@@ -88,7 +88,7 @@ Void the disputed charge (with a void reason), or adjust the amount. Then take p
 
 ## See also
 
-- [Billing (Guest Folio)](/docs/operations/billing) — Full folio management.
+- [Billing (Guest Folio)](/docs/operations/reservations/billing) — Full folio management.
 - [Cashiering → Transaction](/docs/operations/cashiering/transaction) — Cashier workspace.
 - [Cashiering → Quick Checkout](/docs/operations/cashiering/quick-checkout) — Batch checkout for multiple departures.
 - [Housekeeping → Room Status](/docs/operations/housekeeping/room-status) — Update room to Vacant Clean after checkout.

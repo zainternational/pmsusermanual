@@ -65,6 +65,6 @@ The rate comes from the reservation's daily rate setup. If the rate is incorrect
 ## See also
 
 - [Cashiering → Transaction](/docs/operations/cashiering/transaction) — Full folio management; Post Room Charge is available here.
-- [Billing (Guest Folio)](/docs/operations/billing) — Folio management with Post Room Charge.
+- [Billing (Guest Folio)](/docs/operations/reservations/billing) — Folio management with Post Room Charge.
 - [Night Audit](/docs/operations/night-audit) — Automatic room charge posting during night audit.
 - [Configuration → Cashiering → Transaction Codes](/docs/configuration/cashiering-setup/transaction-codes) — Room charge transaction code setup.

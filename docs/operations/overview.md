@@ -23,7 +23,7 @@ Each module has its own **Common FAQs** and **Troubleshooting** sections. See th
 | [Reservations](/docs/operations/reservations/overview) | Create, edit, and manage bookings; List, Arrivals, Departures, Waitlist, Cancellations, Confirmation Letter, Registration Form. |
 | [Front Desk](/docs/operations/front-desk/overview) | Room plan, In-house (current guests), Checked-out (departed guests). |
 | [Cashiering](/docs/operations/cashiering/overview) | Cash Register Login, Transaction (folio), Cashier Shift, Quick Checkout, Post Room Charge, Journal by Transaction, Room Routing. |
-| [Billing](/docs/operations/billing) | Full folio management — split, transfer, adjust, void, print folio, routing, checkout. |
+| [Billing](/docs/operations/reservations/billing) | Full folio management — split, transfer, adjust, void, print folio, routing, checkout. |
 | [Housekeeping](/docs/operations/housekeeping/overview) | Management (tabbed), Room Status, Tasks, Lost & Found, Maintenance, Out of Order, Room Chart, Room Plan. |
 | [Night Audit](/docs/operations/night-audit) | Run night audit, post room charges, view runs, summaries, exceptions, reports, guest ledger. |
 | [Reports](/docs/operations/reports/overview) | Reservation, frontdesk, billing, housekeeping, night audit, trial balance, manager report, guest information. |
