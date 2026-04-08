@@ -67,6 +67,80 @@ After cloning, run `npm install` once. To build with “Last updated” dates fr
 - **GitHub Actions:** The **Deploy to GitHub Pages** workflow runs on push to `main` — it builds the site and deploys the `build` output to the `gh-pages` branch automatically. See [.github/workflows/docs.yml](.github/workflows/docs.yml).
 - **Manual deploy** (local): `USE_SSH=true npm run deploy` or `GIT_USER=<username> npm run deploy`
 
+## Deploying to your own server
+
+If you want to host the manual on your own server instead of GitHub Pages:
+
+**1. Update `docusaurus.config.js`**
+
+Switch the URL config to your domain:
+
+```js
+// Comment out GitHub Pages options
+// url: 'https://zainternational.github.io',
+// baseUrl: '/pmsusermanual/',
+
+// Use your own server
+url: 'https://docs.yourdomain.com',
+baseUrl: '/',
+```
+
+**2. Build the static files**
+
+```bash
+npm run build
+```
+
+This generates a `build/` folder with all static HTML/CSS/JS.
+
+**3. Copy `build/` to your server**
+
+```bash
+# rsync example
+rsync -avz --delete build/ user@yourserver:/var/www/pmsusermanual/build/
+```
+
+**4. Configure your web server**
+
+Nginx:
+
+```nginx
+server {
+    listen 80;
+    server_name docs.yourdomain.com;
+
+    root /var/www/pmsusermanual/build;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ $uri.html /index.html;
+    }
+}
+```
+
+Apache:
+
+```apache
+<VirtualHost *:80>
+    ServerName docs.yourdomain.com
+    DocumentRoot /var/www/pmsusermanual/build
+
+    <Directory /var/www/pmsusermanual/build>
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+        FallbackResource /index.html
+    </Directory>
+</VirtualHost>
+```
+
+Quick test with Node:
+
+```bash
+npm install -g serve
+serve build/
+```
+
 ## Maintenance
 
 - **Technical and maintenance** — In the built site, see **Docs → Technical & Maintenance → Maintenance** (link style, CI, must-have screenshots, versioning).
