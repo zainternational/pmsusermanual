@@ -61,25 +61,12 @@ After cloning, run `npm install` once. To build with “Last updated” dates fr
 
 3. For GitHub Pages deploy: `USE_SSH=true npm run deploy` or `GIT_USER=<username> npm run deploy`.
 
-## CI and links
+## CI and deployment
 
 - **Build = link check:** `npm run build` fails if any doc link is broken.
-- **GitHub Actions:** A **Docs** workflow runs on push/PR to `main` (or `master`), runs `npm ci` and `npm run build`. See [.github/workflows/docs.yml](.github/workflows/docs.yml).
+- **GitHub Actions:** The **Deploy to GitHub Pages** workflow runs on push to `main` — it builds the site and deploys the `build` output to the `gh-pages` branch automatically. See [.github/workflows/docs.yml](.github/workflows/docs.yml).
+- **Manual deploy** (local): `USE_SSH=true npm run deploy` or `GIT_USER=<username> npm run deploy`
 
 ## Maintenance
 
 - **Technical and maintenance** — In the built site, see **Docs → Technical & Maintenance → Maintenance** (link style, CI, must-have screenshots, versioning).
-
-## Deployment
-
-**GitHub Pages (SSH):**
-```bash
-USE_SSH=true npm run deploy
-```
-
-**GitHub Pages (HTTPS):**
-```bash
-GIT_USER=<Your GitHub username> npm run deploy
-```
-
-This builds the site and pushes the `build` output to the `gh-pages` branch (or your configured branch).
