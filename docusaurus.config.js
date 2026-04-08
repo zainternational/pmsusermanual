@@ -51,7 +51,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          showLastUpdateTime: true, // set true only when project is in a git repo, else build fails with "fatal: not a git repository"
+          showLastUpdateTime: true,
           breadcrumbs: true,
         },
         blog: false,
