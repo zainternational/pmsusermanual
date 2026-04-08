@@ -6,10 +6,6 @@ sidebar_position: 2
 
 The Dashboard is the home screen after login. It shows an overview of your property's status and quick links to common tasks.
 
-:::info **Suggested screenshot**  
-Add a screenshot of the dashboard (overview stats, widgets, quick actions) here. Save as `static/img/docs/dashboard.png`. See [Screenshot guide](/docs/general/screenshot-guide).
-:::
-
 ![Dashboard](/img/docs/dashboard.png)
 
 :::tip **Having a problem?**  
@@ -28,25 +24,55 @@ The dashboard displays:
 
 ## Key Widgets
 
-### Available Rooms
+### Overview Stats Card
 
-Shows how many rooms are available by type or class. Use this to see what you can sell or assign.
+Shows the key property metrics at a glance:
 
-### Housekeeping Summary
+| Stat | Description |
+|------|-------------|
+| Total Rooms | Total number of rooms in the property. |
+| Occupancy Rate | Percentage of rooms currently occupied. |
+| Available Rooms | Rooms that are vacant and ready to sell. |
+| Today's Check-ins | Number of arrivals expected or completed today. |
+| Today's Check-outs | Number of departures expected or completed today. |
+| Active Staff | Number of users currently logged in. |
+| Monthly Revenue | Revenue for the current month. |
+| Monthly Reservations | Number of reservations created this month. |
 
-Summarizes housekeeping statuses (e.g. vacant clean, vacant dirty, occupied clean, occupied dirty, pick-up, inspected, out of order, out of service). Helps coordinate room readiness.
+### Available Rooms Card
+
+Shows a breakdown of available rooms by room type or room class. Use this to quickly see what you can sell or assign to walk-in guests.
+
+### Housekeeping Card
+
+Summarises housekeeping statuses across all rooms:
+
+| Status | Meaning |
+|--------|---------|
+| Vacant Clean | Room is empty and ready to sell. |
+| Vacant Dirty | Room is empty but needs cleaning. |
+| Occupied Clean | Guest is in-house and room has been serviced. |
+| Occupied Dirty | Guest is in-house and room needs servicing. |
+| Pick-up | Room needs a quick tidy (pick-up service). |
+| Inspected | Room has been inspected and approved. |
+| Out of Order | Room is blocked and not available. |
+| Out of Service | Room is temporarily unavailable. |
 
 ### Revenue Chart
 
-Revenue over a selected period, used for a quick view of performance.
+A bar or line chart showing revenue over a selected period (daily, weekly, or monthly). Used for a quick visual of revenue performance. Hover over bars to see exact amounts.
 
-### VIP Levels / Complimentary
+### VIP Levels Chart
 
-Charts for VIP distribution and complimentary stays, if configured.
+A chart showing the distribution of in-house or arriving guests by VIP level. Useful for prioritising service for high-value guests.
 
-### Recent Bookings
+### Complimentary Chart
 
-A list of recent reservations with guest name, room type, arrival/departure, status, nights. Use it to see the latest activity.
+Shows complimentary (comp) stays — reservations where the rate is zero or marked as complimentary. Useful for tracking comp usage.
+
+### Reservation Details Card
+
+Shows recent or upcoming reservations with guest name, room type, arrival/departure, status, and number of nights. Use it to see the latest booking activity.
 
 ### System Date
 

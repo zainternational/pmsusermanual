@@ -17,6 +17,9 @@ See the main [Troubleshooting](/docs/general/troubleshooting) page — it links 
 | [Billing](/docs/operations/reports/billing) | Revenue by transaction code or category, payments by type, outstanding balances, folio summary. |
 | [Housekeeping](/docs/operations/reports/housekeeping) | Room status, task completion, lost & found log, maintenance log, out-of-order list. |
 | [Night Audit](/docs/operations/reports/night-audit) | Daily summary, revenue summary, room revenue, exceptions, guest ledger for the audit date. |
+| [Guest Information](/docs/operations/reports/guest-information) | In-house guest list with full profile details (passport, visa, nationality, VIP level) for a business date. |
+| [Trial Balance](/docs/operations/reports/trial-balance) | Debit/credit balance per transaction code for a night audit run. |
+| [Manager Report](/docs/operations/reports/manager-report) | Consolidated daily summary: occupancy, revenue, payments, outstanding, and breakdowns by transaction code, payment type, and room type. |
 
 ## Access
 

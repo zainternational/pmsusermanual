@@ -22,10 +22,10 @@ Hotelium PMS is a web-based property management system that supports:
 - **Reservations** — Create, edit, and manage reservations; List, Arrivals, Departures, Waitlist, Cancellations
 - **Profiles** — Individual, company, and travel agent profiles (under Operations)
 - **Front Desk** — Room plan, in-house guests, checked-out guests
-- **Cashiering** — Transactions, cashier shifts, quick checkout
-- **Housekeeping** — Room status, tasks, lost & found, maintenance, out-of-order
+- **Cashiering** — Transactions, cashier shifts, quick checkout, journal by transaction, room routing
+- **Housekeeping** — Room status, tasks, lost & found, maintenance, out-of-order, room chart
 - **Night Audit** — Run night audit, view summaries, post room charges, exceptions
-- **Reports** — Reservation, frontdesk, billing, housekeeping, night audit reports
+- **Reports** — Reservation, frontdesk, billing, housekeeping, night audit, guest information, trial balance, manager report
 - **System Settings** — Configuration for rooms, rates, cashiering, profiles, and more
 
 ## Getting Started
@@ -59,7 +59,7 @@ The main sidebar shows:
 - **Profile** — Individual Profile, Company Profile, Travel Agent Profile
 - **Reservation** — Reservations (includes waitlist and cancellation views)
 - **Front Desk** — Room Plan, In-House, Checked-Out
-- **Cashiering** — Transaction, Cashier Shift, Quick Checkout
+- **Cashiering** — Transaction, Cashier Shift, Quick Checkout, Journal by Transaction, Room Routing
 - **Housekeeping** — Housekeeping management
 - **Night Audit** — Night audit runs and summaries
 - **Report** — Reservation, Frontdesk, Billing, Housekeeping, Night Audit

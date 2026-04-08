@@ -30,5 +30,6 @@ Reservation setup includes room types, room classes, rooms, reservation types, r
 | [Lost Reasons](/docs/configuration/reservation-setup/lost-reasons) | Why a reservation was lost. |
 | [Refused Reasons](/docs/configuration/reservation-setup/refused-reasons) | Why a reservation was refused. |
 | [Inactive Reasons](/docs/configuration/reservation-setup/inactive-reasons) | Reasons for marking a profile, rate, or other entity inactive. |
+| [Purpose of Stay](/docs/configuration/reservation-setup/purpose-of-stay) | Reason codes for why a guest is visiting (e.g. Business, Leisure, Conference). |
 
 Access via **Configuration → Reservation** in the PMS. What you see depends on **user permissions**.

@@ -16,13 +16,18 @@ Each module has its own **Common FAQs** and **Troubleshooting** sections. See th
 
 | Area | What it’s for |
 |------|----------------|
-| [Workflows](/docs/operations/workflows) | End-to-end flows: **check-in** (reservation → room ready → check in → folio) and **end-of-day** (close cashier → run night audit → review reports). |
-| [Reservations](/docs/operations/reservations/overview) | Create, edit, and manage bookings; List, Arrivals, Departures, Waitlist, Cancellations. |
-| [Front Desk](/docs/operations/front-desk/overview) | **Room plan** (rooms and occupancy by date), **In-house** (current guests), **Checked-out** (departed guests). |
-| [Cashiering](/docs/operations/cashiering/overview) | **Transaction** (folio, charges, payments), **Cashier shift**, **Quick checkout**. Requires cash register login. |
-| [Housekeeping](/docs/operations/housekeeping/overview) | Room status, tasks, lost & found, maintenance, out-of-order. |
+| [Dashboard](/docs/operations/dashboard) | Property overview — stats, revenue chart, housekeeping summary, VIP chart, available rooms. |
+| [Workflows](/docs/operations/workflows) | End-to-end flows: check-in, end-of-day, checkout, and profile linking. |
+| [Reservations](/docs/operations/reservations/overview) | Create, edit, and manage bookings; List, Arrivals, Departures, Waitlist, Cancellations, Confirmation Letter, Registration Form. |
+| [Front Desk](/docs/operations/front-desk/overview) | Room plan, In-house (current guests), Checked-out (departed guests). |
+| [Cashiering](/docs/operations/cashiering/overview) | Cash Register Login, Transaction (folio), Cashier Shift, Quick Checkout, Post Room Charge, Journal by Transaction, Room Routing. |
+| [Billing](/docs/operations/billing) | Full folio management — split, transfer, adjust, void, print folio, routing, checkout. |
+| [Housekeeping](/docs/operations/housekeeping/overview) | Management (tabbed), Room Status, Tasks, Lost & Found, Maintenance, Out of Order, Room Chart, Room Plan. |
 | [Night Audit](/docs/operations/night-audit) | Run night audit, post room charges, view runs, summaries, exceptions, reports, guest ledger. |
-| [Reports](/docs/operations/reports/overview) | Reservation, frontdesk, billing, housekeeping, and night audit reports; filters and export. |
+| [Reports](/docs/operations/reports/overview) | Reservation, frontdesk, billing, housekeeping, night audit, trial balance, manager report, guest information. |
+| [Profiles](/docs/operations/profiles/overview) | Individual, company, and travel agent profiles. |
+| [User Activity Logs](/docs/operations/general/user-activity-logs) | Audit trail of all user actions in the system. |
+| [Database Manager](/docs/operations/database-manager) | Multi-property database management (administrators only). |
 
 ## How to Navigate
 

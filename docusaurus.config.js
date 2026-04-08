@@ -11,9 +11,6 @@ const require = createRequire(import.meta.url);
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
-// Must match GitHub Pages path so all asset URLs use this prefix
-const baseUrl = '/pmsusermanual/';
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Hotelium PMS Manual',
@@ -25,26 +22,18 @@ const config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // GitHub Pages: site is at https://zainternational.github.io/pmsusermanual/
-  url: 'https://zainternational.github.io',
-  baseUrl,
+  // Public docs domain
+  url: 'https://docs.hotelium.com.mm',
+  baseUrl: '/',
 
   // Explicit trailingSlash for GitHub Pages (avoids redirects and SEO issues)
   trailingSlash: true,
 
-  // GitHub pages deployment config.
-  // Must match the GitHub repo: https://github.com/<organizationName>/<projectName>
-  // When GitHub Pages source is set to 'gh-pages' branch, baseUrl must be '/pmsusermanual/'
-  // When GitHub Pages source is set to 'main' branch (serving from /docs), baseUrl would be '/pmsusermanual/docs/'
-  organizationName: 'zainternational',
-  projectName: 'pmsusermanual',
-  deploymentBranch: 'gh-pages', // Explicitly set deployment branch
-
   onBrokenLinks: 'throw',
 
-  // Script path must include baseUrl (custom scripts are not auto-prefixed)
+  // Script path is absolute from site root
   scripts: [
-    { src: `${baseUrl}js/back-to-top.js`, defer: true },
+    { src: '/js/back-to-top.js', defer: true },
   ],
 
   // Even if you don't use internationalization, you can use this field to set

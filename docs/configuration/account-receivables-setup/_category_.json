@@ -1,0 +1,8 @@
+{
+  "label": "Account Receivables Setup",
+  "position": 8,
+  "link": {
+    "type": "doc",
+    "id": "configuration/account-receivables-setup/overview"
+  }
+}

@@ -12,11 +12,14 @@ This page has [Common FAQs](#common-faqs) and [Troubleshooting](#troubleshooting
 
 | Tab / Screen | Purpose |
 |--------------|---------|
+| [Housekeeping Management](/docs/operations/housekeeping/management) | Main tabbed screen — access all housekeeping areas from one place. |
 | [Room Status](/docs/operations/housekeeping/room-status) | Status of each room (Vacant Clean/Dirty, Occupied Clean/Dirty, Pick-up, Inspected, Out of Order, Out of Service). |
 | [Tasks](/docs/operations/housekeeping/tasks) | Housekeeping tasks and assignments; assign to attendants or sections. |
 | [Lost & Found](/docs/operations/housekeeping/lost-and-found) | Register and manage lost and found items. |
 | [Maintenance](/docs/operations/housekeeping/maintenance) | Maintenance requests or room maintenance status. |
 | [Out of Order](/docs/operations/housekeeping/out-of-order) | Rooms marked out of order; add/edit/end. |
+| [Room Chart](/docs/operations/housekeeping/room-chart) | Visual floor-by-floor room status grid; click a vacant room to create a new reservation or walk-in. |
+| [Room Plan](/docs/operations/housekeeping/room-plan) | Calendar grid showing room availability over a date range. |
 
 ## Access
 

@@ -10,13 +10,17 @@ sidebar_position: 0
 This page has [Common FAQs](#common-faqs) and [Troubleshooting](#troubleshooting) below. For issues in other modules, see the main [Troubleshooting](/docs/general/troubleshooting) page — it links to module-specific FAQs and troubleshooting sections.
 :::
 
-In the app, **Cashiering** is a menu with three sub-screens:
+In the app, **Cashiering** is a menu with these screens:
 
 | Screen | Purpose |
 |--------|---------|
+| [Cash Register Login](/docs/operations/cashiering/cash-register-login) | Log in to a cash register before using cashiering functions. |
 | [Transaction](/docs/operations/cashiering/transaction) | Work on a specific reservation's folio (charges, payments, adjustments). |
 | [Cashier Shift](/docs/operations/cashiering/cashier-shift) | Open/close cashier shifts and view shift summary. |
 | [Quick Checkout](/docs/operations/cashiering/quick-checkout) | Speed up checkout for selected reservations. |
+| [Post Room Charge](/docs/operations/cashiering/post-room-charge) | Manually post room charges for a specific reservation and date. |
+| [Journal by Transaction](/docs/operations/cashiering/journal-by-transaction) | Detailed view of all items and payments across reservations, filterable by cashier, room, and date. |
+| [Room Routing](/docs/operations/cashiering/room-routing) | Property-wide view of all routing rules set up across reservations. |
 
 ## Cash Register Login
 

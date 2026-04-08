@@ -4,52 +4,70 @@ sidebar_position: 2
 
 # Company Profile
 
-**Company Profile** stores data for companies used as guests, payers, or group organisers in reservations.
+**Company Profile** stores data for companies used as payers, group organisers, or corporate guests in reservations and billing.
 
-## Accessing Company Profiles
+:::tip **Having a problem?**
+See [Profiles Overview](/docs/operations/profiles/overview) for common FAQs and troubleshooting.
+:::
+
+## Access
 
 From the sidebar: **Profile → Company Profile**.
 
-## Company Profile List
+## Profile List
 
-The list shows companies with typical columns:
+The list shows all company profiles with columns for company name, corporate ID, email, phone, and profile display ID. Use the search bar to find by company name or corporate ID.
 
-- Company name
-- Code (if used)
-- Contact (phone, email)
-- Address
-- Last stay or last activity (if available)
+## Creating a Profile
 
-Use **search** and **filters** (e.g. name, code) to find profiles.
+Click **Add** or **New Company Profile**.
 
-## Creating a Company Profile
+| Field | Required | Description |
+|-------|----------|-------------|
+| Company Name | Yes | Full legal or trading name of the company. |
+| Corporate ID | No | Internal or external corporate identifier / account code. |
+| Email | No | Company contact email. |
+| Phone | No | Company contact phone. |
+| Address | No | Street address. |
+| Country | No | From [Countries](/docs/configuration/profile-setup/countries) setup. Selecting country filters the State dropdown. |
+| State/Division/Region | No | From [States](/docs/configuration/profile-setup/states) setup, filtered by country. |
+| City | No | From [Cities](/docs/configuration/profile-setup/cities) setup, filtered by state. |
+| Postal Code | No | From [Postal Codes](/docs/configuration/profile-setup/postal-codes) setup, filtered by city. |
+| Note | No | Internal notes about the company. |
+| AR Number | No | Links the company to an accounts receivable account for direct billing. |
 
-1. Click **Add** or **New Company Profile**.
-2. Fill in at least the required fields, for example:
-   - **Company name**
-   - **Code** (if your property uses it)
-   - **Contact** — Phone, email, contact person
-   - **Address** — Country, city, state, postal code (from setup where applicable)
-   - **Tax ID** or **registration number** if used
-   - **Payment terms** or **credit limit** if used for billing
-3. Save. The profile can then be used in reservations and billing.
+## Editing a Profile
 
-## Editing a Company Profile
-
-1. Open the profile from the list (click row or name).
-2. Change any allowed fields.
-3. Save. Changes apply to future reservations and billing; existing data may not change automatically.
+Open a profile from the list (click the row or name). The detail page shows all fields. Click **Edit** to modify, then **Save**.
 
 ## Using in Reservations and Billing
 
-When creating or editing a reservation:
+When creating or editing a reservation, you can assign a company profile as:
+- **Payer** — the company pays all or part of the bill (use routing in the folio)
+- **Group organiser** — the company is the master account for a group booking
 
-- **Guest** — Use the company as the main guest (e.g. corporate stay).
-- **Payer** — Route all or part of the bill to the company (billing/routing).
-- **Group** — Use the company as the group organiser or master bill payer.
+In **Cashiering → Transaction**, use the routing/split folio feature to direct charges to the company profile. The company's AR number is used for direct billing and accounts receivable reporting.
 
-In **Cashiering**, use **routing** or **split folio** to send charges to the company profile.
+## AR Number
 
-## Configuration
+The `ar_number` field links the company to an accounts receivable account. When set, charges routed to this company can be tracked in AR aging and statement reports. AR account types and aging levels are configured under [Configuration → Account Receivables Setup](/docs/configuration/account-receivables-setup/overview).
 
-Countries, states, cities, and other address/location codes are defined under **Configuration → Profile**. Set those up first so company profiles use consistent values.
+## Common FAQs
+
+**The country/state/city dropdowns are empty.**
+Address options depend on setup. Select Country first — it filters the State dropdown. If options are missing, the parent data may not be configured. Check Configuration → Profile Setup → Countries / States / Cities.
+
+**Can I use a company as the primary guest on a reservation?**
+Typically the primary guest is an individual (the person staying). The company is assigned as the payer. Some properties allow a company name on the reservation for corporate bookings — follow your property's practice.
+
+**Where do I see all charges billed to a company?**
+Use the [Billing Reports](/docs/operations/reports/billing) filtered by company profile, or check the folio routing in Cashiering → Transaction for individual reservations.
+
+## See also
+
+- [Profiles Overview](/docs/operations/profiles/overview)
+- [Travel Agent Profile](/docs/operations/profiles/travel-agent-profile) — Similar structure for travel agencies.
+- [Cashiering → Transaction](/docs/operations/cashiering/transaction) — Route charges to a company profile.
+- [Room Routing](/docs/operations/cashiering/room-routing) — View all routing rules including company-routed charges.
+- [Account Receivables Setup](/docs/configuration/account-receivables-setup/overview) — Account types, aging levels, reminder cycles.
+- [Configuration → Profile Setup](/docs/configuration/profile-setup/overview) — Countries, states, cities, postal codes.

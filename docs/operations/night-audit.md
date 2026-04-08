@@ -4,140 +4,215 @@ sidebar_position: 7
 
 # Night Audit
 
-**Night Audit** is the end-of-day process that closes the business date, posts room revenue, and produces reports. It is typically run once per property per day.
+**Night Audit** is the end-of-day process that closes the business date, posts room charges, and produces audit reports. It is run once per property per business day, after all front-office and cashier activity is complete.
 
-:::tip **Having a problem?**  
-This page has [Common FAQs](#common-faqs) and [Troubleshooting](#troubleshooting) below. For issues in other modules, see the main [Troubleshooting](/docs/general/troubleshooting) page — it links to module-specific FAQs and troubleshooting sections.
+:::tip **Having a problem?**
+This page has [Common FAQs](#common-faqs) and [Troubleshooting](#troubleshooting) below. For issues in other modules, see the main [Troubleshooting](/docs/general/troubleshooting) page.
 :::
 
-:::info **Suggested screenshot**  
-Add a screenshot of the Night Audit screen (audit runs list or Run night audit dialog) here. Save as `static/img/docs/night-audit.png`. See [Screenshot guide](/docs/general/screenshot-guide).
-:::
+## Access
 
-## Accessing Night Audit
+From the sidebar, click **Night Audit**. You need the **Night Audit** permission to run audits. Viewing past runs may require a separate view permission.
 
-From the sidebar, click **Night Audit**. You see **Audit Runs** and related tabs (e.g. Overview, Reservations, Revenue, Payments, Room Status, Exceptions, Reports, Guest Ledger).
+Keyboard shortcut: **Alt+A** opens the Run Night Audit modal.
 
-## Audit Runs
+## Audit Runs List
 
-An **audit run** is one execution of the night audit for a given **business date**.
+The main screen shows a paginated table of all past audit runs with:
 
-### Running Night Audit
+| Column | Description |
+|--------|-------------|
+| Audit Date | The business date that was closed. |
+| Status | PENDING / IN_PROGRESS / COMPLETED / FAILED / PARTIAL |
+| Run By | The user who ran the audit. |
+| Run DateTime | When the audit was started. |
+| Completed DateTime | When the audit finished. |
+| Duration | How long the audit took. |
+| Total Revenue | Total revenue posted on that date. |
+| Total Payments | Total payments received. |
+| Occupancy % | Occupancy rate for that date. |
+| Actions | **View Summary** — opens the audit summary modal. |
 
-1. Open **Night Audit** and choose **Run Night Audit** (or similar).
-2. Confirm the **business date** to be closed (often today or the date you are closing).
-3. Start the run. The system will:
-   - Validate data (e.g. open balances, exceptions)
-   - **Post room charges** for in-house stays for that date
-   - Roll **system date** to the next business day (if configured)
-   - Generate or update **audit reports**
+### Filters
 
-4. Resolve any **exceptions** reported before or after the run, if required by your procedures.
+| Filter | Description |
+|--------|-------------|
+| Status | Filter by audit run status (COMPLETED, FAILED, etc.). |
+| Date Range | Filter by audit date range. |
 
-### Post Room Charge
+Use **Refresh** to reload the list.
 
-**Post Room Charge** posts room revenue to guest folios for the relevant night. It uses:
+## Running Night Audit
 
-- In-house reservations for the audit date
-- Rate and room assignment from the reservation
+Click **Run Night Audit** (or press **Alt+A**). The Run Night Audit modal opens.
 
-You can run it as part of the full audit or, in some setups, from a separate **Post Room Charge** screen (e.g. from Night Audit or Cashiering).
+### Run Audit Modal
 
-### Viewing Past Runs
+| Field | Description |
+|-------|-------------|
+| Audit Date | The business date to close. Defaults to the current business date. Cannot be before the business date. |
+| Force Logout Wait (seconds) | How long to wait (10–300 seconds, default 30) before force-logging out users who do not have night audit permission. This gives active users time to save their work before the audit locks the system. |
 
-- **Audit Runs** table lists previous runs with date, status, and user.
-- Open a run to see its **summary**, **reservations**, **revenue**, **payments**, **room status**, **exceptions**, **reports**, and **guest ledger** for that date.
+Click **Run Audit** to start. A full-screen overlay appears showing elapsed time while the audit runs.
 
-## Tabs and Summaries
+### Pre-Run Confirmation Modals
 
-### Overview
+The system checks for blocking conditions before running. If any are found, a confirmation modal appears:
 
-High-level totals: room revenue, other revenue, payments, occupancy, etc., for the audit date.
+#### Today's Arrivals (Not Checked In)
 
-### Reservations
+If there are reservations with today's arrival date that have not been checked in, the **Today's Arrivals** modal appears showing:
+- A list of all pending arrivals (reservation ID, guest name, arrival/departure dates, room type, room, status)
+- For each reservation, a **Manage** button opens a side drawer with two options:
+  - **Save new date** — Change the arrival date to a future date (e.g. the guest is arriving tomorrow).
+  - **Cancel reservation** — Permanently cancel the reservation.
+- Once all arrivals are resolved (or if you choose to proceed), click **Continue & Mark as No Show** to mark remaining arrivals as no-shows and proceed with the audit.
 
-Reservations that were in-house or otherwise included in that audit run (arrivals, departures, stayovers).
+#### Today's Departures (Not Checked Out)
 
-### Revenue
+If there are in-house reservations with today's departure date that have not been checked out, the **Today's Departures** modal appears showing the list of pending departures. Resolve each one (check out or change departure date) before proceeding.
 
-Revenue breakdown by type (e.g. room, tax, other). Used to verify totals.
+#### Cashier Shift Not Closed
 
-### Payments
+If any cash registers have open shifts (not yet shift-dropped), the **Cashier Shift Not Closed** modal appears showing a list of open registers. For each register:
+1. Click **Shift Drop** to open the shift drop detail view.
+2. Review the cash and payment totals for that register.
+3. Enter the **Actual Cash** amount.
+4. Click **Shift Close** to record the shift drop.
+5. Repeat for each open register.
 
-Payments posted on that date or linked to the audit. Helps reconcile front office and cashier.
+Once all registers are shift-dropped, run night audit again.
 
-### Room Status
+### What Night Audit Does
 
-Snapshot of room status (e.g. occupied, vacant, out of order) at audit time.
+When the audit runs successfully:
+1. **Posts room charges** — Room revenue is posted to each in-house guest's folio for the audit date.
+2. **Advances the business date** — The system date moves to the next day.
+3. **Generates audit data** — Reservation summaries, revenue summaries, payment summaries, occupancy statistics, and guest ledger entries are recorded for the run.
+4. **Force-logs out users** — After the wait period, users without night audit permission are logged out.
 
-### Exceptions
+### Audit Run Statuses
 
-Items that need attention, for example:
+| Status | Meaning |
+|--------|---------|
+| PENDING | Audit is queued but not yet started. |
+| IN_PROGRESS | Audit is currently running. |
+| COMPLETED | Audit finished successfully. |
+| PARTIAL | Audit completed with some warnings or partial data. |
+| FAILED | Audit failed; check the error message on the run. |
 
-- Folios with **balance** (guest balance not zero)
-- **High balance** or **credit** limits
-- **Missing** or **invalid** data
-- **Rate** or **posting** issues
+## Viewing an Audit Run Summary
 
-Resolve exceptions as per your policy; some systems allow marking an exception as “resolved” with a note.
+Click **View Summary** on any completed audit run row. The **Night Audit Summary** modal opens with five tabs:
 
-### Reports
+### Reservation Summaries Tab
 
-Lists **night audit reports** generated for that run (e.g. daily summary, revenue, occupancy). Open or export as configured.
+All reservations included in the audit run, showing:
+- Reservation ID, guest name, room number
+- Arrival/departure dates, nights
+- Status flags: Is Arrival, Is Departure, Is In-House, Is No Show, Is Cancelled
+- Rate amount, total charges, total payments, balance
 
-### Guest Ledger
+### No Show Reservations Tab
 
-Guest ledger view for the audit date: charges and payments per reservation/guest.
+Reservations that were marked as no-show during this audit run.
 
-## System Date
+### Revenue Summaries Tab
 
-Night audit usually **advances the system (business) date** to the next day. That date is used as “today” for:
+Revenue breakdown by transaction code:
 
-- New reservations and searches
-- Rate and availability
-- Reporting
+| Column | Description |
+|--------|-------------|
+| Transaction Code | Short code and name. |
+| Category | Transaction category (e.g. room, F&B, tax). |
+| Count | Number of transactions posted. |
+| Total Amount | Gross amount. |
+| Voided Count / Amount | Voided transactions. |
+| Net Amount | Total minus voided. |
 
-The **Dashboard** and **System Date** widget show the current business date when your property uses it.
+### Payment Summaries Tab
+
+Payment breakdown by payment code:
+
+| Column | Description |
+|--------|-------------|
+| Payment Code | Short code and name. |
+| Count | Number of payments. |
+| Total Amount | Gross payments. |
+| Voided Count / Amount | Voided payments. |
+| Net Amount | Total minus voided. |
+
+### Guest Ledgers Tab
+
+Full guest ledger for the audit run — every debit and credit entry per reservation, showing transaction code, description, debit, credit, running balance, folio number, and reference.
+
+## Post Room Charge
+
+**Post Room Charge** posts room revenue for a specific reservation and date without running the full night audit. Use it to:
+- Post a missed room charge for a past date.
+- Manually post charges for a specific reservation.
+
+Post Room Charge is available from:
+- **Night Audit** page (via the Post Room Charge button if visible)
+- **Cashiering → Transaction** (Post Room Charge button in the transaction history card)
+
+## Business Date
+
+After a successful night audit, the **business date** advances to the next day. This date is used as "today" for:
+- New reservations and availability
+- Rate calculations
+- Reporting defaults
+- Cashier sessions
+
+The current business date is shown in the sidebar and dashboard.
 
 ## Best Practices
 
-- Run night audit **once per day** after all front office and cashier activity for that date is done.
-- **Reconcile** cashier shifts and folios before running.
-- **Review exceptions** and fix critical items before closing the date.
-- **Back up** or export audit reports if required for accounting or compliance.
+- Run night audit **once per day** after all front-office and cashier activity is complete.
+- **Close all cashier shifts** before running — the system will block the audit if open shifts exist.
+- **Check in or resolve all arrivals** — pending arrivals block the audit.
+- **Check out or resolve all departures** — pending departures block the audit.
+- **Review the audit run status** after completion — PARTIAL or FAILED runs need investigation.
 
 ## Common FAQs
 
-**Why don't I see the Night Audit menu?**  
-Your user may not have night audit permission. Ask your administrator to grant access so you can run night audit and view runs and reports.
+**Why don't I see the Night Audit menu?**
+Your user does not have night audit permission. Ask your administrator to grant `add_nightauditrun` or `view_nightauditrun` permission.
 
-**When should I run night audit?**  
-Run it **once per day**, after all front-office and cashier activity for that business date is done. Reconcile cashier shifts and fix critical exceptions before running.
+**The audit is blocked by open cashier shifts — what do I do?**
+The Cashier Shift Not Closed modal shows which registers are open. Click **Shift Drop** for each one, review the totals, and click **Shift Close**. Then run night audit again.
 
-**What happens to the system date when I run night audit?**  
-Night audit usually **advances the system (business) date** to the next day. That date becomes “today” for new reservations, rates, and reporting. The Dashboard shows the current business date when your property uses it.
+**The audit is blocked by today's arrivals — what do I do?**
+Click **Manage** on each arrival to either change the arrival date (guest arriving tomorrow) or cancel the reservation. Or click **Continue & Mark as No Show** to mark all remaining arrivals as no-shows and proceed.
 
-**Can I run night audit more than once for the same date?**  
-Typically no. One audit run per property per business date is the norm. Running again may overwrite or conflict. If you must re-run, follow your property’s procedure and any vendor guidance.
+**What is the Force Logout Wait?**
+When night audit runs, it force-logs out users who do not have night audit permission after the wait period (default 30 seconds). This prevents users from posting transactions while the audit is running. Increase the wait time if your staff need more time to save their work.
 
-**Where do I see exceptions before or after the run?**  
-Open **Night Audit** and use the **Exceptions** tab (or the exceptions section of the run). Resolve critical items (e.g. open balances, invalid data) before closing the date, and document as per your policy.
+**Can I run night audit more than once for the same date?**
+No — one audit run per business date is the norm. If a run failed, check the error message and fix the issue, then run again. The system will not allow a second completed run for the same date.
+
+**The audit completed but the business date did not advance.**
+Check the audit run status. If it shows FAILED or PARTIAL, the date may not have advanced. Review the error message and re-run if needed.
 
 ## Troubleshooting
 
 | Problem | Cause | Solution |
 |--------|--------|----------|
-| **Night audit fails or shows exceptions** | Open balances, invalid data, or missing room charges; cashier shifts not closed if required. | Resolve listed exceptions (post missing room charges, correct rates, close shifts). Fix critical items before running again. |
-| **System date did not advance** | Run may have been in report-only or dry-run mode; or an error stopped the run. | Check the audit run status and logs. Ensure you ran the full night audit (not report-only). Re-run if allowed by your procedure. |
-| **Room charges not posted** | Run failed before posting; or in-house reservations had no rate/room. | Fix exceptions and run again, or use **Post Room Charge** from Night Audit or Cashiering for the relevant date. Ensure in-house reservations have rate and room. |
-| **Cannot open a past audit run** | Permission or date range may restrict which runs you see. | Confirm you have permission to view night audit runs. If filtered by date, adjust the filter to include that run. |
-| **Reports empty or wrong totals** | Wrong audit run or business date selected; or data not yet generated. | Pick the correct audit run or business date for the report. Ensure the run completed successfully before opening reports. |
-
-For login, permissions, wrong property, and other general issues, see [Troubleshooting](/docs/general/troubleshooting).
+| **Audit blocked by open cashier shifts** | One or more cash registers have not been shift-dropped. | Use the Cashier Shift Not Closed modal to shift-drop each open register, then run again. |
+| **Audit blocked by today's arrivals** | Reservations with today's arrival date are not checked in. | Manage each arrival (change date, cancel, or mark as no-show) then run again. |
+| **Audit blocked by today's departures** | In-house reservations with today's departure are not checked out. | Check out or change departure date for each, then run again. |
+| **Audit status is FAILED** | An error occurred during the run (e.g. missing rate, database issue). | Check the error message on the audit run row. Fix the underlying issue and re-run. |
+| **Room charges not posted** | Audit failed before posting, or reservations had no rate/room assigned. | Fix exceptions and re-run, or use Post Room Charge for individual reservations. |
+| **Business date did not advance** | Audit failed or was partial. | Check audit run status and error message. Re-run after fixing the issue. |
+| **Cannot view past audit runs** | Missing view permission. | Ask your administrator to grant `view_nightauditrun` permission. |
+| **Revenue or payment totals look wrong** | Wrong audit run selected, or voided transactions included. | Check the Revenue and Payment Summaries tabs. Voided amounts are shown separately from net amounts. |
 
 ## See also
 
-- [Cashiering](/docs/operations/cashiering/overview) — Close **cash register** shifts and reconcile **folio**s before night audit; Post Room Charge from [Transaction](/docs/operations/cashiering/transaction) if needed.
-- [Reports](/docs/operations/reports/overview) — [Night Audit reports](/docs/operations/reports/night-audit) (daily summary, revenue, guest ledger, **folio** data) and [Billing](/docs/operations/reports/billing) for revenue and balances.
-- [Reservations](/docs/operations/reservations/overview) / [Front Desk](/docs/operations/front-desk/overview) — In-house reservations and room/rate data feed room charges and audit reports.
-- [Configuration overview](/docs/configuration/overview) — System date, transaction codes, and audit settings under System Settings.
+- [Cashiering → Cashier Shift](/docs/operations/cashiering/cashier-shift) — Close cashier shifts before running night audit.
+- [Cashiering → Transaction](/docs/operations/cashiering/transaction) — Post Room Charge from the transaction screen.
+- [Reservations → Arrivals](/docs/operations/reservations/arrivals) — Resolve pending arrivals before night audit.
+- [Reservations → Departures](/docs/operations/reservations/departures) — Resolve pending departures before night audit.
+- [Reports → Night Audit](/docs/operations/reports/night-audit) — Night audit reports (daily summary, revenue, guest ledger).
+- [Reports → Trial Balance](/docs/operations/reports/trial-balance) — Debit/credit balance per transaction code for an audit run.
+- [Reports → Manager Report](/docs/operations/reports/manager-report) — Consolidated daily management summary from an audit run.

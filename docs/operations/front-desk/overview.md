@@ -4,37 +4,42 @@ sidebar_position: 0
 
 # Front Desk Overview
 
-The **Front Desk** area covers room plan, in-house guests, and checked-out guests. Use it for daily front-office tasks, room assignment, and quick access to **folio** and checkout.
+**Front Desk** covers the daily front-office workflow: room planning, in-house guest management, and checked-out guest history. It is the central hub for check-in, check-out, room moves, and quick folio access.
 
-:::tip **Having a problem?**  
-This page has [Common FAQs](#common-faqs) below. For issues in other modules, see the main [Troubleshooting](/docs/general/troubleshooting) page — it links to module-specific FAQs and troubleshooting sections.
+:::tip **Having a problem?**
+This page has [Common FAQs](#common-faqs) below. For issues in other modules, see the main [Troubleshooting](/docs/general/troubleshooting) page.
 :::
 
-In the app, **Front Desk** is a menu with three sub-screens:
+## Screens
 
 | Screen | Purpose |
 |--------|---------|
-| [Room Plan](/docs/operations/front-desk/room-plan) | View rooms and occupancy by date; assign rooms, check in, start new reservations. |
-| [In-House](/docs/operations/front-desk/in-house) | List of guests currently checked in; open reservation or folio, check out, change room. |
-| [Checked-Out](/docs/operations/front-desk/checked-out) | List of departed guests; review check-outs, reopen folio if allowed. |
+| [Room Plan](/docs/operations/front-desk/room-plan) | Calendar grid showing room availability over a date range. Click a cell to create a reservation for that room and date. |
+| [In-House](/docs/operations/front-desk/in-house) | All currently checked-in guests. Check out, move rooms, open folio, view alerts/comments/messages. |
+| [Checked-Out](/docs/operations/front-desk/checked-out) | Departed guests. Review history, move back to in-house if needed, open folio. |
 
-## Access
+## Typical Daily Workflow
 
-From the sidebar, open **Front Desk**, then choose **Room Plan**, **In-House**, or **Checked-Out**. What you see depends on **user permissions**.
+1. Start the day on **Room Plan** — review arrivals and room availability.
+2. As guests arrive, check them in from **Reservations → Arrivals** or directly from the Room Plan.
+3. Manage in-house guests from **In-House** — room moves, folio access, alerts.
+4. Process departures from **In-House** or **Reservations → Departures** — settle folio, check out.
+5. After all activity, run **Night Audit** to close the business date.
 
 ## Common FAQs
 
-**Why don't I see the Room Plan or In-House list?**  
-Your user may not have front-desk or reservation permission. Ask your administrator to grant access to Front Desk (room plan, in-house, checked-out).
+**Why don't I see Room Plan or In-House?**
+Your user may not have front-desk or reservation permission. Ask your administrator to grant access.
 
-**What is the difference between In-House and Checked-Out?**  
-**In-House** shows guests currently staying (checked in, not yet departed). **Checked-Out** shows guests who have already departed, usually for a selected date or range.
+**What is the difference between In-House and Checked-Out?**
+In-House shows guests currently staying. Checked-Out shows guests who have already departed.
 
-For more FAQs and troubleshooting, see [Room Plan](/docs/operations/front-desk/room-plan#troubleshooting), [In-House](/docs/operations/front-desk/in-house), or [Checked-Out](/docs/operations/front-desk/checked-out). For general issues, see [Troubleshooting](/docs/general/troubleshooting).
+**Can I move a guest to a different room while they are in-house?**
+Yes — from the In-House list, use the **Room Move** action on the reservation row. The destination room must be the same room type.
 
 ## See also
 
-- [Cashiering](/docs/operations/cashiering/overview) — Open **folio** and post charges or payments from reservation or front-desk screens; [Transaction](/docs/operations/cashiering/transaction) for full folio access.
-- [Night Audit](/docs/operations/night-audit) — Run after front-desk and cashier activity; [Reports](/docs/operations/reports/overview) for night audit and billing reports.
-- [Reservations](/docs/operations/reservations/overview) — Room plan and in-house/checked-out are based on reservation data and status.
-- [Housekeeping](/docs/operations/housekeeping/overview) — Room status (clean/dirty, etc.) can be shown or used when assigning rooms.
+- [Reservations](/docs/operations/reservations/overview) — Create and manage bookings.
+- [Cashiering](/docs/operations/cashiering/overview) — Post charges and take payments on guest folios.
+- [Housekeeping](/docs/operations/housekeeping/overview) — Room status (clean/dirty) before check-in.
+- [Night Audit](/docs/operations/night-audit) — Close the business date after front-desk activity.

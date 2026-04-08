@@ -16,7 +16,7 @@ If you **do not see** a menu item, your user probably does not have the permissi
 | **Profile** (Individual / Company / Travel Agent) | Permission to view at least one profile type (individual, company, or travel agent). |
 | **Reservation** | Permission to view, add, or edit reservations. |
 | **Front Desk** (Room plan, In-house, Checked-out) | Permission to view reservations and/or to check in / check out, and often account-receivable access. |
-| **Cashiering** (Transaction, Cashier shift, Quick checkout) | Cashier permission. You also must log in to a **cash register** before using cashier screens. |
+| **Cashiering** (Transaction, Cashier shift, Quick checkout, Journal by Transaction, Room Routing) | Cashier permission. You also must log in to a **cash register** before using cashier screens. Room Routing additionally requires the **Manage Room Routing** permission. |
 | **Housekeeping** | Permission to view room status, out-of-order, maintenance, tasks, and/or lost & found. |
 | **Night Audit** | Night audit permission. |
 | **Report** | Permission to view reports. |

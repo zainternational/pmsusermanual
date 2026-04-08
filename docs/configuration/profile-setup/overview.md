@@ -26,6 +26,7 @@ In the PMS, these screens are under **Configuration → Profile**. What you see 
 | [Cities](/docs/configuration/profile-setup/cities) | Cities for address. |
 | [Postal Codes](/docs/configuration/profile-setup/postal-codes) | Postal or ZIP codes. |
 | [Inactive Reason](/docs/configuration/profile-setup/inactive-reason) | Reasons for marking a profile or rate inactive. |
+| [Visa Types](/docs/configuration/profile-setup/visa-type) | Visa type codes for guest travel documents (e.g. Tourist, Business, Transit). |
 
 ## Typical workflow
 
