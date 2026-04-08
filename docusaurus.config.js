@@ -26,6 +26,11 @@ const config = {
   url: 'https://docs.hotelium.com.mm',
   baseUrl: '/',
 
+  // GitHub Pages deployment config
+  organizationName: 'zainternational',
+  projectName: 'pmsusermanual',
+  deploymentBranch: 'gh-pages',
+
   // Explicit trailingSlash for GitHub Pages (avoids redirects and SEO issues)
   trailingSlash: true,
 
