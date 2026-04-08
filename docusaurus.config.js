@@ -22,14 +22,18 @@ const config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // Public docs domain
-  url: 'https://docs.hotelium.com.mm',
-  baseUrl: '/',
+  // === DEPLOYMENT TARGET (uncomment one) ===
 
-  // GitHub Pages deployment config
+  // Option A: GitHub Pages
+  url: 'https://zainternational.github.io',
+  baseUrl: '/pmsusermanual/',
   organizationName: 'zainternational',
   projectName: 'pmsusermanual',
   deploymentBranch: 'gh-pages',
+
+  // Option B: Custom domain / own server
+  // url: 'https://docs.hotelium.com.mm',
+  // baseUrl: '/',
 
   // Explicit trailingSlash for GitHub Pages (avoids redirects and SEO issues)
   trailingSlash: true,
