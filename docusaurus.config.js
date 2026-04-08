@@ -18,9 +18,9 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
-  future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
-  },
+  // future: {
+  //   v4: true, // disabled — causes admonitions (:::tip) to not render in .md files
+  // },
 
   // === DEPLOYMENT TARGET (uncomment one) ===
 
