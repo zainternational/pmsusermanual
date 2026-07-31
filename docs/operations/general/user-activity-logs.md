@@ -7,7 +7,7 @@ sidebar_position: 0
 **User Activity Logs** record actions performed by users in the PMS — logins, reservation changes, payments, configuration changes, and more. Use them for auditing, troubleshooting, and compliance.
 
 :::tip **Having a problem?**
-See the main [Troubleshooting](/docs/general/troubleshooting) page for general issues.
+See the main [Troubleshooting](/general/troubleshooting) page for general issues.
 :::
 
 ## Access
@@ -23,6 +23,11 @@ Requires the **View User Activity Log** permission (`view_useractivitylog`). Adm
 | Search | Free-text search across user name, activity text, and related fields. |
 | From Date | Filter logs from this date (inclusive). |
 | To Date | Filter logs up to this date (inclusive). |
+| Activity Group | Column-header dropdown — filter to a specific module/area (e.g. Reservation, Billing). |
+| Action Type | Column-header dropdown — filter to a specific action (e.g. Create, Update, Delete). |
+| Activity By | Column-header dropdown — filter to a specific user who triggered actions. |
+| Activity For | Column-header dropdown — filter to a specific user/object actions were performed on. |
+| Status | Column-header dropdown — include or exclude logs from inactive users. |
 
 Filters apply automatically as you type or change dates. Use **Reset** to clear all filters.
 
@@ -53,6 +58,10 @@ Users with the **Export User Activity Log** permission can export the current fi
 
 Users with the **Delete User Activity Log** permission can delete individual log entries. A confirmation dialog shows the activity text, user, and date before deletion. Deletion cannot be undone.
 
+:::caution
+The Export and Delete permissions currently only control whether the buttons are **shown** in this screen — enforcement is at the interface level, not the server. Treat these permissions as UI conveniences rather than a hard security boundary, and restrict who has API-level system access accordingly.
+:::
+
 ## Use Cases
 
 - **Auditing** — Who did what and when (e.g. who changed a rate, who cancelled a reservation).
@@ -73,5 +82,5 @@ Log retention depends on your system configuration. Contact your administrator i
 
 ## See also
 
-- [Roles and permissions](/docs/general/roles-and-permissions) — Permission requirements for this screen.
-- [Configuration → Users](/docs/configuration/general-setup/users) — Manage user accounts and permissions.
+- [Roles and permissions](/general/roles-and-permissions) — Permission requirements for this screen.
+- [Configuration → Users](/configuration/general-setup/users) — Manage user accounts and permissions.

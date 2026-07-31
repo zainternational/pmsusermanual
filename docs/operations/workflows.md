@@ -15,21 +15,21 @@ From a confirmed reservation to an in-house guest with a ready room and open fol
 - Guest has a **confirmed** (or equivalent) reservation for today’s arrival.
 - Reservation shows correct **guest**, **room type** (or room), **dates**, and **rate**.
 
-See [Reservations](/docs/operations/reservations/overview) to create or edit reservations.
+See [Reservations](/operations/reservations/overview) to create or edit reservations.
 
 ### 2. Confirm room readiness
 
 - In **Housekeeping**, ensure the assigned (or to-be-assigned) room is **Vacant Clean** or **Ready**.
 - If the room is dirty or under maintenance, change status or assign another room.
 
-See [Housekeeping](/docs/operations/housekeeping/overview).
+See [Housekeeping](/operations/housekeeping/overview).
 
 ### 3. Assign or confirm room (if needed)
 
 - In **Reservation** or **Front Desk → Room plan**, assign a specific **room number** if the reservation only had a room type.
 - Or use **Room plan** to see which room is allocated and that it is available.
 
-See [Front Desk](/docs/operations/front-desk/overview).
+See [Front Desk](/operations/front-desk/overview).
 
 ### 4. Check in the guest
 
@@ -43,7 +43,7 @@ See [Front Desk](/docs/operations/front-desk/overview).
 - Select the reservation. The **folio** is used for all charges and payments during the stay.
 - Post **room** and **tax** as per your property (e.g. at check-in or via night audit). Add any **deposit** or **advance payment** if required.
 
-See [Cashiering](/docs/operations/cashiering/overview).
+See [Cashiering](/operations/cashiering/overview).
 
 ### Summary
 
@@ -65,7 +65,7 @@ Closing the business day: cashier reconciliation, then night audit.
   - Resolve any variance per your property’s policy.
   - Ensure all folios that should be settled for that day are handled.
 
-See [Cashiering](/docs/operations/cashiering/overview).
+See [Cashiering](/operations/cashiering/overview).
 
 ### 2. Resolve exceptions (if any)
 
@@ -73,7 +73,7 @@ See [Cashiering](/docs/operations/cashiering/overview).
 - Review **exceptions** (e.g. open balances, high balance, missing data).
 - Resolve critical exceptions before running the final audit (e.g. post missing room charges, correct rates, or document variances).
 
-See [Night Audit](/docs/operations/night-audit).
+See [Night Audit](/operations/night-audit).
 
 ### 3. Run night audit
 
@@ -84,7 +84,7 @@ See [Night Audit](/docs/operations/night-audit).
   - **Advance the system (business) date** to the next day (if configured).
   - Generate **audit reports** and update statistics.
 
-See [Night Audit](/docs/operations/night-audit).
+See [Night Audit](/operations/night-audit).
 
 ### 4. Review audit results
 
@@ -92,7 +92,7 @@ See [Night Audit](/docs/operations/night-audit).
 - Check **Overview**, **Revenue**, **Payments**, **Room status**, and **Exceptions**.
 - Use **Reports** or **Guest ledger** for that date if you need to file or reconcile with accounting.
 
-See [Reports](/docs/operations/reports/overview).
+See [Reports](/operations/reports/overview).
 
 ### 5. Back up or export (if required)
 
@@ -108,9 +108,9 @@ All charges/payments done → Close cashier shift → Fix critical exceptions �
 
 ## See also
 
-- [Reservations](/docs/operations/reservations/overview) — Creating and managing reservations
-- [Front Desk](/docs/operations/front-desk/overview) — Room plan, in-house, checked-out
-- [Cashiering](/docs/operations/cashiering/overview) — Transactions, shift, quick checkout
-- [Housekeeping](/docs/operations/housekeeping/overview) — Room status and tasks
-- [Night Audit](/docs/operations/night-audit) — Running audit and reviewing runs
-- [Reports](/docs/operations/reports/overview) — Running and exporting reports
+- [Reservations](/operations/reservations/overview) — Creating and managing reservations
+- [Front Desk](/operations/front-desk/overview) — Room plan, in-house, checked-out
+- [Cashiering](/operations/cashiering/overview) — Transactions, shift, quick checkout
+- [Housekeeping](/operations/housekeeping/overview) — Room status and tasks
+- [Night Audit](/operations/night-audit) — Running audit and reviewing runs
+- [Reports](/operations/reports/overview) — Running and exporting reports

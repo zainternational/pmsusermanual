@@ -37,7 +37,7 @@ sidebar_position: 10
 
 ## See also
 
-- [Track It — Groups](/docs/configuration/general-setup/trackit-groups) — Top-level categories.
-- [Track It — Actions](/docs/configuration/general-setup/trackit-actions) — What happened to the item.
-- [Track It — Locations](/docs/configuration/general-setup/trackit-locations) — Where the item was found or stored.
-- [Housekeeping → Lost & Found](/docs/operations/housekeeping/lost-and-found) — Using Track It in operations.
+- [Track It — Groups](/configuration/general-setup/trackit-groups) — Top-level categories.
+- [Track It — Actions](/configuration/general-setup/trackit-actions) — What happened to the item.
+- [Track It — Locations](/configuration/general-setup/trackit-locations) — Where the item was found or stored.
+- [Housekeeping → Lost & Found](/operations/housekeeping/lost-and-found) — Using Track It in operations.

@@ -4,10 +4,14 @@ sidebar_position: 8
 
 # Registration Form
 
-The **Registration Form** (also called the registration card) is a printable guest check-in document. It contains the guest's personal details, stay information, and a signature line for the guest to sign at check-in.
+The **Registration Form** is a printable/emailable guest check-in document. It contains the guest's personal details, stay information, and a signature line for the guest to sign on paper at check-in.
+
+:::info **Registration Form vs. Registration Card**
+The Registration Form is a plain print/email document — it is not saved. For an editable form with an on-screen, saved digital signature, use the [Registration Card](/operations/reservations/registration-card) instead.
+:::
 
 :::tip **Having a problem?**
-See [Reservations Overview](/docs/operations/reservations/overview) for common FAQs and troubleshooting.
+See [Reservations Overview](/operations/reservations/overview) for common FAQs and troubleshooting.
 :::
 
 ## Access
@@ -31,10 +35,17 @@ From a reservation detail page, click **Registration Form** (or the registration
 
 1. Open the reservation (from the reservation list or detail page).
 2. Click **Registration Form**.
-3. A modal opens with a formatted preview of the registration card.
-4. Click **Print** to print.
+3. A modal opens showing the registration card, pre-filled from the reservation and guest profile — edit any field before printing if needed.
+4. Click **Print** to print, or click **Email** to send the form directly to the guest.
 
-Print the form before the guest arrives so it is ready at the front desk.
+Print the form before the guest arrives so it is ready at the front desk, or email it ahead of arrival for the guest to review.
+
+## Emailing the Registration Form
+
+1. Open the reservation and click **Registration Form**.
+2. Click **Email** in the registration card modal.
+3. The recipient address is pre-filled from the guest's profile email (if set) — edit it if needed.
+4. Adjust the subject/message if needed and click **Send**.
 
 ## When to Use
 
@@ -50,7 +61,7 @@ For the registration form to be complete, the guest profile should have:
 - Date of birth
 - Passport or NRC number
 
-These fields are stored on the [Individual Profile](/docs/operations/profiles/individual-profile). If they are missing, fill them in on the profile before printing.
+These fields are stored on the [Individual Profile](/operations/profiles/individual-profile). If they are missing, fill them in on the profile before printing.
 
 ## Common FAQs
 
@@ -58,14 +69,15 @@ These fields are stored on the [Individual Profile](/docs/operations/profiles/in
 Passport details are stored on the individual profile under Step 3 — Travel Documents. Open the profile in **Profile → Individual Profile** and fill in the passport fields.
 
 **Can I print registration forms for all arrivals at once?**
-Currently, registration forms are generated per reservation. Open each reservation and print individually.
+Currently, registration forms are generated per reservation. Open each reservation and print or email individually.
 
 **The hotel name or address is wrong on the form.**
 Update the property details in **Configuration → General Configuration → Hotel Information**.
 
 ## See also
 
-- [Reservations Overview](/docs/operations/reservations/overview) — Full reservation management.
-- [Confirmation Letter](/docs/operations/reservations/confirmation-letter) — Booking confirmation document.
-- [Individual Profile](/docs/operations/profiles/individual-profile) — Guest profile with travel document fields.
-- [Configuration → Hotel Information](/docs/configuration/general-setup/hotel-information) — Property details shown on the form.
+- [Registration Card](/operations/reservations/registration-card) — Editable card with saved digital signature.
+- [Reservations Overview](/operations/reservations/overview) — Full reservation management.
+- [Confirmation Letter](/operations/reservations/confirmation-letter) — Booking confirmation document.
+- [Individual Profile](/operations/profiles/individual-profile) — Guest profile with travel document fields.
+- [Configuration → Hotel Information](/configuration/general-setup/hotel-information) — Property details shown on the form.

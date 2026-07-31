@@ -4,52 +4,45 @@ sidebar_position: 7
 
 # Packages
 
-**Packages** bundle a room rate with additional inclusions (e.g. breakfast, airport transfer, spa credit). When a package rate is selected on a reservation, the included items are posted to the folio automatically.
+**Packages** define a priced add-on (e.g. Bed & Breakfast, Airport Transfer, Spa Credit) that can be attached to a reservation, either bundled into the room rate or sold as a separate line item. Each package posts to the folio under a single transaction code.
 
 ## Access
 
-**Configuration → Rate Management → Package**
+**Configuration → Rate Setup → Package**
 
 ## Fields
 
 | Field | Required | Description |
-|-------|----------|-------------|
-| Short Code | Yes | Abbreviated code (e.g. BB, HB, FB, ROM). |
-| Name | Yes | Package name (e.g. Bed & Breakfast, Half Board, Full Board, Romance Package). |
-| Description | No | Details of what is included. |
-| Transaction Codes | Yes | The transaction codes that make up the package (e.g. room charge + breakfast charge). Each code has an amount or percentage. |
-| Valid From / To | No | Date range the package is available. |
+|-------|----------|--------------|
+| Code | Yes | Short package code (e.g. BB, TRANSFER). Must be unique per hotel. |
+| Name | Yes | Package name (e.g. Bed & Breakfast). |
+| Price | Yes | The package price. |
+| Currency | Auto | Not editable directly — automatically set from the selected hotel's default currency when **Hotel** is set. If no hotel is selected, the system default currency is used. |
+| Start Date / End Date | Yes | Date range the package is valid for. End date must not be earlier than start date. |
+| Transaction Code | No | The single transaction code this package posts under when charged to the folio. |
+| Service Charge % | No | Service charge percentage applied to this package. If left blank, the transaction code's default service charge applies. Set this to override it per package. |
+| Tax % | No | Tax percentage applied to this package. If left blank, the transaction code's default tax applies. Set this to override it per package. |
+| Include in Rate | No | When enabled, the package amount is bundled into the room rate rather than shown as a separate charge. |
+| Sell Separately | No | When enabled, the package can be added to a reservation independently of a rate plan, as a standalone chargeable item. |
+| Hotel | No | Restricts the package to a specific hotel. Leave empty to make the package available to all hotels. Setting this also determines the package's currency (see Currency above). |
 | Active | Yes | Whether the package is available for selection. |
 
-## How Packages Work
+## Notes
 
-When a reservation uses a package rate:
-1. The room charge is posted as normal.
-2. The package inclusions (e.g. breakfast) are posted as separate line items on the folio using the configured transaction codes.
-3. The package amount is split between the room and inclusion transaction codes for reporting purposes.
-
-This means revenue is correctly attributed — room revenue goes to the room transaction code, F&B revenue goes to the breakfast transaction code.
-
-## Common Package Types
-
-| Short Code | Name | Inclusions |
-|-----------|------|-----------|
-| RO | Room Only | Room charge only |
-| BB | Bed & Breakfast | Room + breakfast |
-| HB | Half Board | Room + breakfast + dinner |
-| FB | Full Board | Room + all meals |
-| AI | All Inclusive | Room + all meals + beverages |
+- **Currency follows the hotel, not manual entry.** If you change the **Hotel** field, the package's currency is automatically updated to that hotel's default currency on save.
+- **Include in Rate** and **Sell Separately** are independent toggles — a package can be marked as both, neither, or either one, depending on how it should be offered.
+- A package code only needs to be unique within the same hotel; the same code can be reused across different hotels.
 
 ## Common FAQs
 
-**The package inclusions are not posting to the folio.**
-Ensure the package transaction codes are active and the package is linked to the rate plan used on the reservation.
+**The package isn't posting under the currency I expect.**
+Check the **Hotel** field on the package — currency is derived from the hotel's default currency, not set independently. Clear the hotel field to fall back to the system default currency.
 
-**Can a package have a different price per room type?**
-Yes — packages are linked to rate plans, and rate plans are defined per room type. Set different amounts per room type in the rate setup.
+**Can a package have a different tax or service charge than its transaction code?**
+Yes — set **Service Charge %** and/or **Tax %** on the package itself to override the transaction code's defaults for that package only.
 
 ## See also
 
-- [Rates](/docs/configuration/rate-setup/rates) — Link packages to rate plans.
-- [Transaction Codes](/docs/configuration/cashiering-setup/transaction-codes) — The codes used for package inclusions.
-- [Rate Setup Overview](/docs/configuration/rate-setup/overview)
+- [Transaction Codes](/configuration/cashiering-setup/transaction-codes) — The code a package posts under.
+- [Rate Setup Overview](/configuration/rate-setup/overview)
+- [Currencies](/configuration/rate-setup/currencies) — Hotel default currency, which packages inherit.

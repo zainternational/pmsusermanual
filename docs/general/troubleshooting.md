@@ -7,7 +7,7 @@ sidebar_position: 2
 Common issues and what to do when something goes wrong.
 
 :::tip **Module-specific help**
-Many modules have their own **Common FAQs** and **Troubleshooting** sections: [Reservations](/docs/operations/reservations/overview#troubleshooting), [Front Desk](/docs/operations/front-desk/overview), [Cashiering](/docs/operations/cashiering/overview), [Housekeeping](/docs/operations/housekeeping/overview), [Night Audit](/docs/operations/night-audit#troubleshooting), [Dashboard](/docs/operations/dashboard#troubleshooting), [Configuration](/docs/configuration/overview#troubleshooting), [Profiles](/docs/operations/profiles/overview#troubleshooting). Check those pages first for issues in that area.
+Many modules have their own **Common FAQs** and **Troubleshooting** sections: [Reservations](/operations/reservations/overview#troubleshooting), [Front Desk](/operations/front-desk/overview), [Cashiering](/operations/cashiering/overview), [Housekeeping](/operations/housekeeping/overview), [Night Audit](/operations/night-audit#troubleshooting), [Dashboard](/operations/dashboard#troubleshooting), [Configuration](/configuration/overview#troubleshooting), [Profiles](/operations/profiles/overview#troubleshooting). Check those pages first for issues in that area.
 :::
 
 ## Login
@@ -83,7 +83,7 @@ Many modules have their own **Common FAQs** and **Troubleshooting** sections: [R
 
 | Problem | What to try |
 |--------|-------------|
-| **Menu item missing** | Your permissions may not include that module. Contact your administrator. See [Roles and permissions](/docs/general/roles-and-permissions). |
+| **Menu item missing** | Your permissions may not include that module. Contact your administrator. See [Roles and permissions](/general/roles-and-permissions). |
 | **Slow or timeout** | Check network and backend status. For heavy reports, narrow date range or filters. |
 | **Wrong hotel / property** | Use the **hotel switcher** (if multi-property) to select the correct property. |
 | **Notifications not appearing** | The bell polls every 10 seconds. Wait a moment or refresh the page. |

@@ -7,7 +7,7 @@ sidebar_position: 2
 The **In-House** list shows all reservations currently checked in. Use it to find guests, open folios, process check-outs, move rooms, and manage alerts, comments, and messages.
 
 :::tip **Having a problem?**
-See [Troubleshooting](#troubleshooting) below or the main [Troubleshooting](/docs/general/troubleshooting) page.
+See [Troubleshooting](#troubleshooting) below or the main [Troubleshooting](/general/troubleshooting) page.
 :::
 
 ## Access
@@ -57,6 +57,7 @@ Each reservation row has action buttons (visible on hover or in the action menu)
 | Comments | View and add internal comments. |
 | Messages | View and add guest-facing messages. |
 | Deposit Ledger | View the deposit ledger (requires Deposit Ledger permission). |
+| Guest Record | Open a read-only report of the guest's profile summary and stay history (requires view permission). |
 | Move Back to Arrival | Undo a check-in — moves the reservation back to Reserved/Arrival status. Only allowed if the folio has no charges or payments. |
 | Cancel | Cancel the reservation. Only allowed if the folio has no charges or payments. |
 
@@ -91,6 +92,10 @@ Room Move only works within the same room type. To move a guest to a different r
 
 Reservations belonging to a group are shown together. Use **Expand All** / **Collapse All** to toggle group rows. Group ID and group name are shown in the group header row.
 
+## Guest Record
+
+Click **Guest Record** on a reservation row to open a report of the guest's profile summary (name, phone, email, VIP level, total stays, total nights, last stay date) and their full stay history (past reservations with room type, status, and room/F&B/other/total revenue per stay). Click a reservation number in the stay history to open that reservation, or use **Print** to print the record. This action is only visible to users with the required view permission.
+
 ## Alerts on Check Out
 
 If a reservation has alerts configured to display at **Check Out**, they appear in a read-only modal before the checkout confirmation. Review the alerts and close the modal to proceed with checkout.
@@ -107,8 +112,8 @@ If a reservation has alerts configured to display at **Check Out**, they appear 
 
 ## See also
 
-- [Checked-Out](/docs/operations/front-desk/checked-out) — Departed guests.
-- [Room Plan](/docs/operations/front-desk/room-plan) — Calendar view of room availability.
-- [Cashiering → Transaction](/docs/operations/cashiering/transaction) — Post charges and take payments on the folio.
-- [Reservations → Departures](/docs/operations/reservations/departures) — Today's expected departures.
-- [Housekeeping → Room Status](/docs/operations/housekeeping/room-status) — Room becomes Vacant Dirty after checkout.
+- [Checked-Out](/operations/front-desk/checked-out) — Departed guests.
+- [Room Plan](/operations/front-desk/room-plan) — Calendar view of room availability.
+- [Cashiering → Transaction](/operations/cashiering/transaction) — Post charges and take payments on the folio.
+- [Reservations → Departures](/operations/reservations/departures) — Today's expected departures.
+- [Housekeeping → Room Status](/operations/housekeeping/room-status) — Room becomes Vacant Dirty after checkout.

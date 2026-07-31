@@ -73,9 +73,10 @@ Two sections: Stay Information and Geographical Data.
 
 | Field | Description |
 |-------|-------------|
-| Market | Market segment for the booking — from [Markets](/docs/configuration/rate-setup/markets) setup. |
-| Source | Booking source (e.g. Direct, OTA, Travel Agent) — from [Sources](/docs/configuration/rate-setup/sources) setup. |
-| Purpose of Stay | Reason for the visit — from [Purpose of Stay](/docs/configuration/reservation-setup/purpose-of-stay) setup. |
+| Market | Market segment for the booking — from [Markets](/configuration/rate-setup/markets) setup. |
+| Source | Booking source (e.g. Direct, OTA, Travel Agent) — from [Sources](/configuration/rate-setup/sources) setup. |
+| Purpose of Stay | Reason for the visit — from [Purpose of Stay](/configuration/reservation-setup/purpose-of-stay) setup. |
+| Currency | Currency for the rate/deposit amounts. Auto-set from the hotel's default currency when the reservation is created; not normally changed on the form. |
 
 **Transportation** — Click **Add Transportation Info** to expand the transportation step (optional).
 
@@ -88,7 +89,7 @@ Only shown if you clicked **Add Transportation Info** in Step 2.
 | Pick Up Required | Yes/No toggle. Enables pickup detail fields. |
 | Pickup Location | Where to pick up the guest. |
 | Pick Up Time | Time of pickup. |
-| Pickup Transportation Type | Vehicle/transport type — from [Transportation Types](/docs/configuration/general-setup/transportation-types) setup. |
+| Pickup Transportation Type | Vehicle/transport type — from [Transportation Types](/configuration/general-setup/transportation-types) setup. |
 | Pickup Transport Number | Flight number, train number, etc. |
 | Drop Off Required | Yes/No toggle. Enables drop-off detail fields. |
 | Drop-off Location | Where to drop off the guest. |
@@ -104,15 +105,35 @@ Open a reservation from the list (click the row). The detail page shows the same
 
 ## Reservation Detail — Activity Panel
 
-On the Booking Info step of an existing reservation, an **Activity** card shows:
+On the Booking Info step of an existing reservation, an **Activity** card shows three buttons, each with a count badge when items exist. The buttons are enabled while the reservation is in **Edit** mode.
 
 | Button | Description |
 |--------|-------------|
-| Alerts | View and manage reservation alerts (shown as warning banners at the top of the reservation). |
-| Comments | Internal comments/notes on the reservation. |
-| Messages | Guest-facing messages linked to the reservation. |
+| Alert | View and manage [alert codes](#alerts) attached to the reservation (shown as warning banners at the top of the reservation). |
+| Comment | Internal [comments/notes](#comments-and-messages) on the reservation, not visible to the guest. |
+| Message | [Guest-facing messages](#comments-and-messages) logged against the reservation, e.g. a phone message taken for the guest. |
 
-Each button shows a count badge when items exist.
+### Alerts
+
+Alert codes flag something staff should notice about a reservation (VIP, allergy, do-not-disturb, etc.) — the available codes are set up in [Configuration → Alert Codes](/configuration/reservation-setup/alert-codes). To attach or remove an alert on a reservation:
+
+1. Open the reservation in **Edit** mode and click **Alert** on the Activity card.
+2. Select an alert code to attach it, or remove one already attached.
+3. Save. Attached alerts appear as banners at the top of the reservation and the Alert count badge updates.
+
+A reservation can carry more than one alert code at a time. Remove an alert once it no longer applies.
+
+### Comments and Messages
+
+**Comments** are internal notes about the reservation (e.g. billing instructions, housekeeping notes) that guests never see. **Messages** record guest-facing communication, such as a phone message taken for the guest while they were out — messages can be printed for the guest (see [Message and Deposit Print](#message-and-deposit-print)).
+
+To add a comment or message:
+
+1. Open the reservation in **Edit** mode and click **Comment** or **Message** on the Activity card.
+2. For a message, enter who it's from, a phone number (if applicable), and the message content. For a comment, enter the note content.
+3. Save. The entry is added to the list and the count badge updates.
+
+To remove an entry, open the Comment or Message panel and delete it.
 
 ## Reservation Actions
 
@@ -126,28 +147,57 @@ From the reservation detail header, available actions depend on the current stat
 | Waitlist | — | Moves to waitlist status. |
 | Print Registration Form | Any | Prints the guest registration form. |
 | Print Confirmation Letter | Any | Prints the booking confirmation letter. |
+| Move Back | In-House or Checked Out | Requires the **Move Back** permission. Reverts a checked-in reservation to Reserved/Due In, or a checked-out reservation back to In-House. Use to correct a mistaken check-in/check-out. |
 | Open Billing | In-House | Opens the folio in Cashiering → Transaction. |
 
-## Confirmation Letter and Registration Form
+## Confirmation Letter, Registration Form, and Registration Card
 
 From the reservation detail, you can print:
 - **Confirmation Letter** — Sent to the guest to confirm the booking.
-- **Registration Form** — Signed by the guest at check-in.
+- **Registration Form** — A pre-filled (or blank) check-in document; see [Registration Form](/operations/reservations/registration-form).
+- **Registration Card** — The editable, signed check-in card stored against the reservation, captured with an on-screen signature pad; see [Registration Card](/operations/reservations/registration-card).
+
+## Message and Deposit Print
+
+From the reservation detail, two additional documents can be printed:
+
+| Document | Contents | When to Use |
+|----------|----------|--------------|
+| Message Print | A printable list of all guest messages logged on the reservation (from, phone, date/time, content). | Hand a printed copy of phone/guest messages to the guest, e.g. at check-in or when they return to the front desk. |
+| Deposit Print (Payment Receipt) | A receipt of payments recorded against the reservation, with a guest-signature line. | Print a receipt for the guest after taking a deposit or other payment on the reservation. |
+
+Both are generated from the reservation detail page and open as a printable PDF.
+
+## Guest Record
+
+From the reservation list, use the guest record action on a row (subject to permission) to open the **Guest Record** modal — a summary of the guest's profile details plus their stay history (past and current reservations at the property). Use **Print** in the modal to print the guest record.
 
 ## Group Reservations
 
-Reservations can belong to a **Group**. Group reservations share a group ID and group name. The first reservation in the group holds the deposit; subsequent group members do not require a separate deposit. Group management is available from the reservation list.
+Reservations can belong to a **Group**. Group reservations share a group ID and group name, and each member has a sequence number within the group. The first reservation in the group holds the deposit; subsequent group members do not require a separate deposit.
+
+Group records are managed on their own screen — see [Reservation Groups](/operations/reservations/groups) for creating, editing, and deleting groups, and for adding reservations to a group.
+
+## Room Type Detach
+
+**Room Type Detach** permanently removes rooms from sellable inventory for a room type over a date range, without creating a normal guest reservation. It applies only when the selected **Reservation Type** has inventory detachment enabled in Configuration — for example, to block rooms for maintenance or long-term out-of-order use directly from the reservation flow. If the reservation type does not require detachment, no inventory change happens. Because the effect is a permanent inventory reduction (not a room block that clears when a reservation is cancelled), use it only for cases that should not free up automatically.
 
 ## Daily Rate Override
 
 On the Booking Info step, click **View Daily Rate** to open the Daily Rate modal. This lets you set a custom rate for each individual night of the stay, overriding the flat rate code amount. The total is recalculated automatically.
 
+Daily rates are stored **per night** of the stay. When custom daily rates are set, the reservation's overall **Rate Amount** is derived from the first night's per-adult rate, and each night keeps its own amount. During Night Audit, room charges are posted to the folio using each night's stored daily rate (rather than a single flat rate repeated every night), so a change made in the Daily Rate modal directly affects what is billed for that specific night. Clearing the daily rates removes the per-night overrides and the reservation reverts to billing at the flat rate/rate code amount.
+
 ## See also
 
-- [Arrivals](/docs/operations/reservations/arrivals)
-- [Departures](/docs/operations/reservations/departures)
-- [Waitlist](/docs/operations/reservations/waitlist)
-- [Cancellations](/docs/operations/reservations/cancellations)
-- [Front Desk → Room Plan](/docs/operations/front-desk/room-plan)
-- [Cashiering → Transaction](/docs/operations/cashiering/transaction)
-- [Housekeeping → Room Chart](/docs/operations/housekeeping/room-chart)
+- [Arrivals](/operations/reservations/arrivals)
+- [Departures](/operations/reservations/departures)
+- [Waitlist](/operations/reservations/waitlist)
+- [Cancellations](/operations/reservations/cancellations)
+- [Reservation Groups](/operations/reservations/groups)
+- [Registration Form](/operations/reservations/registration-form)
+- [Registration Card](/operations/reservations/registration-card)
+- [Front Desk → Room Plan](/operations/front-desk/room-plan)
+- [Cashiering → Transaction](/operations/cashiering/transaction)
+- [Housekeeping → Room Chart](/operations/housekeeping/room-chart)
+- [Configuration → Alert Codes](/configuration/reservation-setup/alert-codes)

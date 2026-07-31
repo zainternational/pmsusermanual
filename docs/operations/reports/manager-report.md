@@ -7,12 +7,12 @@ sidebar_position: 8
 The **Manager Report** is a consolidated daily summary for management, built from a night audit run. It shows occupancy, revenue, payments, outstanding balances, and breakdowns by transaction code, payment type, and room type.
 
 :::tip **Having a problem?**
-See the main [Troubleshooting](/docs/general/troubleshooting) page for general issues, or the [Reports Overview](/docs/operations/reports/overview) for how to run and export reports.
+See the main [Troubleshooting](/general/troubleshooting) page for general issues, or the [Reports Overview](/operations/reports/overview) for how to run and export reports.
 :::
 
 ## Access
 
-From the sidebar, click **Report** → **Manager Report**.
+From the sidebar, click **Report** → **Financial**, then choose **Manager** from the sub-report list.
 
 ## Filters
 
@@ -83,6 +83,22 @@ Per room type breakdown:
 | Revenue | Total revenue from this room type. |
 | RevPAR | Revenue per available room. |
 
+### Inventory Flow Metrics
+
+A further breakdown of how today's room inventory moved, including:
+
+| Column | Description |
+|--------|-------------|
+| Detach Inventory | Rooms detached from a multi-room booking. |
+| Day Use | Day-use (no overnight stay) rooms. |
+| Complimentary | Complimentary-rate rooms occupied. |
+| Walk-In | Walk-in arrivals. |
+| Extended / Early Departure | Stays extended or departing earlier than originally booked. |
+| No-Show | Reservations marked no-show. |
+| Cancelled Today | Reservations cancelled on the audit date. |
+| Arrivals / Departures — Today &amp; Tomorrow (Rooms/Persons) | Arrival and departure counts, split by room and by person, for today and the next business date. |
+| Maintenance OOO/OOS | Rooms currently out of order / out of service. |
+
 ## Export
 
 Use the export button (if available) to download as Excel or PDF for management review or owner reporting.
@@ -100,7 +116,7 @@ Revenue and payment data is captured during the night audit run from billing ite
 
 ## See also
 
-- [Night Audit](/docs/operations/night-audit) — Run night audit; the manager report is built from audit run data.
-- [Trial Balance Report](/docs/operations/reports/trial-balance) — Detailed debit/credit breakdown by transaction code.
-- [Billing Reports](/docs/operations/reports/billing) — Revenue and payment detail by date range.
-- [Reports Overview](/docs/operations/reports/overview) — How to run and export reports.
+- [Night Audit](/operations/night-audit) — Run night audit; the manager report is built from audit run data.
+- [Trial Balance Report](/operations/reports/trial-balance) — Detailed debit/credit breakdown by transaction code.
+- [Billing Reports](/operations/reports/billing) — Revenue and payment detail by date range.
+- [Reports Overview](/operations/reports/overview) — How to run and export reports.

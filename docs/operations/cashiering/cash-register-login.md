@@ -7,7 +7,7 @@ sidebar_position: 0
 **Cash Register Login** is required before using any cashiering function (Transaction, Cashier Shift, Quick Checkout). It links your user session to a specific cash register so all transactions are tracked per register.
 
 :::tip **Having a problem?**
-See [Cashiering Overview](/docs/operations/cashiering/overview) for common FAQs and troubleshooting.
+See [Cashiering Overview](/operations/cashiering/overview) for common FAQs and troubleshooting.
 :::
 
 ## When It Appears
@@ -59,8 +59,8 @@ No — each user session is linked to one register at a time. Log out of the cur
 
 ## See also
 
-- [Cashiering Overview](/docs/operations/cashiering/overview) — Overview of all cashiering screens.
-- [Transaction](/docs/operations/cashiering/transaction) — Post charges and payments after logging in.
-- [Cashier Shift](/docs/operations/cashiering/cashier-shift) — Close the shift at end of day.
-- [Configuration → Cash Register Setup](/docs/configuration/general-setup/cash-register-setup) — Set up cash registers.
-- [Configuration → Cashiering → Cashiers](/docs/configuration/cashiering-setup/cashiers) — Link users to cashiers.
+- [Cashiering Overview](/operations/cashiering/overview) — Overview of all cashiering screens.
+- [Transaction](/operations/cashiering/transaction) — Post charges and payments after logging in.
+- [Cashier Shift](/operations/cashiering/cashier-shift) — Close the shift at end of day.
+- [Configuration → Cash Register Setup](/configuration/general-setup/cash-register-setup) — Set up cash registers.
+- [Configuration → Cashiering → Cashiers](/configuration/cashiering-setup/cashiers) — Link users to cashiers.

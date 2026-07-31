@@ -38,5 +38,5 @@ When a user marks a reservation or profile as inactive, they are prompted to sel
 
 ## See also
 
-- [Reservation Setup Overview](/docs/configuration/reservation-setup/overview)
-- [Profile Setup → Inactive Reason](/docs/configuration/profile-setup/inactive-reason) — Inactive reasons for profiles.
+- [Reservation Setup Overview](/configuration/reservation-setup/overview)
+- [Profile Setup → Inactive Reason](/configuration/profile-setup/inactive-reason) — Inactive reasons for profiles.

@@ -14,19 +14,21 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero', styles.heroHotelium)}>
       <div className={clsx('container', styles.heroInner)}>
-        <img src={logoSrc} alt="Hotelium" className={styles.heroLogo} />
+        <a href="https://hotelium.com.mm/" className={styles.heroLogoLink}>
+          <img src={logoSrc} alt="Hotelium" className={styles.heroLogo} />
+        </a>
         <Heading as="h1" className={styles.heroTitle}>
           {siteConfig.title}
         </Heading>
         <p className={styles.heroSubtitle}>{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-          <Link className={styles.ctaButton} to="/docs/quickstart">
+          <Link className={styles.ctaButton} to="/quickstart">
             Quick start
           </Link>
-          <Link className={styles.heroSecondaryLink} to="/docs/intro">
+          <Link className={styles.heroSecondaryLink} to="/intro">
             View documentation
           </Link>
-          <Link className={styles.heroSecondaryLink} to="/docs/general/using-this-manual">
+          <Link className={styles.heroSecondaryLink} to="/general/using-this-manual">
             How to use this manual
           </Link>
         </div>

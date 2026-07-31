@@ -28,10 +28,10 @@ To cancel a reservation:
 3. A modal appears — select a **Cancellation Reason** from the dropdown.
 4. Confirm. The status changes to **Cancelled** and the reservation moves to the Cancellations list.
 
-Cancellation reasons are configured in [Configuration → Reservation Setup → Cancellation Reasons](/docs/configuration/reservation-setup/cancellation-reasons).
+Cancellation reasons are configured in [Configuration → Reservation Setup → Cancellation Reasons](/configuration/reservation-setup/cancellation-reasons).
 
 :::caution
-Cancellation cannot be undone. If you need to reinstate a cancelled reservation, create a new one.
+Cancelling sets the reservation status to **Cancelled** and releases its room assignment. There is no "undo cancel" action that puts the reservation back to a bookable state. A user with the **Move Back Reservation** permission (`move_back_reservation`, shared with delete permissions) can delete the cancellation record from the Cancellations list, but this only removes the historical record — it does **not** automatically restore the reservation's status or room assignment. In practice, treat cancellation as final: create a new reservation instead of trying to reinstate a cancelled one.
 :::
 
 ## Cancellation Reasons
@@ -55,6 +55,6 @@ Use filters to narrow the list by:
 
 ## See also
 
-- [All Reservations](/docs/operations/reservations/list) — Cancel from the reservation detail.
-- [Reservations Overview](/docs/operations/reservations/overview) — Statuses and workflow.
-- [Configuration → Cancellation Reasons](/docs/configuration/reservation-setup/cancellation-reasons) — Set up cancellation reason codes.
+- [All Reservations](/operations/reservations/list) — Cancel from the reservation detail.
+- [Reservations Overview](/operations/reservations/overview) — Statuses and workflow.
+- [Configuration → Cancellation Reasons](/configuration/reservation-setup/cancellation-reasons) — Set up cancellation reason codes.

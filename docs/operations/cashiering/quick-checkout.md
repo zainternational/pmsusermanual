@@ -7,7 +7,7 @@ sidebar_position: 3
 **Quick Checkout** speeds up the departure process by letting you process multiple reservations in sequence — auto-posting room charges, taking payment, and checking out — without opening each folio individually.
 
 :::tip **Having a problem?**
-See [Cashiering Overview](/docs/operations/cashiering/overview) for common FAQs and troubleshooting.
+See [Cashiering Overview](/operations/cashiering/overview) for common FAQs and troubleshooting.
 :::
 
 ## Access
@@ -55,6 +55,8 @@ Quick Checkout processes reservations **one at a time** in sequence:
 4. **Auto-checkout** — Once all folio balances reach zero, checkout completes automatically. The reservation is removed from the list.
 5. **Next reservation** — The system moves to the next reservation in the queue.
 
+Quick Checkout is synchronized with the Cashiering → Transaction and Billing screens: a checkout, payment, or room-charge post performed here is immediately reflected there (and vice versa), so switching between screens mid-process does not create duplicate postings.
+
 Use **Skip** in the payment modal to skip the current reservation and move to the next one.
 
 ## Selecting Reservations
@@ -81,8 +83,8 @@ Click **Skip** to skip the current reservation and continue with the next one. T
 
 ## See also
 
-- [Transaction](/docs/operations/cashiering/transaction) — Full folio access for individual reservations.
-- [Cashier Shift](/docs/operations/cashiering/cashier-shift) — Close the shift after all checkouts.
-- [Front Desk → In-House](/docs/operations/front-desk/in-house) — Alternative checkout from the in-house list.
-- [Reservations → Departures](/docs/operations/reservations/departures) — Today's expected departures.
-- [Night Audit](/docs/operations/night-audit) — Run after all checkouts and cashier activity.
+- [Transaction](/operations/cashiering/transaction) — Full folio access for individual reservations.
+- [Cashier Shift](/operations/cashiering/cashier-shift) — Close the shift after all checkouts.
+- [Front Desk → In-House](/operations/front-desk/in-house) — Alternative checkout from the in-house list.
+- [Reservations → Departures](/operations/reservations/departures) — Today's expected departures.
+- [Night Audit](/operations/night-audit) — Run after all checkouts and cashier activity.

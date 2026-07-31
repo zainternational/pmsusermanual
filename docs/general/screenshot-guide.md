@@ -12,30 +12,30 @@ When adding or updating procedures, prioritize these screenshots so the manual s
 
 | Priority | Screenshot | Doc(s) | Filename |
 |----------|------------|--------|----------|
-| **Must** | Login screen | [Intro](/docs/intro) | `login.png` |
-| **Must** | Dashboard | [Dashboard](/docs/operations/dashboard) | `dashboard.png` |
-| **Must** | Reservation list or new-reservation form | [Reservations](/docs/operations/reservations/overview) | `reservation-list.png` or `reservation-form.png` |
-| **Must** | Transaction / folio | [Cashiering](/docs/operations/cashiering/overview) | `folio.png` |
-| **Must** | Night audit (runs or run dialog) | [Night Audit](/docs/operations/night-audit) | `night-audit.png` |
+| **Must** | Login screen | [Intro](/intro) | `login.png` |
+| **Must** | Dashboard | [Dashboard](/operations/dashboard) | `dashboard.png` |
+| **Must** | Reservation list or new-reservation form | [Reservations](/operations/reservations/overview) | `reservation-list.png` or `reservation-form.png` |
+| **Must** | Transaction / folio | [Cashiering](/operations/cashiering/overview) | `folio.png` |
+| **Must** | Night audit (runs or run dialog) | [Night Audit](/operations/night-audit) | `night-audit.png` |
 
-See [Technical and maintenance](/docs/technical/maintenance) for the full checklist (including “nice to have” items).
+The **Recommended Screenshots (Full List)** below also includes “nice to have” items (sidebar, room plan, housekeeping, etc.).
 
 ## Recommended Screenshots (Full List)
 
 | # | Description | Suggested filename | Use in doc(s) |
 |---|-------------|--------------------|----------------|
-| 1 | **Login screen** — Username and password fields, Login button | `login.png` | [Introduction](/docs/intro) |
-| 2 | **Dashboard** — Overview stats, widgets, quick actions | `dashboard.png` | [Dashboard](/docs/operations/dashboard) |
-| 3 | **Main sidebar** — Full menu (Dashboard, Profile, Reservation, Front desk, etc.) | `sidebar.png` | [Introduction](/docs/intro) |
-| 4 | **Reservation list** — Table with confirmation, guest, room, dates, status | `reservation-list.png` | [Reservations](/docs/operations/reservations/overview) |
-| 5 | **New reservation form** — Guest, dates, room type, rate, main fields | `reservation-form.png` | [Reservations](/docs/operations/reservations/overview) |
-| 6 | **Room plan** — Rooms by floor/type with status and guest names | `room-plan.png` | [Front Desk](/docs/operations/front-desk/overview) |
-| 7 | **Transaction / folio** — Charges, payments, balance for one reservation | `folio.png` | [Cashiering](/docs/operations/cashiering/overview) |
-| 8 | **Housekeeping management** — Tabs (Room status, Tasks, Lost & found, etc.) | `housekeeping.png` | [Housekeeping](/docs/operations/housekeeping/overview) |
-| 9 | **Night audit** — Audit runs list or Run night audit dialog | `night-audit.png` | [Night Audit](/docs/operations/night-audit) |
-| 10 | **Notifications bell** — Bell icon with unread count in header | `notifications-bell.png` | [Notifications](/docs/general/notifications) |
-| 11 | **Change password** — Current password, new password, confirm fields | `change-password.png` | [Profile and Security](/docs/general/profile-and-security) |
-| 12 | **System Settings** — Configuration menu or main config landing | `configuration.png` | [Configuration overview](/docs/configuration/overview) |
+| 1 | **Login screen** — Username and password fields, Login button | `login.png` | [Introduction](/intro) |
+| 2 | **Dashboard** — Overview stats, widgets, quick actions | `dashboard.png` | [Dashboard](/operations/dashboard) |
+| 3 | **Main sidebar** — Full menu (Dashboard, Profile, Reservation, Front desk, etc.) | `sidebar.png` | [Introduction](/intro) |
+| 4 | **Reservation list** — Table with confirmation, guest, room, dates, status | `reservation-list.png` | [Reservations](/operations/reservations/overview) |
+| 5 | **New reservation form** — Guest, dates, room type, rate, main fields | `reservation-form.png` | [Reservations](/operations/reservations/overview) |
+| 6 | **Room plan** — Rooms by floor/type with status and guest names | `room-plan.png` | [Front Desk](/operations/front-desk/overview) |
+| 7 | **Transaction / folio** — Charges, payments, balance for one reservation | `folio.png` | [Cashiering](/operations/cashiering/overview) |
+| 8 | **Housekeeping management** — Tabs (Room status, Tasks, Lost & found, etc.) | `housekeeping.png` | [Housekeeping](/operations/housekeeping/overview) |
+| 9 | **Night audit** — Audit runs list or Run night audit dialog | `night-audit.png` | [Night Audit](/operations/night-audit) |
+| 10 | **Notifications bell** — Bell icon with unread count in header | `notifications-bell.png` | [Notifications](/general/notifications) |
+| 11 | **Change password** — Current password, new password, confirm fields | `change-password.png` | [Profile and Security](/general/profile-and-security) |
+| 12 | **System Settings** — Configuration menu or main config landing | `configuration.png` | [Configuration overview](/configuration/overview) |
 
 ## How to Add a Screenshot in a Doc
 

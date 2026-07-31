@@ -42,14 +42,18 @@ From the arrivals list or the reservation detail:
 
 If the room is not ready, the check-in action may be blocked. Update the room status in Housekeeping first.
 
+:::info
+The **Check In** button on the Arrivals tab is only enabled when the reservation's arrival date equals the current business date. Reservations arriving on a future date show as not yet due in and cannot be checked in early from this tab.
+:::
+
 ## Walk-In Check-In
 
 For guests without a prior reservation, use **Housekeeping → Room Chart** to select a Vacant Clean room and click **Walk-In**. This opens the new reservation form pre-filled with the Walk-In reservation type, room, and today's arrival date.
 
 ## See also
 
-- [All Reservations](/docs/operations/reservations/list) — Full reservation list and creation.
-- [Departures](/docs/operations/reservations/departures) — Guests checking out today.
-- [Front Desk → Room Plan](/docs/operations/front-desk/room-plan) — Assign rooms and check in from the calendar view.
-- [Housekeeping → Room Chart](/docs/operations/housekeeping/room-chart) — Visual room status grid; walk-in from vacant rooms.
-- [Housekeeping → Room Status](/docs/operations/housekeeping/room-status) — Update room status before check-in.
+- [All Reservations](/operations/reservations/list) — Full reservation list and creation.
+- [Departures](/operations/reservations/departures) — Guests checking out today.
+- [Front Desk → Room Plan](/operations/front-desk/room-plan) — Assign rooms and check in from the calendar view.
+- [Housekeeping → Room Chart](/operations/housekeeping/room-chart) — Visual room status grid; walk-in from vacant rooms.
+- [Housekeeping → Room Status](/operations/housekeeping/room-status) — Update room status before check-in.

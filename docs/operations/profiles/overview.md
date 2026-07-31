@@ -11,7 +11,7 @@ Profiles store guest and payer information used in reservations and billing. The
 - **Travel Agent Profile** — Travel agents and agencies
 
 :::tip **Having a problem?**  
-This page has [Common FAQs](#common-faqs) and [Troubleshooting](#troubleshooting) below. For issues in other modules, see the main [Troubleshooting](/docs/general/troubleshooting) page — it links to module-specific FAQs and troubleshooting sections.
+This page has [Common FAQs](#common-faqs) and [Troubleshooting](#troubleshooting) below. For issues in other modules, see the main [Troubleshooting](/general/troubleshooting) page — it links to module-specific FAQs and troubleshooting sections.
 :::
 
 ## Accessing Profiles
@@ -62,7 +62,7 @@ No. Search first by name, email, or phone. Use an existing profile if it matches
 Typically the **guest** is an Individual (the person staying). The **payer** can be a Company or Travel Agent. Some setups allow a company name on the reservation while the main guest is still an individual; follow your property's practice.
 
 **Where do I set titles, countries, VIP levels?**  
-These are in **Configuration → Profile Setup** (or equivalent). Create those codes first so when you add or edit a profile you can select from the list. See [Configuration overview](/docs/configuration/overview).
+These are in **Configuration → Profile Setup** (or equivalent). Create those codes first so when you add or edit a profile you can select from the list. See [Configuration overview](/configuration/overview).
 
 ## Troubleshooting
 
@@ -73,16 +73,16 @@ These are in **Configuration → Profile Setup** (or equivalent). Create those c
 | **Duplicate profiles** | Same guest/company created more than once. | Search before creating. Merge or deactivate duplicates per your property's policy; use one profile for future reservations. |
 | **Company or travel agent not in payer list** | You are in Individual Profile or the payer list filters by type. | In the reservation or folio, choose the payer type (company / travel agent) and search. Ensure the profile exists in Company or Travel Agent Profile. |
 
-For login, permissions, wrong property, and other general issues, see [Troubleshooting](/docs/general/troubleshooting).
+For login, permissions, wrong property, and other general issues, see [Troubleshooting](/general/troubleshooting).
 
 ## Next Steps
 
-- [Individual Profile](/docs/operations/profiles/individual-profile) — Persons and guests
-- [Company Profile](/docs/operations/profiles/company-profile) — Companies and corporate
-- [Travel Agent Profile](/docs/operations/profiles/travel-agent-profile) — Travel agents
+- [Individual Profile](/operations/profiles/individual-profile) — Persons and guests
+- [Company Profile](/operations/profiles/company-profile) — Companies and corporate
+- [Travel Agent Profile](/operations/profiles/travel-agent-profile) — Travel agents
 
 ## See also
 
-- [Reservations](/docs/operations/reservations/overview) — Assign profiles as guest or payer.
-- [Cashiering](/docs/operations/cashiering/overview) — Route charges to company or travel agent; view folio by guest.
-- [Configuration overview](/docs/configuration/overview) — Profile setup (titles, countries, VIP levels, etc.) under Configuration.
+- [Reservations](/operations/reservations/overview) — Assign profiles as guest or payer.
+- [Cashiering](/operations/cashiering/overview) — Route charges to company or travel agent; view folio by guest.
+- [Configuration overview](/configuration/overview) — Profile setup (titles, countries, VIP levels, etc.) under Configuration.

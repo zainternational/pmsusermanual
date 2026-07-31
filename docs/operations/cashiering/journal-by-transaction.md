@@ -7,7 +7,7 @@ sidebar_position: 4
 **Journal by Transaction** provides a detailed view of all billing items and payments posted within a cash register session or date range. It is used to audit and reconcile transactions across reservations, cashiers, and room types.
 
 :::tip **Having a problem?**
-See the main [Troubleshooting](/docs/general/troubleshooting) page for general issues, or [Cashiering Overview](/docs/operations/cashiering/overview) for cashier-related issues.
+See the main [Troubleshooting](/general/troubleshooting) page for general issues, or [Cashiering Overview](/operations/cashiering/overview) for cashier-related issues.
 :::
 
 ## Access
@@ -23,8 +23,11 @@ From the sidebar: **Cashiering** → **Journal by Transaction**. You must comple
 | Room Type | Filter by room type (narrows when room class is selected). |
 | Room | Filter by a specific room number. |
 | Cashier | Filter by a specific cash register user, or view all. |
+| Article | Filter items by attached article description(s), where applicable. |
 | Group By | Group results by Reservation No, Cashier, Transaction Code, or Room No. |
 | Columns | Toggle which columns are visible in the table. |
+
+Multiple filters (other than Group By and the date-range/period selection) can be applied together — e.g. Room Type and Cashier and Article at the same time — to narrow the results further.
 
 ## Tabs
 
@@ -52,7 +55,9 @@ Available groupings:
 
 ## Columns
 
-Typical columns for Items include: reservation ID, room number, guest name, transaction code, description, quantity, unit price, total amount, business date, posted date, cashier.
+Typical columns for Items include: reservation ID, room number, guest name, transaction code, description, article (if attached), quantity, unit price, total amount, business date, posted date, cashier.
+
+All monetary amounts and dates in this screen are formatted using the Currency Symbol, Date Format, and Decimal Point configured in Hotel Information Setup.
 
 Typical columns for Payments include: reservation ID, room number, guest name, payment code, amount, business date, cashier.
 
@@ -71,8 +76,8 @@ Export functionality depends on your configuration. Check for an export button o
 
 ## See also
 
-- [Transaction](/docs/operations/cashiering/transaction) — Post charges and payments on individual folios.
-- [Cashier Shift](/docs/operations/cashiering/cashier-shift) — Open and close shifts; reconcile daily activity.
-- [Room Routing](/docs/operations/cashiering/room-routing) — View and manage routing rules across reservations.
-- [Billing Reports](/docs/operations/reports/billing) — Revenue and payment reports by date range.
-- [Night Audit](/docs/operations/night-audit) — Close the business date after reconciling cashier activity.
+- [Transaction](/operations/cashiering/transaction) — Post charges and payments on individual folios.
+- [Cashier Shift](/operations/cashiering/cashier-shift) — Open and close shifts; reconcile daily activity.
+- [Room Routing](/operations/cashiering/room-routing) — View and manage routing rules across reservations.
+- [Billing Reports](/operations/reports/billing) — Revenue and payment reports by date range.
+- [Night Audit](/operations/night-audit) — Close the business date after reconciling cashier activity.

@@ -16,14 +16,19 @@ sidebar_position: 11
 |-------|-------------|
 | Name | The market group name (e.g. Corporate, Leisure, Government, Wholesale). |
 | Short Code | Abbreviated code used in reports. |
-| Active | Whether this group is available for selection. |
+| Description | Optional free-text description. |
+| Sequence | Display order. |
+
+:::note
+There is no Active/Inactive field on a Market Group.
+:::
 
 ## Relationship to Markets
 
-Market groups are the parent of [Markets](/docs/configuration/rate-setup/markets). Each market code belongs to one market group. When filtering reports by market group, all market codes within that group are included.
+Market groups are the parent of [Markets](/configuration/rate-setup/markets). Each market code belongs to one market group. When filtering reports by market group, all market codes within that group are included.
 
 ## See also
 
-- [Markets](/docs/configuration/rate-setup/markets) — Individual market codes that belong to a market group.
-- [Rate Setup Overview](/docs/configuration/rate-setup/overview)
-- [Reservation Reports](/docs/operations/reports/reservation)
+- [Markets](/configuration/rate-setup/markets) — Individual market codes that belong to a market group.
+- [Rate Setup Overview](/configuration/rate-setup/overview)
+- [Reservation Reports](/operations/reports/reservation)

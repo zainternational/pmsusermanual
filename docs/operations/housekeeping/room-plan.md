@@ -7,7 +7,7 @@ sidebar_position: 7
 The **Housekeeping Room Plan** is a calendar-style grid showing room availability and occupancy over a date range. It is used to visualise which rooms are occupied, vacant, or blocked, and to create new reservations directly from the grid.
 
 :::tip **Having a problem?**
-See [Housekeeping Overview](/docs/operations/housekeeping/overview) for common FAQs and troubleshooting.
+See [Housekeeping Overview](/operations/housekeeping/overview) for common FAQs and troubleshooting.
 :::
 
 ## Access
@@ -76,7 +76,7 @@ Use filters to focus on a specific section of the property.
 
 The room plan reflects the current housekeeping status of each room. Rooms that are **Out of Order** or **Out of Service** are shown differently from vacant rooms, so you can avoid assigning them.
 
-For detailed room status management, use the **Room Status** tab in [Housekeeping Management](/docs/operations/housekeeping/room-status).
+For detailed room status management, use the **Room Status** tab in [Housekeeping Management](/operations/housekeeping/room-status).
 
 ## Common FAQs
 
@@ -94,7 +94,7 @@ Adjust the Start Date and End Date controls to the range you need.
 
 ## See also
 
-- [Front Desk → Room Plan](/docs/operations/front-desk/room-plan) — Same room plan accessed from the Front Desk section.
-- [Housekeeping → Room Status](/docs/operations/housekeeping/room-status) — Manage individual room statuses.
-- [Housekeeping → Out of Order](/docs/operations/housekeeping/out-of-order) — Mark rooms out of order.
-- [Reservations](/docs/operations/reservations/overview) — Full reservation management.
+- [Front Desk → Room Plan](/operations/front-desk/room-plan) — Same room plan accessed from the Front Desk section.
+- [Housekeeping → Room Status](/operations/housekeeping/room-status) — Manage individual room statuses.
+- [Housekeeping → Out of Order](/operations/housekeeping/out-of-order) — Mark rooms out of order.
+- [Reservations](/operations/reservations/overview) — Full reservation management.

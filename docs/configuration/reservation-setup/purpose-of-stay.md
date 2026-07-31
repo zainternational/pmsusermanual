@@ -24,6 +24,6 @@ When creating or editing a reservation, the agent can select a Purpose of Stay. 
 
 ## See also
 
-- [Reservation Setup Overview](/docs/configuration/reservation-setup/overview)
-- [Reservations](/docs/operations/reservations/overview)
-- [Guest Information Report](/docs/operations/reports/guest-information)
+- [Reservation Setup Overview](/configuration/reservation-setup/overview)
+- [Reservations](/operations/reservations/overview)
+- [Guest Information Report](/operations/reports/guest-information)

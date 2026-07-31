@@ -50,9 +50,9 @@ If a guest stays past the standard checkout time, post a late checkout charge fr
 
 ## See also
 
-- [All Reservations](/docs/operations/reservations/list) — Full reservation list.
-- [Arrivals](/docs/operations/reservations/arrivals) — Guests checking in today.
-- [Front Desk → Checked-Out](/docs/operations/front-desk/checked-out) — Departed guests list.
-- [Cashiering → Transaction](/docs/operations/cashiering/transaction) — Settle folio before checkout.
-- [Cashiering → Quick Checkout](/docs/operations/cashiering/quick-checkout) — Batch checkout for multiple departures.
-- [Housekeeping → Room Status](/docs/operations/housekeeping/room-status) — Room becomes Vacant Dirty after checkout.
+- [All Reservations](/operations/reservations/list) — Full reservation list.
+- [Arrivals](/operations/reservations/arrivals) — Guests checking in today.
+- [Front Desk → Checked-Out](/operations/front-desk/checked-out) — Departed guests list.
+- [Cashiering → Transaction](/operations/cashiering/transaction) — Settle folio before checkout.
+- [Cashiering → Quick Checkout](/operations/cashiering/quick-checkout) — Batch checkout for multiple departures.
+- [Housekeeping → Room Status](/operations/housekeeping/room-status) — Room becomes Vacant Dirty after checkout.

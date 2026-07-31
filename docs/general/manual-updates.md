@@ -19,5 +19,5 @@ When we publish updates, we add a new row below with the version, date, and a sh
 ---
 
 :::tip **New to the manual?**
-Start with the [Introduction](/docs/intro) and use [By role](/docs/intro#by-role) to jump to the docs for your job.
+Start with the [Introduction](/intro) and use [By role](/intro#by-role) to jump to the docs for your job.
 :::

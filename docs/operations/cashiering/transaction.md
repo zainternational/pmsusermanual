@@ -7,7 +7,7 @@ sidebar_position: 1
 The **Transaction** screen is the main cashiering workspace. It shows all in-house reservations on the left and the selected reservation's folio detail on the right. Use it to post charges, take payments, void transactions, print folios, and check out guests.
 
 :::tip **Having a problem?**
-See [Cashiering Overview](/docs/operations/cashiering/overview) for common FAQs and troubleshooting.
+See [Cashiering Overview](/operations/cashiering/overview) for common FAQs and troubleshooting.
 :::
 
 ## Access
@@ -31,7 +31,9 @@ Click any row in the left panel to load that reservation's detail in the right p
 |--------|-------------|
 | Search | Filter by guest name, room number, or reservation number. |
 | Status | Filter by reservation status (default: In-House). |
-| Date Range | Filter by arrival or departure date. |
+| Date Range | Filter by arrival or departure date. This filter layer is always visible alongside the other filters. |
+
+Multiple filters can be combined at once (e.g. search text plus status plus date range) to narrow the list.
 
 Use **Clear Filters** to reset.
 
@@ -70,11 +72,11 @@ Select a transaction row to enable the action buttons below the table.
 |--------|-----------|-------------|
 | Post Room Charge | — | Post room charges for the reservation for a specific date. Opens the Post Room Charge modal. |
 | Edit | Single charge | Edit the quantity, unit price, or description of a charge. |
-| Transfer | One or more | Transfer selected transaction(s) to another reservation or folio. |
-| Split | Single charge | Split a charge into two separate line items. |
+| Transfer | One or more | Transfer selected transaction(s) to another reservation or room (moves the item to a different folio). |
+| Split | Single charge | Split a charge across two folios by amount — enter the amount to move to the new folio and the remainder stays on the original folio. The item's net, service charge, and tax are divided proportionally. Only non-voided items can be split, and the split amount must be less than the full line total. |
 | Adjust Amount | Single item | Adjust the amount of a charge or payment. |
-| Void | Single item | Void a charge or payment. Voided items remain visible in the history (greyed out) for audit purposes. |
-| Charge | — | Add a new charge. Opens the Add Item modal. |
+| Void | Single item | Void a charge or payment. Voiding does not delete the original row — it is flagged as voided (with reason and who voided it) so it remains in the folio history for audit purposes. An item that is already voided cannot be voided again. |
+| Charge | — | Add a new charge. Opens the Add Item modal. You may optionally attach an **Article** (a predefined item/service description) to the charge; posting an article requires the `post_article` permission, and viewing article details requires `view_article`. |
 | Payment | — | Add a new payment. Opens the Payment modal. |
 
 **Print Folio** button (top right of transaction card) — opens the Print Folio modal to select a folio and generate a printable folio PDF.
@@ -91,12 +93,14 @@ The charge appears immediately in the transaction history and the balance update
 ## Posting a Payment
 
 1. Click **Payment**.
-2. Select a **Payment Type** (cash, card, bank transfer, etc.).
+2. Select a **Payment Type** from the dropdown. Only payment types flagged as **Cashier Payment** in transaction code setup appear here — codes meant for AR or deposit-only posting are not offered in this dropdown.
 3. Enter the amount. The folio balance updates in real time.
 4. Optionally toggle **Print after payment** to print the folio automatically.
 5. Save. The payment reduces the balance.
 
-Exchange rate conversion is applied automatically if the payment is in a foreign currency.
+Exchange rate conversion is applied automatically if the payment is in a foreign currency and the payment code's default currency differs from the reservation's currency. The converted amount is calculated via a fixed exchange-rate pivot maintained in Configuration → Exchange Rates; if no exchange rate covers the payment date, the payment is rejected with an error rather than posted at face value.
+
+All amounts on this screen (charges, payments, and the folio balance) are formatted using the **Currency Symbol**, **Date Format**, and **Decimal Point** configured in Hotel Information Setup, not a hardcoded format.
 
 ## Post Room Charge
 
@@ -106,7 +110,7 @@ Click **Post Room Charge** to post room revenue for a specific night to the gues
 
 Click **Routing** to open the routing modal. Routing sends specific transaction codes to another room, company profile, or travel agent profile. For example, route room charges to a company and incidentals to the guest.
 
-Routing rules set here are also visible in [Room Routing](/docs/operations/cashiering/room-routing).
+Routing rules set here are also visible in [Room Routing](/operations/cashiering/room-routing).
 
 ## Checkout
 
@@ -122,7 +126,7 @@ If the balance is negative (overpayment), add a negative payment (refund) to bri
 
 ## Proforma Invoice
 
-Click **Proforma** to generate a draft invoice showing current charges and payments. This is typically given to the guest before final checkout for review.
+Click **Proforma** to generate a draft invoice showing current charges and payments, including the guest's name, title, and address. This is typically given to the guest before final checkout for review. Unlike the printed Guest Folio, the proforma invoice reflects exactly the figures shown on screen at the moment it is generated (it is not recalculated by the server), so it will not reflect changes made after it was opened.
 
 ## Print Folio
 
@@ -149,9 +153,9 @@ Voided items remain visible in the history for audit purposes.
 
 ## See also
 
-- [Cashier Shift](/docs/operations/cashiering/cashier-shift) — Open/close shifts; reconcile before night audit.
-- [Quick Checkout](/docs/operations/cashiering/quick-checkout) — Batch checkout for multiple departures.
-- [Journal by Transaction](/docs/operations/cashiering/journal-by-transaction) — Audit all posted items and payments across cashiers.
-- [Room Routing](/docs/operations/cashiering/room-routing) — Property-wide view of all routing rules.
-- [Night Audit](/docs/operations/night-audit) — Post room charges and close the business date.
-- [Billing Reports](/docs/operations/reports/billing) — Revenue and payment reports.
+- [Cashier Shift](/operations/cashiering/cashier-shift) — Open/close shifts; reconcile before night audit.
+- [Quick Checkout](/operations/cashiering/quick-checkout) — Batch checkout for multiple departures.
+- [Journal by Transaction](/operations/cashiering/journal-by-transaction) — Audit all posted items and payments across cashiers.
+- [Room Routing](/operations/cashiering/room-routing) — Property-wide view of all routing rules.
+- [Night Audit](/operations/night-audit) — Post room charges and close the business date.
+- [Billing Reports](/operations/reports/billing) — Revenue and payment reports.

@@ -37,6 +37,6 @@ Rate Class → Rate Category → Rate Plan → Rate (per room type + date range)
 
 ## See also
 
-- [Rate Categories](/docs/configuration/rate-setup/rate-categories) — Finer grouping within a class.
-- [Rates](/docs/configuration/rate-setup/rates) — Individual rate plans linked to a class and category.
-- [Rate Setup Overview](/docs/configuration/rate-setup/overview)
+- [Rate Categories](/configuration/rate-setup/rate-categories) — Finer grouping within a class.
+- [Rates](/configuration/rate-setup/rates) — Individual rate plans linked to a class and category.
+- [Rate Setup Overview](/configuration/rate-setup/overview)

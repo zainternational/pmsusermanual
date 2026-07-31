@@ -44,15 +44,15 @@ The manual is **readable on phones and tablets** — the layout adapts to small 
 
 | Section | What’s in it |
 |--------|----------------|
-| [Introduction](/docs/intro) | Overview, login, navigation, by role |
-| [Dashboard](/docs/operations/dashboard) | Home screen, stats, quick actions |
-| [Operations](/docs/operations/overview) | Reservations, front desk, cashiering, housekeeping, night audit, reports, workflows |
-| [Profiles](/docs/operations/profiles/overview) | Individual, company, travel agent |
-| [Configuration](/docs/configuration/overview) | System settings and setup |
-| [Troubleshooting & general](/docs/general/troubleshooting) | [Troubleshooting](/docs/general/troubleshooting), [Using this manual](/docs/general/using-this-manual), [Roles & permissions](/docs/general/roles-and-permissions), glossary, profile & security, notifications, screenshot guide |
+| [Introduction](/intro) | Overview, login, navigation, by role |
+| [Dashboard](/operations/dashboard) | Home screen, stats, quick actions |
+| [Operations](/operations/overview) | Reservations, front desk, cashiering, housekeeping, night audit, reports, workflows |
+| [Profiles](/operations/profiles/overview) | Individual, company, travel agent |
+| [Configuration](/configuration/overview) | System settings and setup |
+| [Troubleshooting & general](/general/troubleshooting) | [Troubleshooting](/general/troubleshooting), [Using this manual](/general/using-this-manual), [Roles & permissions](/general/roles-and-permissions), glossary, profile & security, notifications, screenshot guide |
 
 ## Next
 
-- [Introduction](/docs/intro) — Start here if you’re new
-- [Operations overview](/docs/operations/overview) — Day-to-day operations
-- [Troubleshooting](/docs/general/troubleshooting) — When something goes wrong
+- [Introduction](/intro) — Start here if you’re new
+- [Operations overview](/operations/overview) — Day-to-day operations
+- [Troubleshooting](/general/troubleshooting) — When something goes wrong

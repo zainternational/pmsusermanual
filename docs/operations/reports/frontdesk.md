@@ -7,7 +7,7 @@ sidebar_position: 2
 The **Frontdesk Report** shows a snapshot of front-desk activity for a selected business date: arrivals, departures, in-house guests, and room status.
 
 :::tip **Having a problem?**
-See the main [Troubleshooting](/docs/general/troubleshooting) page for general issues, or the [Reports Overview](/docs/operations/reports/overview) for how to run and export reports.
+See the main [Troubleshooting](/general/troubleshooting) page for general issues, or the [Reports Overview](/operations/reports/overview) for how to run and export reports.
 :::
 
 ## Access
@@ -104,6 +104,6 @@ Use the export button (if available) to download as Excel or PDF.
 
 ## See also
 
-- [Front Desk](/docs/operations/front-desk/overview) — Room plan, in-house list, checked-out list.
-- [Reservation Report](/docs/operations/reports/reservation) — Full reservation list with advanced filters.
-- [Reports Overview](/docs/operations/reports/overview) — How to run and export reports.
+- [Front Desk](/operations/front-desk/overview) — Room plan, in-house list, checked-out list.
+- [Reservation Report](/operations/reports/reservation) — Full reservation list with advanced filters.
+- [Reports Overview](/operations/reports/overview) — How to run and export reports.

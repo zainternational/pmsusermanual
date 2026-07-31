@@ -7,19 +7,20 @@ sidebar_position: 0
 The **Housekeeping** module is used to track room status, assign tasks, manage lost & found, maintenance, and out-of-order rooms. In the app, the main screen is **Housekeeping Management**, with **tabs** for each area.
 
 :::tip **Having a problem?**  
-This page has [Common FAQs](#common-faqs) and [Troubleshooting](#troubleshooting) below. For issues in other modules, see the main [Troubleshooting](/docs/general/troubleshooting) page — it links to module-specific FAQs and troubleshooting sections.
+This page has [Common FAQs](#common-faqs) and [Troubleshooting](#troubleshooting) below. For issues in other modules, see the main [Troubleshooting](/general/troubleshooting) page — it links to module-specific FAQs and troubleshooting sections.
 :::
 
 | Tab / Screen | Purpose |
 |--------------|---------|
-| [Housekeeping Management](/docs/operations/housekeeping/management) | Main tabbed screen — access all housekeeping areas from one place. |
-| [Room Status](/docs/operations/housekeeping/room-status) | Status of each room (Vacant Clean/Dirty, Occupied Clean/Dirty, Pick-up, Inspected, Out of Order, Out of Service). |
-| [Tasks](/docs/operations/housekeeping/tasks) | Housekeeping tasks and assignments; assign to attendants or sections. |
-| [Lost & Found](/docs/operations/housekeeping/lost-and-found) | Register and manage lost and found items. |
-| [Maintenance](/docs/operations/housekeeping/maintenance) | Maintenance requests or room maintenance status. |
-| [Out of Order](/docs/operations/housekeeping/out-of-order) | Rooms marked out of order; add/edit/end. |
-| [Room Chart](/docs/operations/housekeeping/room-chart) | Visual floor-by-floor room status grid; click a vacant room to create a new reservation or walk-in. |
-| [Room Plan](/docs/operations/housekeeping/room-plan) | Calendar grid showing room availability over a date range. |
+| [Housekeeping Management](/operations/housekeeping/management) | Main tabbed screen — access all housekeeping areas from one place. |
+| [Room Status](/operations/housekeeping/room-status) | Status of each room (Vacant Clean/Dirty, Occupied Clean/Dirty, Pick-up, Inspected, Out of Order, Out of Service). |
+| [Tasks](/operations/housekeeping/tasks) | Housekeeping tasks and assignments; assign to attendants or sections. |
+| [Lost & Found](/operations/housekeeping/lost-and-found) | Register and manage lost and found items. |
+| [Maintenance](/operations/housekeeping/maintenance) | Maintenance requests or room maintenance status. |
+| [Out of Order](/operations/housekeeping/out-of-order) | Rooms marked out of order; add/edit/end. |
+| [Room Chart](/operations/housekeeping/room-chart) | Visual floor-by-floor room status grid; click a vacant room to create a new reservation or walk-in. |
+| [Room Plan](/operations/housekeeping/room-plan) | Calendar grid showing room availability over a date range. |
+| [Post Article](/operations/housekeeping/management#post-article-tab) | Post chargeable articles (mini-bar, amenities, etc.) to an in-house guest's folio directly from Housekeeping. |
 
 ## Access
 
@@ -56,10 +57,10 @@ Yes, if your property uses housekeeping tasks and attendances. In the **Tasks** 
 | **Out-of-order room still shows as available** | Out-of-order record ended or not applied for the dates you are viewing. | Check Out of Order list; add or edit the record so it covers the dates and property you need. |
 | **Tasks tab empty or missing** | Housekeeping tasks or attendances not configured; or you lack task permission. | Ask your administrator to set up housekeeping tasks and attendances in Configuration. Confirm your role can view/assign tasks. |
 
-For general issues, see [Troubleshooting](/docs/general/troubleshooting).
+For general issues, see [Troubleshooting](/general/troubleshooting).
 
 ## See also
 
-- [Reservations](/docs/operations/reservations/overview) — Room assignment and status affect availability and check-in.
-- [Front Desk](/docs/operations/front-desk/overview) — Room plan and check-in use housekeeping status (e.g. Vacant Clean) when assigning rooms.
-- [Configuration overview](/docs/configuration/overview) — HouseKeeping & Maintenance setup (sections, tasks, attendances, lost & found reasons, out-of-order rules).
+- [Reservations](/operations/reservations/overview) — Room assignment and status affect availability and check-in.
+- [Front Desk](/operations/front-desk/overview) — Room plan and check-in use housekeeping status (e.g. Vacant Clean) when assigning rooms.
+- [Configuration overview](/configuration/overview) — HouseKeeping & Maintenance setup (sections, tasks, attendances, lost & found reasons, out-of-order rules).

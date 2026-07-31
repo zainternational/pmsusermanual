@@ -7,7 +7,7 @@ sidebar_position: 6
 **Post Room Charge** manually posts room revenue for a specific reservation and date. Use it when room charges were not posted automatically by night audit, or to post charges for a specific past date.
 
 :::tip **Having a problem?**
-See [Cashiering Overview](/docs/operations/cashiering/overview) for common FAQs and troubleshooting.
+See [Cashiering Overview](/operations/cashiering/overview) for common FAQs and troubleshooting.
 :::
 
 ## Access
@@ -64,7 +64,7 @@ The rate comes from the reservation's daily rate setup. If the rate is incorrect
 
 ## See also
 
-- [Cashiering → Transaction](/docs/operations/cashiering/transaction) — Full folio management; Post Room Charge is available here.
-- [Billing (Guest Folio)](/docs/operations/reservations/billing) — Folio management with Post Room Charge.
-- [Night Audit](/docs/operations/night-audit) — Automatic room charge posting during night audit.
-- [Configuration → Cashiering → Transaction Codes](/docs/configuration/cashiering-setup/transaction-codes) — Room charge transaction code setup.
+- [Cashiering → Transaction](/operations/cashiering/transaction) — Full folio management; Post Room Charge is available here.
+- [Billing (Guest Folio)](/operations/reservations/billing) — Folio management with Post Room Charge.
+- [Night Audit](/operations/night-audit) — Automatic room charge posting during night audit.
+- [Configuration → Cashiering → Transaction Codes](/configuration/cashiering-setup/transaction-codes) — Room charge transaction code setup.

@@ -25,15 +25,15 @@ const config = {
   // === DEPLOYMENT TARGET (uncomment one) ===
 
   // Option A: GitHub Pages
-  url: 'https://zainternational.github.io',
-  baseUrl: '/pmsusermanual/',
-  organizationName: 'zainternational',
-  projectName: 'pmsusermanual',
-  deploymentBranch: 'gh-pages',
+  // url: 'https://zainternational.github.io',
+  // baseUrl: '/pmsusermanual/',
+  // organizationName: 'zainternational',
+  // projectName: 'pmsusermanual',
+  // deploymentBranch: 'gh-pages',
 
-  // Option B: Custom domain / own server
-  // url: 'https://docs.hotelium.com.mm',
-  // baseUrl: '/',
+  // Option B: hotelium.com.mm/docs/ (subfolder on main site)
+  url: 'https://hotelium.com.mm',
+  baseUrl: '/docs/',
 
   // Explicit trailingSlash for GitHub Pages (avoids redirects and SEO issues)
   trailingSlash: true,
@@ -42,7 +42,7 @@ const config = {
 
   // Script path is absolute from site root
   scripts: [
-    { src: '/js/back-to-top.js', defer: true },
+    { src: '/docs/js/back-to-top.js', defer: true },
   ],
 
   // Even if you don't use internationalization, you can use this field to set
@@ -59,6 +59,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/',
           sidebarPath: './sidebars.js',
           showLastUpdateTime: true,
           breadcrumbs: true,
@@ -79,7 +80,7 @@ const config = {
         hashed: true,
         language: ['en'],
         indexBlog: false,
-        docsRouteBasePath: '/docs',
+        docsRouteBasePath: '/',
       },
     ],
   ],
@@ -95,6 +96,8 @@ const config = {
         logo: {
           alt: 'Hotelium Logo',
           src: 'img/logo.jpg',
+          href: 'https://hotelium.com.mm/',
+          target: '_self',
         },
         items: [
           {
@@ -121,11 +124,11 @@ const config = {
           {
             title: 'Getting Started',
             items: [
-              { label: 'Quick start', to: '/docs/quickstart' },
-              { label: 'Introduction', to: '/docs/intro' },
-              { label: 'Operations', to: '/docs/operations/overview' },
-              { label: 'Configuration', to: '/docs/configuration/overview' },
-              { label: 'Using this manual', to: '/docs/general/using-this-manual' },
+              { label: 'Quick start', to: '/quickstart' },
+              { label: 'Introduction', to: '/intro' },
+              { label: 'Operations', to: '/operations/overview' },
+              { label: 'Configuration', to: '/configuration/overview' },
+              { label: 'Using this manual', to: '/general/using-this-manual' },
             ],
           },
           {

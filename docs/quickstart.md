@@ -7,7 +7,7 @@ sidebar_position: 0
 Follow these steps **in order** to see the main flow of the PMS: **login → dashboard → one reservation → one check-in → one folio**. Use this path when you are new to the system or training staff.
 
 :::tip **More detail**  
-Each step links to the full doc. For login, navigation, and “By role”, see [Introduction](/docs/intro). For end-to-end flows, see [Workflows](/docs/operations/workflows).
+Each step links to the full doc. For login, navigation, and “By role”, see [Introduction](/intro). For end-to-end flows, see [Workflows](/operations/workflows).
 :::
 
 ## 1. Log in
@@ -16,7 +16,7 @@ Each step links to the full doc. For login, navigation, and “By role”, see [
 2. Enter your **username** and **password**.
 3. Click **Login**. You are taken to the **Dashboard**.
 
-See [Introduction → Logging in](/docs/intro#logging-in) for details and screenshots.
+See [Introduction → Logging in](/intro#logging-in) for details and screenshots.
 
 ## 2. Open the Dashboard
 
@@ -25,7 +25,7 @@ After login you land on the **Dashboard**. From here you can:
 - See occupancy, revenue, and housekeeping summary
 - Use quick links into reservations, room plan, and other modules
 
-Spend a moment looking at the widgets and quick actions. See [Dashboard](/docs/operations/dashboard) for full detail.
+Spend a moment looking at the widgets and quick actions. See [Dashboard](/operations/dashboard) for full detail.
 
 ## 3. Create or find one reservation
 
@@ -33,7 +33,7 @@ Spend a moment looking at the widgets and quick actions. See [Dashboard](/docs/o
 2. Either **create a new reservation** (guest, dates, room type/room, rate) or **find an existing reservation** for today’s arrival.
 3. Make sure it is **Confirmed** (or equivalent) and has a **room** (or room type) and **rate**.
 
-See [Reservations](/docs/operations/reservations/overview) and [Reservation list](/docs/operations/reservations/list) for creating and editing reservations.
+See [Reservations](/operations/reservations/overview) and [Reservation list](/operations/reservations/list) for creating and editing reservations.
 
 ## 4. Do one check-in
 
@@ -42,7 +42,7 @@ See [Reservations](/docs/operations/reservations/overview) and [Reservation list
 3. Use **Check in**. The reservation becomes **In-house** (or **Checked in**).
 4. The guest is now in-house; charges can post to their **folio**.
 
-See [Front Desk](/docs/operations/front-desk/overview), [Room plan](/docs/operations/front-desk/room-plan), and [Workflows → Check-in](/docs/operations/workflows#check-in-flow) for the full check-in flow.
+See [Front Desk](/operations/front-desk/overview), [Room plan](/operations/front-desk/room-plan), and [Workflows → Check-in](/operations/workflows#check-in-flow) for the full check-in flow.
 
 ## 5. Open the folio and post once
 
@@ -52,18 +52,18 @@ See [Front Desk](/docs/operations/front-desk/overview), [Room plan](/docs/operat
 4. Optionally **add a charge** (e.g. room, tax) or **post a payment** (e.g. deposit). Save.
 5. You have now used: **login → dashboard → reservation → check-in → folio** in one short path.
 
-See [Cashiering](/docs/operations/cashiering/overview) and [Transaction (Guest Folio)](/docs/operations/cashiering/transaction) for daily cashier and folio work.
+See [Cashiering](/operations/cashiering/overview) and [Transaction (Guest Folio)](/operations/cashiering/transaction) for daily cashier and folio work.
 
 ---
 
 ## What’s next?
 
-- **By role** — [Introduction → By role](/docs/intro#by-role) links to the right starting place for Front desk, Cashier, Housekeeping, Night auditor, Manager.
-- **Full workflows** — [Workflows](/docs/operations/workflows): check-in flow and end-of-day (cashier shift + night audit).
-- **Operations overview** — [Operations](/docs/operations/overview): all modules (reservations, front desk, cashiering, housekeeping, night audit, reports).
+- **By role** — [Introduction → By role](/intro#by-role) links to the right starting place for Front desk, Cashier, Housekeeping, Night auditor, Manager.
+- **Full workflows** — [Workflows](/operations/workflows): check-in flow and end-of-day (cashier shift + night audit).
+- **Operations overview** — [Operations](/operations/overview): all modules (reservations, front desk, cashiering, housekeeping, night audit, reports).
 
 ## See also
 
-- [Introduction](/docs/intro) — Login, navigation, hotel/cash register, By role, more getting-started topics.
-- [Using this manual](/docs/general/using-this-manual) — Search, breadcrumbs, print/PDF.
-- [Workflows](/docs/operations/workflows) — Check-in and end-of-day flows.
+- [Introduction](/intro) — Login, navigation, hotel/cash register, By role, more getting-started topics.
+- [Using this manual](/general/using-this-manual) — Search, breadcrumbs, print/PDF.
+- [Workflows](/operations/workflows) — Check-in and end-of-day flows.

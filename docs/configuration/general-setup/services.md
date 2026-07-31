@@ -1,5 +1,5 @@
 ---
-sidebar_position: 11
+sidebar_position: 9
 ---
 
 # Services
@@ -47,6 +47,6 @@ Deleting a service that is linked to existing records may cause errors. Deactiva
 
 ## See also
 
-- [General Setup Overview](/docs/configuration/general-setup/overview) — All general configuration items.
-- [Transportation Types](/docs/configuration/general-setup/transportation-types) — Configure transportation options for guest pickups.
-- [TrackIt](/docs/configuration/general-setup/trackit) — Track maintenance, lost & found, and service requests.
+- [General Setup Overview](/configuration/general-setup/overview) — All general configuration items.
+- [Transportation Types](/configuration/general-setup/transportation-types) — Configure transportation options for guest pickups.
+- [TrackIt](/configuration/general-setup/trackit) — Track maintenance, lost & found, and service requests.

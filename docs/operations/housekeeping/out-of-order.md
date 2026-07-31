@@ -7,7 +7,7 @@ sidebar_position: 5
 The **Out of Order** tab manages rooms that are taken out of sale — either fully out of order (OOO) or temporarily out of service (OOS). Out of order rooms are excluded from availability and shown with a special status in Room Status, Room Plan, and Room Chart.
 
 :::tip **Having a problem?**
-See [Housekeeping Overview](/docs/operations/housekeeping/overview) for common FAQs and troubleshooting.
+See [Housekeeping Overview](/operations/housekeeping/overview) for common FAQs and troubleshooting.
 :::
 
 ## Access
@@ -35,7 +35,7 @@ Click **Add Out of Order**. The form has the following fields:
 |-------|----------|-------------|
 | Room | Yes | Select the room to take out of order. Only rooms not already OOO are shown. |
 | Out of Order Status | Yes | Out of Order or Out of Service. |
-| Reason | Yes | Why the room is out of order — from [Out of Order Reasons](/docs/configuration/housekeeping-setup/out-of-order-reasons) setup. |
+| Reason | Yes | Why the room is out of order — from [Out of Order Reasons](/configuration/housekeeping-setup/out-of-order-reasons) setup. |
 | From Date | Yes | Start date of the OOO period. Cannot be before the current business date. |
 | To Date | No | Expected end date (optional). If not set, the room remains OOO until manually returned. |
 | Remarks | No | Additional notes about the issue. |
@@ -90,8 +90,8 @@ The room remains OOO indefinitely until you manually use the Return to Service a
 
 ## See also
 
-- [Room Status](/docs/operations/housekeeping/room-status) — OOO/OOS status is reflected here; update room status after return.
-- [Maintenance](/docs/operations/housekeeping/maintenance) — Log maintenance tasks for OOO rooms.
-- [Room Chart](/docs/operations/housekeeping/room-chart) — OOO rooms are highlighted and excluded from walk-in/new reservation actions.
-- [Front Desk → Room Plan](/docs/operations/front-desk/room-plan) — OOO rooms are excluded from availability.
-- [Configuration → Out of Order Reasons](/docs/configuration/housekeeping-setup/out-of-order-reasons) — Set up OOO reason codes.
+- [Room Status](/operations/housekeeping/room-status) — OOO/OOS status is reflected here; update room status after return.
+- [Maintenance](/operations/housekeeping/maintenance) — Log maintenance tasks for OOO rooms.
+- [Room Chart](/operations/housekeeping/room-chart) — OOO rooms are highlighted and excluded from walk-in/new reservation actions.
+- [Front Desk → Room Plan](/operations/front-desk/room-plan) — OOO rooms are excluded from availability.
+- [Configuration → Out of Order Reasons](/configuration/housekeeping-setup/out-of-order-reasons) — Set up OOO reason codes.

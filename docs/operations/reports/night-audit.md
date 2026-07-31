@@ -7,7 +7,7 @@ sidebar_position: 5
 The **Night Audit Report** shows a list of all audit runs with their key metrics, and lets you drill into the details of a specific run — revenue summary, payment summary, reservation summary, and occupancy statistics.
 
 :::tip **Having a problem?**
-See the main [Troubleshooting](/docs/general/troubleshooting) page for general issues, or the [Reports Overview](/docs/operations/reports/overview) for how to run and export reports.
+See the main [Troubleshooting](/general/troubleshooting) page for general issues, or the [Reports Overview](/operations/reports/overview) for how to run and export reports.
 :::
 
 ## Access
@@ -123,8 +123,8 @@ The Night Audit Summary modal (accessed from the Night Audit page) shows the sam
 
 ## See also
 
-- [Night Audit](/docs/operations/night-audit) — Run night audit and view audit runs with the full summary modal.
-- [Trial Balance Report](/docs/operations/reports/trial-balance) — Debit/credit balance per transaction code for an audit run.
-- [Manager Report](/docs/operations/reports/manager-report) — Consolidated daily management summary.
-- [Billing Report](/docs/operations/reports/billing) — Revenue and payment detail by date range.
-- [Reports Overview](/docs/operations/reports/overview) — How to run and export reports.
+- [Night Audit](/operations/night-audit) — Run night audit and view audit runs with the full summary modal.
+- [Trial Balance Report](/operations/reports/trial-balance) — Debit/credit balance per transaction code for an audit run.
+- [Manager Report](/operations/reports/manager-report) — Consolidated daily management summary.
+- [Billing Report](/operations/reports/billing) — Revenue and payment detail by date range.
+- [Reports Overview](/operations/reports/overview) — How to run and export reports.

@@ -45,6 +45,6 @@ No reservation type with short code `WI` or `WALK` exists. Create one in this sc
 
 ## See also
 
-- [Reservations → List](/docs/operations/reservations/list) — Reservation form uses these types.
-- [Housekeeping → Room Chart](/docs/operations/housekeeping/room-chart) — Walk-In uses the WI/WALK type.
-- [Reservation Setup Overview](/docs/configuration/reservation-setup/overview)
+- [Reservations → List](/operations/reservations/list) — Reservation form uses these types.
+- [Housekeeping → Room Chart](/operations/housekeeping/room-chart) — Walk-In uses the WI/WALK type.
+- [Reservation Setup Overview](/configuration/reservation-setup/overview)

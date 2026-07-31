@@ -16,17 +16,17 @@ sidebar_position: 2
 |-------|-------------|
 | Short Code | Abbreviated code used in reports and availability (e.g. STD, DLX, STE). |
 | Name | Full name (e.g. Standard King, Deluxe Twin, Junior Suite). |
-| Room Class | The class this type belongs to — from [Room Classes](/docs/configuration/reservation-setup/room-classes). |
+| Room Class | The class this type belongs to — from [Room Classes](/configuration/reservation-setup/room-classes). |
 | Sequence | Display order in dropdowns and room plan. |
 | Hotel | The hotel this room type applies to (multi-property). |
 
 ## Setup Order
 
 Define room types before adding rooms or rates:
-1. [Room Classes](/docs/configuration/reservation-setup/room-classes) — broad categories
+1. [Room Classes](/configuration/reservation-setup/room-classes) — broad categories
 2. **Room Types** — specific types within a class
-3. [Rooms](/docs/configuration/reservation-setup/rooms) — individual rooms of each type
-4. [Rates](/docs/configuration/rate-setup/rates) — rates linked to room types
+3. [Rooms](/configuration/reservation-setup/rooms) — individual rooms of each type
+4. [Rates](/configuration/rate-setup/rates) — rates linked to room types
 
 ## Usage
 
@@ -37,9 +37,11 @@ Room types appear in:
 - **Reports** — Occupancy and revenue breakdowns by room type.
 - **Journal by Transaction** — Filter by room type.
 
+Room types also support the [Bulk Import (Excel)](/general/bulk-import) workflow (Template / Import Excel buttons on the list page).
+
 ## See also
 
-- [Room Classes](/docs/configuration/reservation-setup/room-classes)
-- [Rooms](/docs/configuration/reservation-setup/rooms)
-- [Rates](/docs/configuration/rate-setup/rates)
-- [Reservation Setup Overview](/docs/configuration/reservation-setup/overview)
+- [Room Classes](/configuration/reservation-setup/room-classes)
+- [Rooms](/configuration/reservation-setup/rooms)
+- [Rates](/configuration/rate-setup/rates)
+- [Reservation Setup Overview](/configuration/reservation-setup/overview)

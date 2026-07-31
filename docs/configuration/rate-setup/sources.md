@@ -39,7 +39,7 @@ Sources are selected on the reservation form (Booking Info step). They appear in
 
 ## See also
 
-- [Source Groups](/docs/configuration/rate-setup/source-groups) — Parent grouping of source codes.
-- [Rates](/docs/configuration/rate-setup/rates) — Rates can be restricted to specific sources.
-- [Reservation Reports](/docs/operations/reports/reservation) — Filter by source and source group.
-- [Rate Setup Overview](/docs/configuration/rate-setup/overview)
+- [Source Groups](/configuration/rate-setup/source-groups) — Parent grouping of source codes.
+- [Rates](/configuration/rate-setup/rates) — Rates can be restricted to specific sources.
+- [Reservation Reports](/operations/reports/reservation) — Filter by source and source group.
+- [Rate Setup Overview](/configuration/rate-setup/overview)

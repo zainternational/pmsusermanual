@@ -7,7 +7,7 @@ sidebar_position: 8
 The **Billing** module is the full folio management workspace for a reservation. It shows all charges, payments, and folio details for a selected reservation, and lets you post charges, take payments, split or transfer items, adjust amounts, void transactions, and print folios.
 
 :::tip **Having a problem?**
-This page has [Common FAQs](#common-faqs) and [Troubleshooting](#troubleshooting) below. For cashiering-related issues, see [Cashiering Overview](/docs/operations/cashiering/overview).
+This page has [Common FAQs](#common-faqs) and [Troubleshooting](#troubleshooting) below. For cashiering-related issues, see [Cashiering Overview](/operations/cashiering/overview).
 :::
 
 ## Access
@@ -72,6 +72,10 @@ Click a row to select it and enable the action buttons.
 
 Service charge and tax are calculated automatically based on the transaction code's service charge configuration.
 
+:::note
+Charges for setup **Articles** (e.g. mini-bar, amenities) can also be posted directly from **Housekeeping → Post Article** for an in-house guest, without opening Billing — see [Housekeeping Management](/operations/housekeeping/management#post-article-tab). This requires the separate Post Article / View Article permission and appears here on the same folio either way.
+:::
+
 ## Posting a Payment
 
 1. Click **Payment**.
@@ -134,7 +138,7 @@ Click **Print Folio** to open the folio print modal.
 
 1. Select the **Folio Number** to print.
 2. A print preview opens showing all charges and payments.
-3. Click **Print** or save as PDF.
+3. Click **Print** or save as PDF, or click **Email** to send the folio as a PDF directly to a recipient's email address (same as [emailing the confirmation letter](/operations/reservations/confirmation-letter#emailing-the-letter) — the recipient is editable and the document is attached as a PDF).
 
 The printed folio is typically given to the guest at checkout as their invoice.
 
@@ -146,7 +150,7 @@ Click **Preview** (or the preview icon) to see a formatted folio preview without
 
 Click **Routing** to set up charge routing for the reservation. Routing sends specific transaction codes to another room, company profile, or travel agent profile automatically when charges are posted.
 
-See [Room Routing](/docs/operations/cashiering/room-routing) for the property-wide routing view.
+See [Room Routing](/operations/cashiering/room-routing) for the property-wide routing view.
 
 ## Checkout from Billing
 
@@ -195,8 +199,8 @@ If the balance is negative (overpayment), add a negative payment (refund) to bri
 
 ## See also
 
-- [Cashiering → Transaction](/docs/operations/cashiering/transaction) — Cashier workspace with in-house list.
-- [Cashiering → Room Routing](/docs/operations/cashiering/room-routing) — Property-wide routing rules.
-- [Night Audit](/docs/operations/night-audit) — Post room charges and close the business date.
-- [Reports → Billing](/docs/operations/reports/billing) — Revenue and payment reports.
-- [Reservations](/docs/operations/reservations/overview) — Reservation management.
+- [Cashiering → Transaction](/operations/cashiering/transaction) — Cashier workspace with in-house list.
+- [Cashiering → Room Routing](/operations/cashiering/room-routing) — Property-wide routing rules.
+- [Night Audit](/operations/night-audit) — Post room charges and close the business date.
+- [Reports → Billing](/operations/reports/billing) — Revenue and payment reports.
+- [Reservations](/operations/reservations/overview) — Reservation management.

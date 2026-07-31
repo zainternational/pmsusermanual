@@ -7,7 +7,7 @@ sidebar_position: 4
 The **Housekeeping Report** shows the current room status across the property, along with optional sections for out-of-order rooms, maintenance records, lost & found records, and housekeeping tasks.
 
 :::tip **Having a problem?**
-See the main [Troubleshooting](/docs/general/troubleshooting) page for general issues, or the [Reports Overview](/docs/operations/reports/overview) for how to run and export reports.
+See the main [Troubleshooting](/general/troubleshooting) page for general issues, or the [Reports Overview](/operations/reports/overview) for how to run and export reports.
 :::
 
 ## Access
@@ -77,10 +77,15 @@ Room maintenance tasks (shown when **Include Maintenance** is Yes).
 | Title | Maintenance title (from OOO reason). |
 | Maintenance Type | Type of maintenance work. |
 | Priority | Low / Medium / High / Urgent / Critical. |
-| Status | Pending or Completed. |
-| Assigned To | Engineering staff assigned. |
+| Status | Pending or Completed — derived from whether Completed Date is set; not a stored column. |
+| Scheduled Date | Date maintenance was scheduled. |
 | Completed Date | Date maintenance was completed. |
+| Assigned To | Engineering staff assigned. |
 | Remarks | Notes. |
+
+:::note
+The **Excel export** of this section only includes Room Number, Title, Maintenance Type, Priority, Scheduled Date, Completed Date, and Assigned To — Status and Remarks are shown on screen but are **not** included in the exported file.
+:::
 
 ### Lost & Found Records
 
@@ -118,5 +123,5 @@ Use the export button (if available) to download as Excel or PDF.
 
 ## See also
 
-- [Housekeeping](/docs/operations/housekeeping/overview) — Room status, tasks, lost & found, maintenance, out-of-order.
-- [Reports Overview](/docs/operations/reports/overview) — How to run and export reports.
+- [Housekeeping](/operations/housekeeping/overview) — Room status, tasks, lost & found, maintenance, out-of-order.
+- [Reports Overview](/operations/reports/overview) — How to run and export reports.

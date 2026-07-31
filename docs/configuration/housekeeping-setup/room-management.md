@@ -16,8 +16,10 @@ sidebar_position: 4
 |-------|----------|-------------|
 | Short Code | Yes | Abbreviated code (e.g. PLUMB, ELEC, AC). |
 | Name | Yes | Reason name (e.g. Plumbing Issue, Electrical Fault, Air Conditioning). |
-| Sequence | No | Display order in dropdowns. |
-| Active | Yes | Whether this reason is available for selection. |
+
+:::note
+There is no Sequence or Active field exposed for Room Maintenance Reasons — only Short Code and Name.
+:::
 
 ## Common Maintenance Reasons
 
@@ -38,6 +40,6 @@ When a housekeeper or engineer logs a maintenance issue in **Housekeeping → Ma
 
 ## See also
 
-- [Housekeeping → Maintenance](/docs/operations/housekeeping/maintenance) — Log and track maintenance issues.
-- [Management Types](/docs/configuration/housekeeping-setup/management-types) — Classification types for maintenance records.
-- [Housekeeping Setup Overview](/docs/configuration/housekeeping-setup/overview)
+- [Housekeeping → Maintenance](/operations/housekeeping/maintenance) — Log and track maintenance issues.
+- [Management Types](/configuration/housekeeping-setup/management-types) — Classification types for maintenance records.
+- [Housekeeping Setup Overview](/configuration/housekeeping-setup/overview)

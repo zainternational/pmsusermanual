@@ -19,6 +19,15 @@
   margin: 0 auto;
 }
 
+.heroLogoLink {
+  display: inline-block;
+  line-height: 0;
+}
+
+.heroLogoLink:hover {
+  opacity: 0.9;
+}
+
 .heroLogo {
   height: 6.5rem;
   width: auto;

@@ -18,12 +18,12 @@ sidebar_position: 3
 | Email | User's email address. |
 | Password | Set or reset the user's password (minimum 6 characters). |
 | First Name / Last Name | Display name shown in the system. |
-| Job Title | From [Job Titles](/docs/configuration/general-setup/job-titles) setup. |
-| Department | From [Departments](/docs/configuration/general-setup/departments) setup. Used to filter staff in Housekeeping Tasks (Housekeeping dept) and Maintenance (Engineering dept). |
+| Job Title | From [Job Titles](/configuration/general-setup/job-titles) setup. |
+| Department | From [Departments](/configuration/general-setup/departments) setup. Used to filter staff in Housekeeping Tasks (Housekeeping dept) and Maintenance (Engineering dept). |
 | Profile Picture | Optional photo shown in the user profile. |
 | User Groups | Assign one or more user groups to inherit their permissions. |
 | Direct Permissions | Assign specific permissions directly to the user (in addition to group permissions). |
-| Hotel / Property | Assign the user to one or more hotels in multi-property setups. |
+| Hotel / Property | Assign the user to a hotel in multi-property setups. The selector allows picking multiple hotels, but only a single hotel assignment is actually saved per user — if more than one is selected, the system keeps the first one. Leave unassigned (super admin) for access to all hotels. |
 | Active | Whether the user can log in. Deactivate instead of deleting to preserve audit history. |
 
 ## Department Assignment
@@ -40,12 +40,12 @@ Permissions control what each user can see and do. They are assigned via:
 - **User Groups** — Assign a group; the user inherits all permissions in that group.
 - **Direct permissions** — Add specific permissions on top of group permissions.
 
-See [User Groups](/docs/configuration/general-setup/user-groups) and [Roles and Permissions](/docs/general/roles-and-permissions) for the full list of permission areas.
+See [User Groups](/configuration/general-setup/user-groups) and [Roles and Permissions](/general/roles-and-permissions) for the full list of permission areas.
 
 ## Common FAQs
 
 **A user can't see a menu — what do I do?**
-Check their user group and direct permissions. The required permission for each menu is listed in [Roles and Permissions](/docs/general/roles-and-permissions).
+Check their user group and direct permissions. The required permission for each menu is listed in [Roles and Permissions](/general/roles-and-permissions).
 
 **Why doesn't a staff member appear in the Housekeeping Task Assign To dropdown?**
 Their Department must be set to **Housekeeping**. Edit the user and assign the correct department.
@@ -55,7 +55,7 @@ Their Department must be set to a department with short code **ENG** (Engineerin
 
 ## See also
 
-- [User Groups](/docs/configuration/general-setup/user-groups)
-- [Departments](/docs/configuration/general-setup/departments)
-- [Job Titles](/docs/configuration/general-setup/job-titles)
-- [Roles and Permissions](/docs/general/roles-and-permissions)
+- [User Groups](/configuration/general-setup/user-groups)
+- [Departments](/configuration/general-setup/departments)
+- [Job Titles](/configuration/general-setup/job-titles)
+- [Roles and Permissions](/general/roles-and-permissions)

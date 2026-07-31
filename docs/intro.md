@@ -7,11 +7,11 @@ sidebar_position: 1
 Welcome to the **Hotelium Property Management System (PMS)** user manual. This guide explains how to use the PMS application for daily hotel operations, from login and dashboard to reservations, front desk, cashiering, housekeeping, night audit, and system configuration.
 
 :::tip **New to this manual?**  
-[Using this manual](/docs/general/using-this-manual) explains search, keyboard shortcuts, print/PDF, and how to find your way.
+[Using this manual](/general/using-this-manual) explains search, keyboard shortcuts, print/PDF, and how to find your way.
 :::
 
 :::tip **Having a problem?**  
-See the main [Troubleshooting](/docs/general/troubleshooting) page — it links to module-specific FAQs and troubleshooting for [Reservations](/docs/operations/reservations/overview#troubleshooting), [Front Desk](/docs/operations/front-desk/overview), [Cashiering](/docs/operations/cashiering/overview), [Housekeeping](/docs/operations/housekeeping/overview), [Night Audit](/docs/operations/night-audit#troubleshooting), [Dashboard](/docs/operations/dashboard#troubleshooting), [Configuration](/docs/configuration/overview#troubleshooting), and [Profiles](/docs/operations/profiles/overview#troubleshooting).
+See the main [Troubleshooting](/general/troubleshooting) page — it links to module-specific FAQs and troubleshooting for [Reservations](/operations/reservations/overview#troubleshooting), [Front Desk](/operations/front-desk/overview), [Cashiering](/operations/cashiering/overview), [Housekeeping](/operations/housekeeping/overview), [Night Audit](/operations/night-audit#troubleshooting), [Dashboard](/operations/dashboard#troubleshooting), [Configuration](/configuration/overview#troubleshooting), and [Profiles](/operations/profiles/overview#troubleshooting).
 :::
 
 ## About the System
@@ -31,7 +31,7 @@ Hotelium PMS is a web-based property management system that supports:
 ## Getting Started
 
 :::tip **First day? Do these steps in order.**  
-[**Quick start**](/docs/quickstart) walks through: **login → dashboard → one reservation → one check-in → one folio**. Follow it step by step, then use the links below for detail.
+[**Quick start**](/quickstart) walks through: **login → dashboard → one reservation → one check-in → one folio**. Follow it step by step, then use the links below for detail.
 :::
 
 ### Logging In
@@ -44,7 +44,7 @@ Hotelium PMS is a web-based property management system that supports:
 If you are not logged in and open the app, you are redirected to the login page. After login, you are sent to the Dashboard.
 
 :::info **Suggested screenshot**  
-Add a screenshot of the login screen (username, password, Login button) here. Save as `static/img/docs/login.png`. See [Screenshot guide](/docs/general/screenshot-guide).
+Add a screenshot of the login screen (username, password, Login button) here. Save as `static/img/docs/login.png`. See [Screenshot guide](/general/screenshot-guide).
 :::
 
 :::tip **Forgot password?**  
@@ -81,30 +81,30 @@ Use your browser’s **Print** (Ctrl+P / Cmd+P) to print a page or **Save as PDF
 
 | Role | Start here |
 |------|------------|
-| **Front desk** | [Reservations](/docs/operations/reservations/overview), [Front Desk](/docs/operations/front-desk/overview), [Dashboard](/docs/operations/dashboard) |
-| **Cashier** | [Cashiering](/docs/operations/cashiering/overview) (after cash register login) |
-| **Housekeeping** | [Housekeeping](/docs/operations/housekeeping/overview) |
-| **Night auditor** | [Night Audit](/docs/operations/night-audit), [Reports](/docs/operations/reports/overview) |
-| **Manager / admin** | [Dashboard](/docs/operations/dashboard), [Reports](/docs/operations/reports/overview), [Configuration](/docs/configuration/overview) |
+| **Front desk** | [Reservations](/operations/reservations/overview), [Front Desk](/operations/front-desk/overview), [Dashboard](/operations/dashboard) |
+| **Cashier** | [Cashiering](/operations/cashiering/overview) (after cash register login) |
+| **Housekeeping** | [Housekeeping](/operations/housekeeping/overview) |
+| **Night auditor** | [Night Audit](/operations/night-audit), [Reports](/operations/reports/overview) |
+| **Manager / admin** | [Dashboard](/operations/dashboard), [Reports](/operations/reports/overview), [Configuration](/configuration/overview) |
 
 ## More Getting-Started Topics
 
-- [**Quick start**](/docs/quickstart) — Login → dashboard → one reservation → check-in → folio, in order
-- [Using this manual](/docs/general/using-this-manual) — Search, breadcrumbs, print/PDF, back to top
-- [Manual updates](/docs/general/manual-updates) — What’s new; version and major changes
-- [Profile and security](/docs/general/profile-and-security) — View profile, change password
-- [Notifications](/docs/general/notifications) — Bell icon, unread list, where you are taken
-- [Roles and permissions](/docs/general/roles-and-permissions) — Who sees which menus
+- [**Quick start**](/quickstart) — Login → dashboard → one reservation → check-in → folio, in order
+- [Using this manual](/general/using-this-manual) — Search, breadcrumbs, print/PDF, back to top
+- [Manual updates](/general/manual-updates) — What’s new; version and major changes
+- [Profile and security](/general/profile-and-security) — View profile, change password
+- [Notifications](/general/notifications) — Bell icon, unread list, where you are taken
+- [Roles and permissions](/general/roles-and-permissions) — Who sees which menus
 
 ## Next Steps
 
-- [Dashboard](/docs/operations/dashboard) — Overview, stats, and quick actions
-- [Workflows](/docs/operations/workflows) — Check-in flow, end-of-day cashier and night audit
-- [Reservations](/docs/operations/reservations/overview) — Creating and managing reservations
-- [Front Desk](/docs/operations/front-desk/overview) — Room plan, in-house, checked-out
-- [Cashiering](/docs/operations/cashiering/overview) — Transactions and billing
-- [Housekeeping](/docs/operations/housekeeping/overview) — Room status and tasks
-- [Night Audit](/docs/operations/night-audit) — Running night audit and reviews
-- [Reports](/docs/operations/reports/overview) — Reservation, billing, housekeeping, night audit reports
-- [Profiles](/docs/operations/profiles/overview) — Individual, company, and travel agent profiles
-- [Configuration](/docs/configuration/overview) — System setup and settings
+- [Dashboard](/operations/dashboard) — Overview, stats, and quick actions
+- [Workflows](/operations/workflows) — Check-in flow, end-of-day cashier and night audit
+- [Reservations](/operations/reservations/overview) — Creating and managing reservations
+- [Front Desk](/operations/front-desk/overview) — Room plan, in-house, checked-out
+- [Cashiering](/operations/cashiering/overview) — Transactions and billing
+- [Housekeeping](/operations/housekeeping/overview) — Room status and tasks
+- [Night Audit](/operations/night-audit) — Running night audit and reviews
+- [Reports](/operations/reports/overview) — Reservation, billing, housekeeping, night audit reports
+- [Profiles](/operations/profiles/overview) — Individual, company, and travel agent profiles
+- [Configuration](/configuration/overview) — System setup and settings

@@ -15,16 +15,21 @@ sidebar_position: 9
 | Field | Required | Description |
 |-------|----------|-------------|
 | Currency | Yes | The foreign currency (e.g. USD, EUR, THB). |
-| Rate (MMK per unit) | Yes | How many units of base currency equal 1 unit of the foreign currency. |
+| Hotel | No | Restricts this rate to a specific hotel. Leave empty to apply to all hotels. |
+| Units per MMK | Yes | How many units of this currency equal 1 MMK. |
+| MMK per Unit | Yes | How many MMK equal 1 unit of this currency. Both directions are entered — the system does not derive one from the other. |
 | Valid From | Yes | Start date for this rate. |
-| Valid To | No | End date. If blank, the rate is open-ended. |
-| Active | Yes | Whether this rate is currently in use. |
+| Valid To | Yes | End date for this rate — **required**, not open-ended. To keep a rate current, create a new record with a fresh date range once the old one expires. |
+
+:::note
+There is no Active/Inactive flag on Exchange Rates — a rate is simply in effect or not, based on whether today's business date falls within its Valid From/Valid To range.
+:::
 
 ## How It Works
 
-When a payment is posted in a foreign currency, the system uses the exchange rate valid on the business date to convert the amount to the base currency for folio and reporting purposes.
+When a payment is posted in a foreign currency, the system uses the exchange rate valid on the business date to convert the amount to MMK for folio and reporting purposes.
 
-Example: If 1 USD = 2,100 MMK and a guest pays USD 100, the folio records MMK 210,000.
+Example: If 1 USD = 2,100 MMK (entered as MMK per Unit = 2100) and a guest pays USD 100, the folio records MMK 210,000.
 
 ## Multiple Rates Over Time
 
@@ -33,13 +38,13 @@ You can have multiple exchange rate records for the same currency with different
 ## Common FAQs
 
 **The exchange rate is not applying in the payment modal.**
-Ensure the currency is active in [Currencies](/docs/configuration/rate-setup/currencies) and the exchange rate has a valid date range covering today's business date.
+Ensure the currency's Status is Active in [Currencies](/configuration/rate-setup/currencies) and the exchange rate has a Valid From/Valid To range covering today's business date (both dates are required — an expired record needs a new one, not an edit to remove the end date).
 
 **Should I update exchange rates daily?**
 Update them whenever the rate changes significantly. For properties with high foreign currency volume, daily updates are recommended.
 
 ## See also
 
-- [Currencies](/docs/configuration/rate-setup/currencies) — Define which currencies are accepted.
-- [Cashiering → Exchange Rates](/docs/configuration/cashiering-setup/exchange-rates) — Cashiering-specific exchange rate setup.
-- [Rate Setup Overview](/docs/configuration/rate-setup/overview)
+- [Currencies](/configuration/rate-setup/currencies) — Define which currencies are accepted.
+- [Cashiering → Exchange Rates](/configuration/cashiering-setup/exchange-rates) — Cashiering-specific exchange rate setup.
+- [Rate Setup Overview](/configuration/rate-setup/overview)

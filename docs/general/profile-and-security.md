@@ -12,9 +12,21 @@ Your user profile stores your display name, job title, contact details, and simi
 
 From the profile details screen you can:
 
-- View your **username**, **email**, **job title**, and other stored fields
-- Edit allowed fields (depending on configuration)
+- View and, where allowed, edit your stored profile fields:
+  - **Username** and **Email**
+  - **First name** and **Last name**
+  - **Phone number**
+  - **Date of birth**
+  - **Gender**
+  - **Job title**
+  - **Department**
+  - **Address**
+  - **Emergency contact**
+  - **Message** and **Note** (free-text fields)
+  - **Profile picture** — upload or replace your photo from the profile screen
 - Go to **Change password** if the option is shown
+
+Some fields (such as your admin type, groups, or active status) are managed only by an administrator and are not editable from your own profile.
 
 ## Change Password
 

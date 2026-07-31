@@ -7,7 +7,7 @@ sidebar_position: 5
 **Room Routing** (also called Room Routing History) shows all routing rules that have been set up across reservations for a selected date range. It is used to review and audit how charges are being routed between rooms, folios, or payers.
 
 :::tip **Having a problem?**
-See the main [Troubleshooting](/docs/general/troubleshooting) page for general issues, or [Cashiering Overview](/docs/operations/cashiering/overview) for cashier-related issues.
+See the main [Troubleshooting](/general/troubleshooting) page for general issues, or [Cashiering Overview](/operations/cashiering/overview) for cashier-related issues.
 :::
 
 ## Access
@@ -52,7 +52,7 @@ Open the reservation in **Cashiering → Transaction**, then use the routing/spl
 
 ## See also
 
-- [Transaction](/docs/operations/cashiering/transaction) — Where routing rules are created per reservation (folio routing/split).
-- [Journal by Transaction](/docs/operations/cashiering/journal-by-transaction) — Detailed view of all posted items and payments.
-- [Cashiering Overview](/docs/operations/cashiering/overview) — Overview of all cashiering screens.
-- [Configuration → Routing Codes](/docs/configuration/cashiering-setup/routing-codes) — Set up routing codes used in routing rules.
+- [Transaction](/operations/cashiering/transaction) — Where routing rules are created per reservation (folio routing/split).
+- [Journal by Transaction](/operations/cashiering/journal-by-transaction) — Detailed view of all posted items and payments.
+- [Cashiering Overview](/operations/cashiering/overview) — Overview of all cashiering screens.
+- [Configuration → Routing Codes](/configuration/cashiering-setup/routing-codes) — Set up routing codes used in routing rules.

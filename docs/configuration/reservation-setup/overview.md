@@ -10,26 +10,26 @@ Reservation setup includes room types, room classes, rooms, reservation types, r
 
 | Sub-menu | Purpose |
 |----------|---------|
-| [Room Classes](/docs/configuration/reservation-setup/room-classes) | Broad room category (e.g. Standard, Deluxe). |
-| [Room Types](/docs/configuration/reservation-setup/room-types) | Specific type (e.g. Standard King, Deluxe Twin). |
-| [Rooms](/docs/configuration/reservation-setup/rooms) | Add or edit rooms, room number, type, floor, section. |
-| [Reservation Types](/docs/configuration/reservation-setup/reservation-types) | e.g. FIT, Group, Travel Agent. |
-| [Reservation Methods](/docs/configuration/reservation-setup/reservation-methods) | e.g. Phone, Web, Walk-in. |
-| [Booking Types](/docs/configuration/reservation-setup/booking-types) | e.g. Guaranteed, Non-guaranteed. |
-| [Business Segments](/docs/configuration/reservation-setup/business-segments) | Market segment (e.g. Corporate, Leisure). |
-| [Floor Plans](/docs/configuration/reservation-setup/floor-plans) | Layout or floor grouping for room plan. |
-| [Special Requests](/docs/configuration/reservation-setup/special-requests) | e.g. High floor, Late checkout. |
-| [Room Status](/docs/configuration/reservation-setup/room-status) | Statuses for room state (e.g. Available, Out of Order). |
-| [Room Move](/docs/configuration/reservation-setup/room-move) | Reasons for moving a guest to another room. |
-| [Trace Codes](/docs/configuration/reservation-setup/trace-codes) | Internal trace or follow-up. |
-| [Origin Codes](/docs/configuration/reservation-setup/origin-codes) | Origin of the reservation (e.g. region, campaign). |
-| [Alert Codes](/docs/configuration/reservation-setup/alert-codes) | Alerts or flags on the reservation. |
-| [Discount Reasons](/docs/configuration/reservation-setup/discount-reasons) | Reason for a discount. |
-| [Cancellation Reasons](/docs/configuration/reservation-setup/cancellation-reasons) | Reason for cancelling a reservation. |
-| [Waitlist Reasons](/docs/configuration/reservation-setup/waitlist-reasons) | Reason or type for waitlist. |
-| [Lost Reasons](/docs/configuration/reservation-setup/lost-reasons) | Why a reservation was lost. |
-| [Refused Reasons](/docs/configuration/reservation-setup/refused-reasons) | Why a reservation was refused. |
-| [Inactive Reasons](/docs/configuration/reservation-setup/inactive-reasons) | Reasons for marking a profile, rate, or other entity inactive. |
-| [Purpose of Stay](/docs/configuration/reservation-setup/purpose-of-stay) | Reason codes for why a guest is visiting (e.g. Business, Leisure, Conference). |
+| [Room Classes](/configuration/reservation-setup/room-classes) | Broad room category (e.g. Standard, Deluxe). |
+| [Room Types](/configuration/reservation-setup/room-types) | Specific type (e.g. Standard King, Deluxe Twin). |
+| [Rooms](/configuration/reservation-setup/rooms) | Add or edit rooms, room number, type, floor, section. |
+| [Reservation Types](/configuration/reservation-setup/reservation-types) | e.g. FIT, Group, Travel Agent. |
+| [Reservation Methods](/configuration/reservation-setup/reservation-methods) | e.g. Phone, Web, Walk-in. |
+| [Booking Types](/configuration/reservation-setup/booking-types) | e.g. Guaranteed, Non-guaranteed. |
+| [Business Segments](/configuration/reservation-setup/business-segments) | Market segment (e.g. Corporate, Leisure). |
+| [Floor Plans](/configuration/reservation-setup/floor-plans) | Layout or floor grouping for room plan. |
+| [Special Requests](/configuration/reservation-setup/special-requests) | e.g. High floor, Late checkout. |
+| [Room Status](/configuration/reservation-setup/room-status) | Statuses for room state (e.g. Available, Out of Order). |
+| [Room Move](/configuration/reservation-setup/room-move) | Reasons for moving a guest to another room. |
+| [Trace Codes](/configuration/reservation-setup/trace-codes) | Internal trace or follow-up. |
+| [Origin Codes](/configuration/reservation-setup/origin-codes) | Origin of the reservation (e.g. region, campaign). |
+| [Alert Codes](/configuration/reservation-setup/alert-codes) | Alerts or flags on the reservation. |
+| [Discount Reasons](/configuration/reservation-setup/discount-reasons) | Reason for a discount. |
+| [Cancellation Reasons](/configuration/reservation-setup/cancellation-reasons) | Reason for cancelling a reservation. |
+| [Waitlist Reasons](/configuration/reservation-setup/waitlist-reasons) | Reason or type for waitlist. |
+| [Lost Reasons](/configuration/reservation-setup/lost-reasons) | Why a reservation was lost. |
+| [Refused Reasons](/configuration/reservation-setup/refused-reasons) | Why a reservation was refused. |
+| [Inactive Reasons](/configuration/reservation-setup/inactive-reasons) | Reasons for marking a profile, rate, or other entity inactive. |
+| [Purpose of Stay](/configuration/reservation-setup/purpose-of-stay) | Reason codes for why a guest is visiting (e.g. Business, Leisure, Conference). |
 
 Access via **Configuration → Reservation** in the PMS. What you see depends on **user permissions**.

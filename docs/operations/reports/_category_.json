@@ -3,6 +3,6 @@
   "position": 8,
   "link": {
     "type": "generated-index",
-    "description": "Predefined reports for reservations, front desk, billing, housekeeping, and night audit."
+    "description": "Predefined reports for reservations, front desk, guest profiles, billing/financial, housekeeping, and night audit."
   }
 }

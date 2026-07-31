@@ -7,7 +7,7 @@ sidebar_position: 1
 The **Reservation Report** shows all reservations matching the selected filters, with a summary of totals and breakdowns by market, source, and room type.
 
 :::tip **Having a problem?**
-See the main [Troubleshooting](/docs/general/troubleshooting) page for general issues, or the [Reports Overview](/docs/operations/reports/overview) for how to run and export reports.
+See the main [Troubleshooting](/general/troubleshooting) page for general issues, or the [Reports Overview](/operations/reports/overview) for how to run and export reports.
 :::
 
 ## Access
@@ -98,6 +98,6 @@ Use the export button (if available) to download as Excel or PDF.
 
 ## See also
 
-- [Reservations](/docs/operations/reservations/overview) — Source of reservation data.
-- [Reports Overview](/docs/operations/reports/overview) — How to run and export reports.
-- [Frontdesk Report](/docs/operations/reports/frontdesk) — Arrivals, departures, and in-house for a specific business date.
+- [Reservations](/operations/reservations/overview) — Source of reservation data.
+- [Reports Overview](/operations/reports/overview) — How to run and export reports.
+- [Frontdesk Report](/operations/reports/frontdesk) — Arrivals, departures, and in-house for a specific business date.

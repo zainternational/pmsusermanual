@@ -7,16 +7,21 @@ sidebar_position: 0
 **Front Desk** covers the daily front-office workflow: room planning, in-house guest management, and checked-out guest history. It is the central hub for check-in, check-out, room moves, and quick folio access.
 
 :::tip **Having a problem?**
-This page has [Common FAQs](#common-faqs) below. For issues in other modules, see the main [Troubleshooting](/docs/general/troubleshooting) page.
+This page has [Common FAQs](#common-faqs) below. For issues in other modules, see the main [Troubleshooting](/general/troubleshooting) page.
 :::
 
 ## Screens
 
 | Screen | Purpose |
 |--------|---------|
-| [Room Plan](/docs/operations/front-desk/room-plan) | Calendar grid showing room availability over a date range. Click a cell to create a reservation for that room and date. |
-| [In-House](/docs/operations/front-desk/in-house) | All currently checked-in guests. Check out, move rooms, open folio, view alerts/comments/messages. |
-| [Checked-Out](/docs/operations/front-desk/checked-out) | Departed guests. Review history, move back to in-house if needed, open folio. |
+| [Room Plan](/operations/front-desk/room-plan) | Calendar grid showing room availability over a date range. Click a cell to create a reservation for that room and date. |
+| [In-House](/operations/front-desk/in-house) | All currently checked-in guests. Check out, move rooms, open folio, view alerts/comments/messages. |
+| [Checked-Out](/operations/front-desk/checked-out) | Departed guests. Review history, move back to in-house if needed, open folio. |
+| [Stay Information](/operations/front-desk/stay-information) | Not a guest list — this is the room/rate/dates section of the reservation form itself (Booking Info step). See below. |
+
+:::info **"Stay Information" is a form section, not a screen**
+Unlike Room Plan, In-House, and Checked-Out (which list guests/rooms), **Stay Information** refers to the group of fields on the reservation form — room type, room number, number of rooms, number of guests, rate code, package, and discount. It's filled in while creating or editing a reservation, not viewed as its own list. See [Stay Information](/operations/front-desk/stay-information) for details.
+:::
 
 ## Typical Daily Workflow
 
@@ -39,7 +44,8 @@ Yes — from the In-House list, use the **Room Move** action on the reservation 
 
 ## See also
 
-- [Reservations](/docs/operations/reservations/overview) — Create and manage bookings.
-- [Cashiering](/docs/operations/cashiering/overview) — Post charges and take payments on guest folios.
-- [Housekeeping](/docs/operations/housekeeping/overview) — Room status (clean/dirty) before check-in.
-- [Night Audit](/docs/operations/night-audit) — Close the business date after front-desk activity.
+- [Reservations](/operations/reservations/overview) — Create and manage bookings.
+- [Stay Information](/operations/front-desk/stay-information) — Room, rate, and package fields on the reservation form.
+- [Cashiering](/operations/cashiering/overview) — Post charges and take payments on guest folios.
+- [Housekeeping](/operations/housekeeping/overview) — Room status (clean/dirty) before check-in.
+- [Night Audit](/operations/night-audit) — Close the business date after front-desk activity.

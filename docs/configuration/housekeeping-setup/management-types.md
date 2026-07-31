@@ -16,8 +16,10 @@ sidebar_position: 6
 |-------|----------|-------------|
 | Short Code | Yes | Abbreviated code (e.g. PREV, CORR, EMER). |
 | Name | Yes | Type name (e.g. Preventive, Corrective, Emergency). |
-| Sequence | No | Display order in dropdowns. |
-| Active | Yes | Whether this type is available for selection. |
+
+:::note
+There is no Sequence or Active field exposed for Management Types — only Short Code and Name.
+:::
 
 ## Common Management Types
 
@@ -35,6 +37,6 @@ When logging a maintenance record in **Housekeeping → Maintenance**, staff sel
 
 ## See also
 
-- [Housekeeping → Maintenance](/docs/operations/housekeeping/maintenance) — Log and track maintenance issues.
-- [Room Maintenance Reasons](/docs/configuration/housekeeping-setup/room-management) — Specific reasons for maintenance issues.
-- [Housekeeping Setup Overview](/docs/configuration/housekeeping-setup/overview)
+- [Housekeeping → Maintenance](/operations/housekeeping/maintenance) — Log and track maintenance issues.
+- [Room Maintenance Reasons](/configuration/housekeeping-setup/room-management) — Specific reasons for maintenance issues.
+- [Housekeeping Setup Overview](/configuration/housekeeping-setup/overview)

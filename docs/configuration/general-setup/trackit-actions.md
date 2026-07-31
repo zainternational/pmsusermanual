@@ -1,5 +1,5 @@
 ---
-sidebar_position: 11
+sidebar_position: 15
 ---
 
 # Track It — Actions
@@ -46,7 +46,7 @@ The **Category** flag is used for filtering and reporting:
 
 ## See also
 
-- [Track It — Groups](/docs/configuration/general-setup/trackit-groups) — Top-level categories.
-- [Track It — Types](/docs/configuration/general-setup/trackit-types) — Sub-categories.
-- [Track It — Locations](/docs/configuration/general-setup/trackit-locations) — Where the item was found or stored.
-- [Housekeeping → Lost & Found](/docs/operations/housekeeping/lost-and-found) — Using Track It in operations.
+- [Track It — Groups](/configuration/general-setup/trackit-groups) — Top-level categories.
+- [Track It — Types](/configuration/general-setup/trackit-types) — Sub-categories.
+- [Track It — Locations](/configuration/general-setup/trackit-locations) — Where the item was found or stored.
+- [Housekeeping → Lost & Found](/operations/housekeeping/lost-and-found) — Using Track It in operations.

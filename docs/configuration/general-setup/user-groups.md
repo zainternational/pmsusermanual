@@ -14,10 +14,12 @@ sidebar_position: 4
 
 | Field | Description |
 |-------|-------------|
-| Short Code | Abbreviated code (e.g. FD, CASH, HK, MGR). |
 | Name | Group name (e.g. Front Desk, Cashier, Housekeeping, Manager). |
-| Sequence | Display order. |
 | Permissions | The list of permissions assigned to this group. |
+
+:::note
+There is no Short Code or Sequence field on a User Group — only Name and Permissions.
+:::
 
 ## How Permission Inheritance Works
 
@@ -26,10 +28,14 @@ User Group (permissions) → assigned to → User → inherits all group permiss
                                                 + any direct permissions added to the user
 ```
 
-- A user can belong to **one group**. They inherit all permissions in that group.
-- **Direct permissions** can be added on top of the group — useful for one-off exceptions (e.g. a front desk agent who also needs to run reports).
-- If a permission is in the group, the user has it. If it is not in the group, the user does not have it — unless it is added directly to their account.
-- Removing a permission from a group removes it from **all users** in that group immediately.
+- A user can belong to **one or more groups**. They inherit the combined permissions of every group assigned to them.
+- **Direct permissions** can be added on top of the group(s) — useful for one-off exceptions (e.g. a front desk agent who also needs to run reports).
+- If a permission is in any of the user's groups, the user has it. If it is not in any assigned group, the user does not have it — unless it is added directly to their account.
+- A group's permissions can only be changed while it has **no users assigned** — see [Editing a Group](#editing-a-group) below. Once you're able to save a permission change, it applies to every user in the group.
+
+:::info Managing groups themselves
+Creating, editing, and deleting user groups (and viewing the permission list) is not currently restricted to administrators — any logged-in user with API access can perform these actions. Day-to-day access to the **User Groups** screen itself is still governed by the sidebar menu/UI, but be aware there is currently no dedicated "manage groups" permission enforced on the backend.
+:::
 
 ## Permission Areas
 
@@ -142,10 +148,10 @@ Each setup area has its own view / add / change / delete permissions. For exampl
 
 1. Open the group from the list.
 2. Add or remove permissions as needed.
-3. Save. Changes apply immediately to all users in the group.
+3. Save.
 
 :::warning
-Removing a permission from a group removes it from every user in that group. Check who is in the group before removing permissions.
+**A group with any users currently assigned to it cannot be edited at all.** Saving is blocked with an error ("This user group cannot be updated because one or more users are assigned to it. Remove users from this group before making changes.") — you must first remove every user from the group (reassign them to no group or a different one) before you can add/remove its permissions. This is the opposite of "changes apply immediately" — plan permission changes in advance, since editing an in-use group requires temporarily unassigning its members.
 :::
 
 ## Common FAQs
@@ -160,9 +166,9 @@ Use groups for roles shared by multiple staff. Use direct permissions for one-of
 Check that the group has the correct `view` permission for that module. Some menus require a specific permission name — see the tables above. Also confirm the user is saved with the correct group assigned.
 
 **Can a user be in multiple groups?**
-Each user is assigned one group. Use direct permissions to add extra access beyond the group.
+Yes. Assign as many groups as needed; the user inherits the combined permissions of all assigned groups. Direct permissions can add extra access beyond the groups.
 
 ## See also
 
-- [Users](/docs/configuration/general-setup/users) — Create user accounts and assign groups.
-- [Roles and Permissions](/docs/general/roles-and-permissions) — Overview of which menus require which permissions.
+- [Users](/configuration/general-setup/users) — Create user accounts and assign groups.
+- [Roles and Permissions](/general/roles-and-permissions) — Overview of which menus require which permissions.

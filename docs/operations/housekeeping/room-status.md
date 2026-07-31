@@ -7,7 +7,7 @@ sidebar_position: 1
 The **Room Status** tab shows the current housekeeping status of every room. Use it to see which rooms are ready to sell, need cleaning, or are out of order — and to update statuses in bulk.
 
 :::tip **Having a problem?**
-See [Housekeeping Overview](/docs/operations/housekeeping/overview) for common FAQs and troubleshooting.
+See [Housekeeping Overview](/operations/housekeeping/overview) for common FAQs and troubleshooting.
 :::
 
 ## Access
@@ -20,18 +20,25 @@ At the top of the tab, summary cards show counts for each status category across
 
 ## Room Status Values
 
-| Status | Code | Meaning |
-|--------|------|---------|
-| Vacant Clean | VC | Room is empty and clean — ready to sell and assign. |
-| Vacant Dirty | VD | Room is empty but needs cleaning before it can be sold. |
-| Occupied Clean | OC | Guest is in-house; room has been cleaned. |
-| Occupied Dirty | OD | Guest is in-house; room has not been cleaned yet. |
-| Pick-up | PU | Room needs a quick service/pick-up (e.g. towels, trash). |
-| Inspected | IN | Room has been inspected and approved by a supervisor. |
-| Out of Order | OOO | Room is not available for sale (e.g. under repair). Driven by an active Out of Order record. |
-| Out of Service | OOS | Room is temporarily withdrawn from inventory. Driven by an active Out of Order record with Out of Service status. |
+A room's status is actually two independent fields, shown as separate columns on this tab:
 
-Out of Order and Out of Service statuses are automatically applied when an active [Out of Order](/docs/operations/housekeeping/out-of-order) record exists for the room. When the OOO record is completed (returned to service), the room reverts to the return status set on that record.
+| Field | Values | Meaning |
+|-------|--------|---------|
+| Housekeeping Status | Clean, Dirty, Inspected, Pickup | The cleaning state of the room, set by housekeeping staff. |
+| FO Status (Front Office) | Vacant, Occupied | Whether a guest currently occupies the room — driven automatically by check-in/checkout, not manually editable here. |
+
+On the [Room Chart](/operations/housekeeping/room-chart), these two fields are combined into a single quick-glance code for display purposes only (not a stored field):
+
+| Code | Meaning | Derived from |
+|------|---------|---------------|
+| VC | Vacant Clean | FO Status = Vacant, Housekeeping Status = Clean or Inspected |
+| VD | Vacant Dirty | FO Status = Vacant, Housekeeping Status = Dirty or Pickup |
+| OC | Occupied Clean | FO Status = Occupied, Housekeeping Status = Clean or Inspected |
+| OD | Occupied Dirty | FO Status = Occupied, Housekeeping Status = Dirty or Pickup |
+| OOO | Out of Order | An active [Out of Order](/operations/housekeeping/out-of-order) record exists for the room. |
+| OOS | Out of Service | An active Out of Order record with Out of Service status. |
+
+Out of Order and Out of Service override the VC/VD/OC/OD codes on the Room Chart whenever an active OOO record exists for the room. When the OOO record is completed (returned to service), the room reverts to the return status set on that record.
 
 ## Filters and Search
 
@@ -53,7 +60,7 @@ You can update one or multiple rooms at once:
 4. Click **Update Rooms**. All selected rooms are updated simultaneously.
 
 :::note
-The update modal only shows housekeeping statuses (Clean, Dirty, Inspected, Pickup). Out of Order and Out of Service are managed from the [Out of Order](/docs/operations/housekeeping/out-of-order) tab.
+The update modal only shows housekeeping statuses (Clean, Dirty, Inspected, Pickup). Out of Order and Out of Service are managed from the [Out of Order](/operations/housekeeping/out-of-order) tab.
 :::
 
 ## Table Columns
@@ -62,12 +69,14 @@ Typical columns: Room Number, Floor, Room Type, FO Status (Front Office), Reserv
 
 ## Integration with Front Desk
 
-Room status directly affects check-in availability. A room must be **Vacant Clean** (or equivalent ready status) before a guest can be checked in from Front Desk or Reservations. After checkout, the room automatically becomes **Vacant Dirty** — housekeeping staff update it to Clean after servicing.
+Housekeeping status (Clean/Dirty/Inspected/Pickup) is informational for housekeeping staff — it does **not** block check-in or new bookings. A room does not need to be Vacant Clean to be checked in or reserved; only an active **Out of Order** or **Out of Service** record blocks a room from availability (see [Out of Order](/operations/housekeeping/out-of-order)).
+
+Checking a guest in automatically sets the room's housekeeping status to **Clean**, regardless of its status beforehand — the system relies on housekeeping/front desk process to ensure the room is actually ready. After checkout, the room automatically becomes **Vacant Dirty** — housekeeping staff should update it to Clean after servicing, but this is an operational workflow rather than a system-enforced gate.
 
 ## See also
 
-- [Out of Order](/docs/operations/housekeeping/out-of-order) — Mark rooms as OOO/OOS; drives the OOO status shown here.
-- [Tasks](/docs/operations/housekeeping/tasks) — Assign cleaning tasks to attendants.
-- [Room Chart](/docs/operations/housekeeping/room-chart) — Visual floor-by-floor status grid.
-- [Front Desk → Room Plan](/docs/operations/front-desk/room-plan) — Room plan uses housekeeping status for availability.
-- [Configuration → Housekeeping Setup](/docs/configuration/housekeeping-setup/overview) — Room status codes, sections, attendants.
+- [Out of Order](/operations/housekeeping/out-of-order) — Mark rooms as OOO/OOS; drives the OOO status shown here.
+- [Tasks](/operations/housekeeping/tasks) — Assign cleaning tasks to attendants.
+- [Room Chart](/operations/housekeeping/room-chart) — Visual floor-by-floor status grid.
+- [Front Desk → Room Plan](/operations/front-desk/room-plan) — Room plan uses housekeeping status for availability.
+- [Configuration → Housekeeping Setup](/configuration/housekeeping-setup/overview) — Room status codes, sections, attendants.

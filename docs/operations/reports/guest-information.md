@@ -7,12 +7,12 @@ sidebar_position: 6
 The **Guest Information Report** shows all in-house guests for a selected business date, including full profile details for both primary and additional guests on each reservation.
 
 :::tip **Having a problem?**
-See the main [Troubleshooting](/docs/general/troubleshooting) page for general issues, or the [Reports Overview](/docs/operations/reports/overview) for how to run and export reports.
+See the main [Troubleshooting](/general/troubleshooting) page for general issues, or the [Reports Overview](/operations/reports/overview) for how to run and export reports.
 :::
 
 ## Access
 
-From the sidebar, click **Report** → **Guest Information**.
+From the sidebar, click **Report** → **Profile**, then choose **Guest Information** from the sub-report list.
 
 ## Filter
 
@@ -65,6 +65,9 @@ The guest profile may not have been fully filled in at the time of reservation. 
 
 ## See also
 
-- [Individual Profiles](/docs/operations/profiles/individual-profile) — Where guest profile data is stored and edited.
-- [Reservations](/docs/operations/reservations/overview) — Source of stay and reservation data.
-- [Reports Overview](/docs/operations/reports/overview) — How to run and export reports.
+- [Individual Profiles](/operations/profiles/individual-profile) — Where guest profile data is stored and edited.
+- [Reservations](/operations/reservations/overview) — Source of stay and reservation data.
+- [Guest Record Report](/operations/reports/guest-record) — Per-profile stay history and revenue statistics.
+- [Repeated Guest Report](/operations/reports/repeated-guest) — Guests with multiple stays and revenue summary.
+- [Guest Birthday Report](/operations/reports/guest-birthday) — Guests with birthdays in a selected date range.
+- [Reports Overview](/operations/reports/overview) — How to run and export reports.

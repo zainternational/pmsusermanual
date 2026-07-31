@@ -94,6 +94,6 @@ No — each database is isolated. A user must have an account in each property's
 
 ## See also
 
-- [Hotel Information](/docs/configuration/general-setup/hotel-information) — Configure property details after creating a new database.
-- [Users](/docs/configuration/general-setup/users) — Set up user accounts for each property.
-- [License](/docs/configuration/general-setup/license) — License management per property.
+- [Hotel Information](/configuration/general-setup/hotel-information) — Configure property details after creating a new database.
+- [Users](/configuration/general-setup/users) — Set up user accounts for each property.
+- [License](/configuration/general-setup/license) — License management per property.

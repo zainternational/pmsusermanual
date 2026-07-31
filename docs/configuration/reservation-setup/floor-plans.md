@@ -22,6 +22,8 @@ sidebar_position: 8
 
 Once floors are created, assign each room to a floor in **Configuration → Reservation Setup → Rooms**. Rooms without a floor assigned may not appear in floor-grouped views.
 
+Use **Import** to bulk-load floor plans from an Excel file (download the template first via **Template**), and **Export** to download the current list. See [Bulk Import (Excel)](/general/bulk-import) for the full import workflow.
+
 ## Common Floor Plans
 
 | Short Code | Name | Sequence |
@@ -42,7 +44,7 @@ Adjust the **Sequence** number on each floor. Lower sequence numbers appear firs
 
 ## See also
 
-- [Rooms](/docs/configuration/reservation-setup/rooms) — Assign rooms to floors.
-- [Front Desk → Room Plan](/docs/operations/front-desk/room-plan) — Calendar grid grouped by floor.
-- [Housekeeping → Room Chart](/docs/operations/housekeeping/room-chart) — Floor-by-floor room status grid.
-- [Reservation Setup Overview](/docs/configuration/reservation-setup/overview)
+- [Rooms](/configuration/reservation-setup/rooms) — Assign rooms to floors.
+- [Front Desk → Room Plan](/operations/front-desk/room-plan) — Calendar grid grouped by floor.
+- [Housekeeping → Room Chart](/operations/housekeeping/room-chart) — Floor-by-floor room status grid.
+- [Reservation Setup Overview](/configuration/reservation-setup/overview)

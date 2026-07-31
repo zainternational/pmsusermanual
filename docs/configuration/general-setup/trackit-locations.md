@@ -1,5 +1,5 @@
 ---
-sidebar_position: 12
+sidebar_position: 14
 ---
 
 # Track It — Locations
@@ -46,7 +46,7 @@ If your property wants to track which specific room an item was found in, add in
 
 ## See also
 
-- [Track It — Groups](/docs/configuration/general-setup/trackit-groups) — Top-level categories.
-- [Track It — Types](/docs/configuration/general-setup/trackit-types) — Sub-categories.
-- [Track It — Actions](/docs/configuration/general-setup/trackit-actions) — What happened to the item.
-- [Housekeeping → Lost & Found](/docs/operations/housekeeping/lost-and-found) — Using Track It in operations.
+- [Track It — Groups](/configuration/general-setup/trackit-groups) — Top-level categories.
+- [Track It — Types](/configuration/general-setup/trackit-types) — Sub-categories.
+- [Track It — Actions](/configuration/general-setup/trackit-actions) — What happened to the item.
+- [Housekeeping → Lost & Found](/operations/housekeeping/lost-and-found) — Using Track It in operations.

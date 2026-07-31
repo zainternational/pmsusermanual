@@ -7,27 +7,32 @@ sidebar_position: 0
 The **Reservation** module is used to create, view, edit, and manage guest reservations. It connects to guest profiles, rooms, rates, billing, and housekeeping.
 
 :::tip **Having a problem?**
-This page has [Common FAQs](#common-faqs) and [Troubleshooting](#troubleshooting) below. For issues in other modules, see the main [Troubleshooting](/docs/general/troubleshooting) page.
+This page has [Common FAQs](#common-faqs) and [Troubleshooting](#troubleshooting) below. For issues in other modules, see the main [Troubleshooting](/general/troubleshooting) page.
 :::
 
 ## Views
 
 | View | Purpose |
 |------|---------|
-| [All Reservations](/docs/operations/reservations/list) | Full list — search, filter, create, edit, check in/out. |
-| [Arrivals](/docs/operations/reservations/arrivals) | Guests arriving on a selected date. |
-| [Departures](/docs/operations/reservations/departures) | Guests departing on a selected date. |
-| [Waitlist](/docs/operations/reservations/waitlist) | Requests held when no room or rate is available. |
-| [Cancellations](/docs/operations/reservations/cancellations) | Cancelled reservations with reasons. |
-| [Confirmation Letter](/docs/operations/reservations/confirmation-letter) | Printable booking confirmation for the guest. |
-| [Registration Form](/docs/operations/reservations/registration-form) | Guest registration card for check-in signature. |
+| [All Reservations](/operations/reservations/list) | Full list — search, filter, create, edit, check in/out. |
+| [Arrivals](/operations/reservations/arrivals) | Guests arriving on a selected date. |
+| [Departures](/operations/reservations/departures) | Guests departing on a selected date. |
+| [Waitlist](/operations/reservations/waitlist) | Requests held when no room or rate is available. |
+| [Cancellations](/operations/reservations/cancellations) | Cancelled reservations with reasons. |
+| [Confirmation Letter](/operations/reservations/confirmation-letter) | Printable booking confirmation for the guest. |
+| [Registration Form](/operations/reservations/registration-form) | Blank/pre-filled guest registration document. |
+| [Registration Card](/operations/reservations/registration-card) | Signed, editable check-in card stored on the reservation. |
+| [Reservation Groups](/operations/reservations/groups) | Manage multi-room group bookings. |
 
 ## Reservation Statuses
 
 | Status | Meaning |
 |--------|---------|
 | Reserved / Confirmed | Booking is held; guest not yet arrived. |
+| PM (Passerby) | Walk-in / same-day booking recorded as a passerby stay. |
+| Due In | Arrival date is the current business date; guest not yet checked in. |
 | In-House | Guest has checked in; charges post to folio. |
+| Due Out | Departure date is the current business date; guest still in-house. |
 | Checked Out | Stay is complete; balance should be settled. |
 | Cancelled | Booking is no longer active. |
 | Waitlist | Request held pending availability. |
@@ -50,7 +55,7 @@ Check-in and check-out can be done from the reservation detail, **Front Desk →
 Your user may not have reservation permission. Ask your administrator to grant access.
 
 **How do I check in a guest?**
-Open the reservation, ensure the room is Vacant Clean in Housekeeping, then use the **Check In** action. The guest appears in Front Desk → In-House.
+Open the reservation, ensure the room is Vacant Clean in Housekeeping, then use the **Check In** action. The guest appears in Front Desk → In-House. On the Arrivals tab, **Check In** is only enabled when the reservation's arrival date matches the current business date.
 
 **How do I add additional guests to a reservation?**
 On the reservation form, Step 1 (Guest Info), click **Add Another Guest**. Each additional guest can be linked to an existing individual profile or entered manually.
@@ -60,6 +65,9 @@ The **Waitlist** tab appears on the Reservation screen. Use it when no suitable 
 
 **Can I cancel and recreate instead of editing dates?**
 Prefer editing the reservation when only dates or room change. Use cancellation when the stay is truly cancelled — cancellation creates a record with a reason and cannot be undone.
+
+**I checked in (or checked out) a reservation by mistake — can I undo it?**
+Yes, if your user has the **Move Back** permission. From the In-House list, **Move Back** reverts a checked-in reservation to Reserved/Due In. From the Checked-Out list, **Move Back** reverts a checked-out reservation to In-House. Use this only to correct a mistaken check-in/check-out, not as a routine workflow step.
 
 ## Troubleshooting
 
@@ -76,9 +84,9 @@ Prefer editing the reservation when only dates or room change. Use cancellation 
 
 ## See also
 
-- [Profiles](/docs/operations/profiles/overview) — Individual, company, and travel agent profiles.
-- [Front Desk](/docs/operations/front-desk/overview) — Room plan, in-house list, checked-out list.
-- [Cashiering](/docs/operations/cashiering/overview) — Post charges, take payments, view folios.
-- [Housekeeping](/docs/operations/housekeeping/overview) — Room status before check-in.
-- [Night Audit](/docs/operations/night-audit) — Close the business date and post room charges.
-- [Configuration](/docs/configuration/overview) — Reservation types, sources, room types, rates, cancellation reasons.
+- [Profiles](/operations/profiles/overview) — Individual, company, and travel agent profiles.
+- [Front Desk](/operations/front-desk/overview) — Room plan, in-house list, checked-out list.
+- [Cashiering](/operations/cashiering/overview) — Post charges, take payments, view folios.
+- [Housekeeping](/operations/housekeeping/overview) — Room status before check-in.
+- [Night Audit](/operations/night-audit) — Close the business date and post room charges.
+- [Configuration](/configuration/overview) — Reservation types, sources, room types, rates, cancellation reasons.

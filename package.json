@@ -12,7 +12,12 @@
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids"
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "deploy:manual": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/deploy-manual.ps1",
+    "deploy:manual:upload": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/deploy-manual.ps1 -SkipBuild",
+    "site:download": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/download-site-index.ps1",
+    "site:upload": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/upload-site-index.ps1",
+    "deploy:help": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/deploy.ps1 help"
   },
   "dependencies": {
     "@docusaurus/core": "^3.10.0",

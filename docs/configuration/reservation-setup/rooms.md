@@ -15,10 +15,10 @@ sidebar_position: 3
 | Field | Required | Description |
 |-------|----------|-------------|
 | Room Number | Yes | The room identifier shown on folios, room plan, and reports (e.g. 101, 201A). |
-| Room Type | Yes | The room type this room belongs to — from [Room Types](/docs/configuration/reservation-setup/room-types). |
+| Room Type | Yes | The room type this room belongs to — from [Room Types](/configuration/reservation-setup/room-types). |
 | Room Class | No | Auto-derived from the room type's class. |
 | Hotel | Yes | The hotel/property this room belongs to (multi-property). |
-| Floor | No | The floor — from [Floor Plans](/docs/configuration/reservation-setup/floor-plans). Used for grouping in Room Plan and Room Chart. |
+| Floor | No | The floor — from [Floor Plans](/configuration/reservation-setup/floor-plans). Used for grouping in Room Plan and Room Chart. |
 | Sequence | No | Display order within the floor/type. |
 | Description | No | Optional notes about the room. |
 | PM Room | No | If checked, this room is excluded from inventory counts (does not affect occupancy %). PM rooms can still have reservations, charges, and checkouts. |
@@ -38,10 +38,12 @@ A PM (Property Management) room is excluded from inventory and occupancy calcula
 **Why doesn't a room appear in the Room Plan or Room Chart?**
 Ensure the room has a Floor assigned. Rooms without a floor may not appear in floor-grouped views.
 
+Rooms also support the [Bulk Import (Excel)](/general/bulk-import) workflow (Template / Import Excel buttons on the list page), covering room number, description, room type, floor, and PM room.
+
 ## See also
 
-- [Room Types](/docs/configuration/reservation-setup/room-types)
-- [Room Classes](/docs/configuration/reservation-setup/room-classes)
-- [Floor Plans](/docs/configuration/reservation-setup/floor-plans)
-- [Front Desk → Room Plan](/docs/operations/front-desk/room-plan)
-- [Housekeeping → Room Chart](/docs/operations/housekeeping/room-chart)
+- [Room Types](/configuration/reservation-setup/room-types)
+- [Room Classes](/configuration/reservation-setup/room-classes)
+- [Floor Plans](/configuration/reservation-setup/floor-plans)
+- [Front Desk → Room Plan](/operations/front-desk/room-plan)
+- [Housekeeping → Room Chart](/operations/housekeeping/room-chart)

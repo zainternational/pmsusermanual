@@ -27,6 +27,6 @@ The property-wide view of all active routing rules is in **Cashiering → Room R
 
 ## See also
 
-- [Transaction Codes](/docs/configuration/cashiering-setup/transaction-codes)
-- [Cashiering → Transaction](/docs/operations/cashiering/transaction)
-- [Cashiering → Room Routing](/docs/operations/cashiering/room-routing)
+- [Transaction Codes](/configuration/cashiering-setup/transaction-codes)
+- [Cashiering → Transaction](/operations/cashiering/transaction)
+- [Cashiering → Room Routing](/operations/cashiering/room-routing)

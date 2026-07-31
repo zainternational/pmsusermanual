@@ -7,7 +7,7 @@ sidebar_position: 2
 **Cashier Shift** is used to manage cash register sessions — view shift history, close a shift (shift drop), and run cashier reports. It is the reconciliation hub before night audit.
 
 :::tip **Having a problem?**
-See [Cashiering Overview](/docs/operations/cashiering/overview) for common FAQs and troubleshooting.
+See [Cashiering Overview](/operations/cashiering/overview) for common FAQs and troubleshooting.
 :::
 
 ## Access
@@ -64,8 +64,10 @@ Navigate to **Cashier Close** from the dashboard. This screen shows:
 4. After closing, a success banner appears and a **Logout** button is shown — use it to log out of the cash register session.
 
 :::note
-Only transactions from the current session (since the last login) are shown in the closure summary. Previous sessions are in the Cashier History table.
+Only transactions from the current session (since the last shift drop) are shown in the closure summary. Previous sessions are in the Cashier History table. There is no separate "login/logout" session boundary — the "current" period shown here is simply everything posted since the cashier's last shift drop.
 :::
+
+All amounts shown in the Closure Summary, Shift Drop totals, and Cashier Reports use the Currency Symbol, Date Format, and Decimal Point configured in Hotel Information Setup, rather than a fixed format. This screen's transaction/payment totals are kept in sync with what is shown on the Cashiering → Transaction and Billing screens, so a charge or payment posted or voided there is reflected here immediately.
 
 ## Cashier Reports
 
@@ -100,8 +102,8 @@ New transactions after a shift close will appear in the next shift. Each shift d
 
 ## See also
 
-- [Transaction](/docs/operations/cashiering/transaction) — Post charges and payments during the shift.
-- [Quick Checkout](/docs/operations/cashiering/quick-checkout) — Batch checkout before closing the shift.
-- [Night Audit](/docs/operations/night-audit) — Close cashier shifts before running night audit.
-- [Journal by Transaction](/docs/operations/cashiering/journal-by-transaction) — Detailed audit of all posted items across cashiers.
-- [Billing Reports](/docs/operations/reports/billing) — Revenue and payment reports by date range.
+- [Transaction](/operations/cashiering/transaction) — Post charges and payments during the shift.
+- [Quick Checkout](/operations/cashiering/quick-checkout) — Batch checkout before closing the shift.
+- [Night Audit](/operations/night-audit) — Close cashier shifts before running night audit.
+- [Journal by Transaction](/operations/cashiering/journal-by-transaction) — Detailed audit of all posted items across cashiers.
+- [Billing Reports](/operations/reports/billing) — Revenue and payment reports by date range.

@@ -17,7 +17,10 @@ sidebar_position: 4
 | Short Code | Abbreviated code (e.g. CASH, VISA, BT). |
 | Name | Full name (e.g. Cash, Visa Card, Bank Transfer). |
 | Sequence | Display order in the payment modal. |
-| Active | Whether this payment type is available for selection. |
+
+:::note
+There is no Active/Inactive flag on Payment Types — every payment type that exists is available for selection. To stop a payment type from being offered, delete it (or ask an administrator to, if it's referenced elsewhere).
+:::
 
 ## Relationship to Transaction Codes
 
@@ -30,10 +33,10 @@ If a payment type requires a credit card number, ensure the corresponding **Tran
 ## Common FAQs
 
 **A payment type is not appearing in the payment modal.**
-Check that the payment type is marked as **Active**. Also ensure the user has permission to post payments.
+Confirm the payment type record exists and hasn't been deleted (there is no separate Active toggle). Also ensure the user has permission to post payments.
 
 ## See also
 
-- [Transaction Codes](/docs/configuration/cashiering-setup/transaction-codes)
-- [Cashiering Setup Overview](/docs/configuration/cashiering-setup/overview)
-- [Cashiering → Transaction](/docs/operations/cashiering/transaction)
+- [Transaction Codes](/configuration/cashiering-setup/transaction-codes)
+- [Cashiering Setup Overview](/configuration/cashiering-setup/overview)
+- [Cashiering → Transaction](/operations/cashiering/transaction)

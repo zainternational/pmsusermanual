@@ -29,7 +29,8 @@ Open the browser; most changes reload automatically.
 
 | Path | Purpose |
 |------|---------|
-| `docs/` | Manual content (Markdown). Quick start, intro, operations, configuration, general, technical. |
+| `docs/` | Manual content (Markdown). Quick start, intro, operations, configuration, general. |
+| `internal/` | Maintainer-only notes (not published). |
 | `src/` | React components and styles (homepage, custom CSS). |
 | `static/` | Images, favicon, logo, `.nojekyll`, custom JS (e.g. back-to-top). |
 | `docusaurus.config.js` | Site title, URL, theme, navbar, footer, docs options. |
@@ -143,4 +144,5 @@ serve build/
 
 ## Maintenance
 
-- **Technical and maintenance** — In the built site, see **Docs → Technical & Maintenance → Maintenance** (link style, CI, must-have screenshots, versioning).
+- **Internal (not in public manual):** [internal/technical/maintenance.md](internal/technical/maintenance.md) — link style, CI, screenshots, versioning.
+- **Deploy:** [scripts/README.md](scripts/README.md) — upload to hotelium.com.mm/docs/.

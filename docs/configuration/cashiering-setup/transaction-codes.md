@@ -17,8 +17,8 @@ sidebar_position: 1
 | Short Code | Abbreviated code used in reports and folios (e.g. ROOM, TAX, CASH). |
 | Name | Full name of the transaction code (e.g. Room Charge, Service Tax, Cash Payment). |
 | Sequence | Display order in lists and folios. |
-| Transaction Code Group | The group this code belongs to — from [Transaction Code Groups](/docs/configuration/cashiering-setup/transaction-code-groups). |
-| Transaction Code Sub-Group | Optional finer grouping — from [Transaction Code Sub-Groups](/docs/configuration/cashiering-setup/transaction-code-sub-groups). |
+| Transaction Code Group | The group this code belongs to — from [Transaction Code Groups](/configuration/cashiering-setup/transaction-code-groups). |
+| Transaction Code Sub-Group | Optional finer grouping — from [Transaction Code Sub-Groups](/configuration/cashiering-setup/transaction-code-sub-groups). |
 | Transaction Type | Category: Others, Telephone Charges, Lodging, Minibar, Food & Beverage, Tax, Non Revenue. |
 | Default Currency | The default currency for this code (if different from the property default). |
 | Inactive | Mark the code as inactive so it no longer appears in posting screens. |
@@ -77,8 +77,8 @@ No — only one transaction code per hotel can have the **Internal Deposit** fla
 
 ## See also
 
-- [Transaction Code Groups](/docs/configuration/cashiering-setup/transaction-code-groups)
-- [Transaction Code Sub-Groups](/docs/configuration/cashiering-setup/transaction-code-sub-groups)
-- [Service Charges](/docs/configuration/cashiering-setup/service-charges)
-- [Routing Codes](/docs/configuration/cashiering-setup/routing-codes)
-- [Cashiering → Transaction](/docs/operations/cashiering/transaction)
+- [Transaction Code Groups](/configuration/cashiering-setup/transaction-code-groups)
+- [Transaction Code Sub-Groups](/configuration/cashiering-setup/transaction-code-sub-groups)
+- [Service Charges](/configuration/cashiering-setup/service-charges)
+- [Routing Codes](/configuration/cashiering-setup/routing-codes)
+- [Cashiering → Transaction](/operations/cashiering/transaction)

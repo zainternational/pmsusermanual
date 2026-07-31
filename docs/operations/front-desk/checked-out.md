@@ -7,7 +7,7 @@ sidebar_position: 3
 The **Checked-Out** list shows all reservations that have been checked out. Use it to review departure history, open folios for post-checkout adjustments, and move reservations back to in-house if a checkout was made in error.
 
 :::tip **Having a problem?**
-See [Troubleshooting](#troubleshooting) below or the main [Troubleshooting](/docs/general/troubleshooting) page.
+See [Troubleshooting](#troubleshooting) below or the main [Troubleshooting](/general/troubleshooting) page.
 :::
 
 ## Access
@@ -46,6 +46,7 @@ Same configurable columns as In-House. Use the **Columns** toggle to show or hid
 | Comments | View and add internal comments. |
 | Messages | View and add guest-facing messages. |
 | Deposit Ledger | View the deposit ledger (requires Deposit Ledger permission). |
+| Guest Record | Open a read-only report of the guest's profile summary and stay history (requires view permission). See [Guest Record](/operations/front-desk/in-house#guest-record) for details. |
 | Move Back to In-House | Undo a checkout — moves the reservation back to In-House status. Requires `move_back_reservation` permission. |
 
 ## Moving Back to In-House
@@ -80,7 +81,7 @@ Group reservations are shown together with expand/collapse controls, same as In-
 
 ## See also
 
-- [In-House](/docs/operations/front-desk/in-house) — Currently checked-in guests.
-- [Room Plan](/docs/operations/front-desk/room-plan) — Room availability calendar.
-- [Cashiering → Transaction](/docs/operations/cashiering/transaction) — Post-checkout folio access.
-- [Billing Reports](/docs/operations/reports/billing) — Revenue and payment reports including checked-out folios.
+- [In-House](/operations/front-desk/in-house) — Currently checked-in guests.
+- [Room Plan](/operations/front-desk/room-plan) — Room availability calendar.
+- [Cashiering → Transaction](/operations/cashiering/transaction) — Post-checkout folio access.
+- [Billing Reports](/operations/reports/billing) — Revenue and payment reports including checked-out folios.

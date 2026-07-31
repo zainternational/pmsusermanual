@@ -1,5 +1,5 @@
 ---
-sidebar_position: 9
+sidebar_position: 11
 ---
 
 # Track It
@@ -14,10 +14,10 @@ sidebar_position: 9
 
 | Table | Purpose | Doc |
 |-------|---------|-----|
-| [Groups](/docs/configuration/general-setup/trackit-groups) | Top-level categories (Electronics, Clothing, Documents, etc.) | [→](/docs/configuration/general-setup/trackit-groups) |
-| [Types](/docs/configuration/general-setup/trackit-types) | Sub-categories within a group (Phone, Laptop, Passport, etc.) | [→](/docs/configuration/general-setup/trackit-types) |
-| [Actions](/docs/configuration/general-setup/trackit-actions) | What happened to the item (Found, Returned, Disposed, etc.) | [→](/docs/configuration/general-setup/trackit-actions) |
-| [Locations](/docs/configuration/general-setup/trackit-locations) | Where the item was found or stored (Lobby, Room 101, HK Storage, etc.) | [→](/docs/configuration/general-setup/trackit-locations) |
+| [Groups](/configuration/general-setup/trackit-groups) | Top-level categories (Electronics, Clothing, Documents, etc.) | [→](/configuration/general-setup/trackit-groups) |
+| [Types](/configuration/general-setup/trackit-types) | Sub-categories within a group (Phone, Laptop, Passport, etc.) | [→](/configuration/general-setup/trackit-types) |
+| [Actions](/configuration/general-setup/trackit-actions) | What happened to the item (Found, Returned, Disposed, etc.) | [→](/configuration/general-setup/trackit-actions) |
+| [Locations](/configuration/general-setup/trackit-locations) | Where the item was found or stored (Lobby, Room 101, HK Storage, etc.) | [→](/configuration/general-setup/trackit-locations) |
 
 ## How They Work Together
 
@@ -34,10 +34,10 @@ All four dropdowns must have data configured here before Lost & Found can be use
 
 Set up in this order since Types, Actions, and Locations are independent of each other but all feed into the Lost & Found form:
 
-1. [Groups](/docs/configuration/general-setup/trackit-groups) — create top-level categories first
-2. [Types](/docs/configuration/general-setup/trackit-types) — create sub-categories
-3. [Actions](/docs/configuration/general-setup/trackit-actions) — create actions with correct Category flag
-4. [Locations](/docs/configuration/general-setup/trackit-locations) — create locations
+1. [Groups](/configuration/general-setup/trackit-groups) — create top-level categories first
+2. [Types](/configuration/general-setup/trackit-types) — create sub-categories
+3. [Actions](/configuration/general-setup/trackit-actions) — create actions with correct Category flag
+4. [Locations](/configuration/general-setup/trackit-locations) — create locations
 
 ## Common FAQs
 
@@ -49,5 +49,5 @@ It distinguishes between actions that represent a claim/resolution (e.g. Returne
 
 ## See also
 
-- [Housekeeping → Lost & Found](/docs/operations/housekeeping/lost-and-found) — Using Track It in daily operations.
-- [General Setup Overview](/docs/configuration/general-setup/overview) — All general configuration items.
+- [Housekeeping → Lost & Found](/operations/housekeeping/lost-and-found) — Using Track It in daily operations.
+- [General Setup Overview](/configuration/general-setup/overview) — All general configuration items.

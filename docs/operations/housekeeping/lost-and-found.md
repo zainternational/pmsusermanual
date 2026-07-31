@@ -7,7 +7,7 @@ sidebar_position: 3
 The **Lost & Found** tab (also called Track It) is used to register found items, track their status, and record when they are returned or disposed of. It uses the Track It system which categorises items by group, type, action, and location.
 
 :::tip **Having a problem?**
-See [Housekeeping Overview](/docs/operations/housekeeping/overview) for common FAQs and troubleshooting.
+See [Housekeeping Overview](/operations/housekeeping/overview) for common FAQs and troubleshooting.
 :::
 
 ## Access
@@ -25,10 +25,10 @@ Click **Add** or **New Record**. The form has the following fields:
 | Field | Required | Description |
 |-------|----------|-------------|
 | Item Name | Yes | Name or description of the found item (e.g. "Black wallet", "iPhone charger"). |
-| Group | No | Item category group — from [Track It Group](/docs/configuration/general-setup/trackit) setup. |
-| Type | No | Item type within the group — from [Track It Type](/docs/configuration/general-setup/trackit) setup. |
-| Action | Yes | What happened to the item — from [Track It Action](/docs/configuration/general-setup/trackit) setup (e.g. Found, Returned, Disposed). |
-| Location | No | Where the item was found — from [Track It Location](/docs/configuration/general-setup/trackit) setup. |
+| Group | No | Item category group — from [Track It Group](/configuration/general-setup/trackit) setup. |
+| Type | No | Item type within the group — from [Track It Type](/configuration/general-setup/trackit) setup. |
+| Action | Yes | What happened to the item — from [Track It Action](/configuration/general-setup/trackit) setup (e.g. Found, Returned, Disposed). |
+| Location | No | Where the item was found — from [Track It Location](/configuration/general-setup/trackit) setup. |
 | Quantity | No | Number of items (default 1). |
 | Date | Yes | Date the item was found. Defaults to the current business date. Cannot be before the business date. |
 | Description | No | Detailed description of the item (colour, brand, condition, etc.). |
@@ -42,6 +42,11 @@ Click the **Edit** icon on a record row to open the edit form with the same fiel
 ## Searching and Filtering
 
 Use the search bar to filter records by item name, location, or date. The table supports pagination for large numbers of records.
+
+Two additional filters sit above the table:
+
+- **Status** — Filter records by **Lost & Found**, **Claimed**, or **All**. A record counts as "Claimed" when its Track It Action is configured as a claim/category action (see [Track It Action](/configuration/general-setup/trackit)). The tab opens with **Lost & Found** selected by default.
+- **Action** — Filter records to a specific Track It Action, or **All**.
 
 ## Track It System
 
@@ -62,5 +67,5 @@ The current form does not have a direct guest/reservation link field. Use the De
 
 ## See also
 
-- [Configuration → Track It](/docs/configuration/general-setup/trackit) — Set up Track It groups, types, actions, and locations.
-- [Housekeeping Overview](/docs/operations/housekeeping/overview) — Overview of all housekeeping tabs.
+- [Configuration → Track It](/configuration/general-setup/trackit) — Set up Track It groups, types, actions, and locations.
+- [Housekeeping Overview](/operations/housekeeping/overview) — Overview of all housekeeping tabs.

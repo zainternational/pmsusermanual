@@ -31,7 +31,9 @@ sidebar_position: 16
 
 When a user cancels a reservation from the reservation detail or list, a modal appears requiring them to select a cancellation reason. If no reasons are configured, cancellation may be blocked.
 
+Use **Import** to bulk-load cancellation reasons from an Excel file (download the template first via **Template**), and **Export** to download the current list. See [Bulk Import (Excel)](/general/bulk-import) for the full import workflow.
+
 ## See also
 
-- [Reservations → Cancellations](/docs/operations/reservations/cancellations)
-- [Reservation Setup Overview](/docs/configuration/reservation-setup/overview)
+- [Reservations → Cancellations](/operations/reservations/cancellations)
+- [Reservation Setup Overview](/configuration/reservation-setup/overview)

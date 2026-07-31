@@ -7,12 +7,12 @@ sidebar_position: 3
 The **Billing Report** shows all billing items (charges) and payments for a selected date range, with a summary of total charges, total payments, and outstanding balance.
 
 :::tip **Having a problem?**
-See the main [Troubleshooting](/docs/general/troubleshooting) page for general issues, or the [Reports Overview](/docs/operations/reports/overview) for how to run and export reports.
+See the main [Troubleshooting](/general/troubleshooting) page for general issues, or the [Reports Overview](/operations/reports/overview) for how to run and export reports.
 :::
 
 ## Access
 
-From the sidebar, click **Report** → **Billing**.
+From the sidebar, click **Report** → **Financial**, then choose **Billing** from the sub-report list.
 
 ## Filters
 
@@ -74,8 +74,12 @@ Each row is one payment posted to a folio.
 | Amount | Payment amount. |
 | Description | Payment description or reference. |
 | Business Date | The business date the payment was posted to. |
-| Posted Date | The date/time the payment was posted. |
+| Created At | The date/time the payment record was created. |
 | Voided | Whether the payment has been voided. |
+
+:::note
+Unlike billing items, payments don't have a separate "Posted Date" column — only room charges (billing items) track Posted Date; payments use their creation timestamp instead.
+:::
 | Arrival Date | Guest arrival date. |
 | Departure Date | Guest departure date. |
 
@@ -97,7 +101,7 @@ Set **Include Voided** to **Yes** to include voided charges and payments in the 
 
 ## See also
 
-- [Cashiering → Transaction](/docs/operations/cashiering/transaction) — Post charges and payments on individual folios.
-- [Night Audit](/docs/operations/night-audit) — Post room charges and close the business date.
-- [Trial Balance Report](/docs/operations/reports/trial-balance) — Debit/credit balance per transaction code for an audit run.
-- [Reports Overview](/docs/operations/reports/overview) — How to run and export reports.
+- [Cashiering → Transaction](/operations/cashiering/transaction) — Post charges and payments on individual folios.
+- [Night Audit](/operations/night-audit) — Post room charges and close the business date.
+- [Trial Balance Report](/operations/reports/trial-balance) — Debit/credit balance per transaction code for an audit run.
+- [Reports Overview](/operations/reports/overview) — How to run and export reports.

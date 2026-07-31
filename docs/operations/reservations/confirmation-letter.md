@@ -7,7 +7,7 @@ sidebar_position: 7
 The **Reservation Confirmation Letter** is a printable document sent to the guest to confirm their booking. It shows the reservation details, stay dates, room type, rate, and property contact information.
 
 :::tip **Having a problem?**
-See [Reservations Overview](/docs/operations/reservations/overview) for common FAQs and troubleshooting.
+See [Reservations Overview](/operations/reservations/overview) for common FAQs and troubleshooting.
 :::
 
 ## Access
@@ -34,9 +34,16 @@ The confirmation letter typically includes:
 1. Open the reservation (from the reservation list or detail page).
 2. Click **Confirmation Letter**.
 3. A modal opens with a formatted preview of the letter.
-4. Click **Print** to print, or save as PDF.
+4. Click **Print** to print, save as PDF, or click **Email** to send it directly to the guest.
 
-The letter can be printed and handed to the guest, or saved as PDF and emailed.
+The letter can be printed and handed to the guest, saved as PDF, or emailed directly from the PMS.
+
+## Emailing the Letter
+
+1. Open the reservation and click **Confirmation Letter**.
+2. Click **Email** in the letter modal.
+3. The recipient address is pre-filled from the guest's profile email (if set) — edit it if needed.
+4. Adjust the subject/message if needed and click **Send**.
 
 ## When to Use
 
@@ -53,10 +60,10 @@ The reservation may not have a rate assigned. Ensure a rate plan and room type a
 Hotel information is configured in **Configuration → General Configuration → Hotel Information**. Ask your administrator to update it.
 
 **Can I email the confirmation letter directly from the PMS?**
-The current version generates a printable/PDF version. Email it manually by saving as PDF and attaching to an email.
+Yes — click **Email** in the confirmation letter modal to send it directly to the guest's email address without leaving the PMS.
 
 ## See also
 
-- [Reservations Overview](/docs/operations/reservations/overview) — Full reservation management.
-- [Registration Form](/docs/operations/reservations/registration-form) — Guest registration card for check-in.
-- [Configuration → Hotel Information](/docs/configuration/general-setup/hotel-information) — Property details shown on the letter.
+- [Reservations Overview](/operations/reservations/overview) — Full reservation management.
+- [Registration Form](/operations/reservations/registration-form) — Guest registration card for check-in.
+- [Configuration → Hotel Information](/configuration/general-setup/hotel-information) — Property details shown on the letter.

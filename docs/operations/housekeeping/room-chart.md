@@ -7,7 +7,7 @@ sidebar_position: 7
 The **Room Chart** gives a visual, floor-by-floor snapshot of all rooms and their current status for a selected date. It is used for quick room assignment, walk-in check-ins, and housekeeping status review.
 
 :::tip **Having a problem?**
-See the main [Troubleshooting](/docs/general/troubleshooting) page for general issues, or [Housekeeping Overview](/docs/operations/housekeeping/overview) for housekeeping-related issues.
+See the main [Troubleshooting](/general/troubleshooting) page for general issues, or [Housekeeping Overview](/operations/housekeeping/overview) for housekeeping-related issues.
 :::
 
 ## Access
@@ -71,7 +71,7 @@ Ensure rooms are configured in Configuration → Reservation Setup → Rooms, an
 
 ## See also
 
-- [Room Status](/docs/operations/housekeeping/room-status) — Update individual room housekeeping status.
-- [Room Plan](/docs/operations/front-desk/room-plan) — Calendar-based room availability view used for reservations.
-- [Out of Order](/docs/operations/housekeeping/out-of-order) — Mark rooms as out of order or out of service.
-- [Reservations](/docs/operations/reservations/overview) — Create and manage reservations.
+- [Room Status](/operations/housekeeping/room-status) — Update individual room housekeeping status.
+- [Room Plan](/operations/front-desk/room-plan) — Calendar-based room availability view used for reservations.
+- [Out of Order](/operations/housekeeping/out-of-order) — Mark rooms as out of order or out of service.
+- [Reservations](/operations/reservations/overview) — Create and manage reservations.

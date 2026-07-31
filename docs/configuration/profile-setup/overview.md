@@ -12,21 +12,21 @@ In the PMS, these screens are under **Configuration → Profile**. What you see 
 
 | Sub-menu | Purpose |
 |----------|---------|
-| [Preferences](/docs/configuration/profile-setup/preferences) | Guest or profile preferences (e.g. bed type, floor, newspaper). |
-| [VIP Levels](/docs/configuration/profile-setup/vip-levels) | VIP or loyalty levels for classifying guests. |
-| [Loyalty Tiers](/docs/configuration/profile-setup/loyalty-tiers) | Loyalty program tiers. |
-| [Titles](/docs/configuration/profile-setup/titles) | Salutations or titles (e.g. Mr, Ms, Dr). |
-| [Languages](/docs/configuration/profile-setup/languages) | Languages offered or stored for profiles. |
-| [Nationalities](/docs/configuration/profile-setup/nationalities) | Nationalities used in profile and reporting. |
-| [Regions](/docs/configuration/profile-setup/regions) | Regions (e.g. for address or reporting). |
-| [Countries](/docs/configuration/profile-setup/countries) | Countries for address and reporting. |
-| [Territories](/docs/configuration/profile-setup/territories) | Territories within a country, if used. |
-| [States](/docs/configuration/profile-setup/states) | States or provinces. |
-| [Districts](/docs/configuration/profile-setup/districts) | Districts within a state or city, if used. |
-| [Cities](/docs/configuration/profile-setup/cities) | Cities for address. |
-| [Postal Codes](/docs/configuration/profile-setup/postal-codes) | Postal or ZIP codes. |
-| [Inactive Reason](/docs/configuration/profile-setup/inactive-reason) | Reasons for marking a profile or rate inactive. |
-| [Visa Types](/docs/configuration/profile-setup/visa-type) | Visa type codes for guest travel documents (e.g. Tourist, Business, Transit). |
+| [Preferences](/configuration/profile-setup/preferences) | Guest or profile preferences (e.g. bed type, floor, newspaper). |
+| [VIP Levels](/configuration/profile-setup/vip-levels) | VIP or loyalty levels for classifying guests. |
+| [Loyalty Tiers](/configuration/profile-setup/loyalty-tiers) | Loyalty program tiers. |
+| [Titles](/configuration/profile-setup/titles) | Salutations or titles (e.g. Mr, Ms, Dr). |
+| [Languages](/configuration/profile-setup/languages) | Languages offered or stored for profiles. |
+| [Nationalities](/configuration/profile-setup/nationalities) | Nationalities used in profile and reporting. |
+| [Regions](/configuration/profile-setup/regions) | Regions (e.g. for address or reporting). |
+| [Countries](/configuration/profile-setup/countries) | Countries for address and reporting. |
+| [Territories](/configuration/profile-setup/territories) | Territories within a country, if used. |
+| [States](/configuration/profile-setup/states) | States or provinces. |
+| [Districts](/configuration/profile-setup/districts) | Districts within a state or city, if used. |
+| [Cities](/configuration/profile-setup/cities) | Cities for address. |
+| [Postal Codes](/configuration/profile-setup/postal-codes) | Postal or ZIP codes. |
+| [Inactive Reason](/configuration/profile-setup/inactive-reason) | Reasons for marking a profile or rate inactive. |
+| [Visa Types](/configuration/profile-setup/visa-type) | Visa type codes for guest travel documents (e.g. Tourist, Business, Transit). |
 
 ## Typical workflow
 
@@ -39,5 +39,5 @@ From the sidebar, go to **Configuration** → **Profile**, then open the sub-ite
 
 ## See also
 
-- [Configuration Overview](/docs/configuration/overview) — All configuration menus, including Profile.
-- [Profiles overview](/docs/operations/profiles/overview) — Using individual, company, and travel agent profiles in reservations and billing.
+- [Configuration Overview](/configuration/overview) — All configuration menus, including Profile.
+- [Profiles overview](/operations/profiles/overview) — Using individual, company, and travel agent profiles in reservations and billing.

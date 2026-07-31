@@ -11,7 +11,7 @@ This guide explains how to link an **individual**, **company**, or **travel agen
 Linking profiles to reservations:
 - Populates guest details automatically (name, contact, travel documents).
 - Enables routing charges to a company or travel agent folio.
-- Feeds the [Guest Information Report](/docs/operations/reports/guest-information) for immigration compliance.
+- Feeds the [Guest Information Report](/operations/reports/guest-information) for immigration compliance.
 - Builds guest history for loyalty and repeat-guest tracking.
 
 ## Linking an Individual Profile as Primary Guest
@@ -32,7 +32,7 @@ A reservation can have multiple guests (e.g. a couple or family sharing a room).
 1. In **Step 1 — Guest Info**, click **Add Another Guest**.
 2. Search for and select an existing individual profile, or enter details manually.
 3. Repeat for each additional guest.
-4. All guests appear in the [Guest Information Report](/docs/operations/reports/guest-information).
+4. All guests appear in the [Guest Information Report](/operations/reports/guest-information).
 
 ## Linking a Company Profile as Payer
 
@@ -43,7 +43,7 @@ To bill charges to a company account:
 3. Select it. The company is linked as the billing entity.
 4. Set up **routing** in Cashiering → Transaction (or Billing) to route room charges or other codes to the company folio automatically.
 
-See [Room Routing](/docs/operations/cashiering/room-routing) for routing setup.
+See [Room Routing](/operations/cashiering/room-routing) for routing setup.
 
 ## Linking a Travel Agent Profile
 
@@ -85,9 +85,9 @@ Travel documents are stored on the individual profile (Step 3 — Travel Documen
 
 ## See also
 
-- [Individual Profile](/docs/operations/profiles/individual-profile) — Create and manage guest profiles.
-- [Company Profile](/docs/operations/profiles/company-profile) — Create and manage company profiles.
-- [Travel Agent Profile](/docs/operations/profiles/travel-agent-profile) — Create and manage travel agent profiles.
-- [Reservations](/docs/operations/reservations/overview) — Full reservation management.
-- [Room Routing](/docs/operations/cashiering/room-routing) — Route charges to company or travel agent.
-- [Guest Information Report](/docs/operations/reports/guest-information) — In-house guest list with travel document data.
+- [Individual Profile](/operations/profiles/individual-profile) — Create and manage guest profiles.
+- [Company Profile](/operations/profiles/company-profile) — Create and manage company profiles.
+- [Travel Agent Profile](/operations/profiles/travel-agent-profile) — Create and manage travel agent profiles.
+- [Reservations](/operations/reservations/overview) — Full reservation management.
+- [Room Routing](/operations/cashiering/room-routing) — Route charges to company or travel agent.
+- [Guest Information Report](/operations/reports/guest-information) — In-house guest list with travel document data.

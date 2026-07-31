@@ -7,7 +7,7 @@ sidebar_position: 1
 The **Room Plan** is a calendar-style grid showing all rooms and their occupancy across a date range. Use it to see availability at a glance, create new reservations by clicking on a room/date cell, and navigate to existing reservations.
 
 :::tip **Having a problem?**
-See [Troubleshooting](#troubleshooting) below or the main [Troubleshooting](/docs/general/troubleshooting) page.
+See [Troubleshooting](#troubleshooting) below or the main [Troubleshooting](/general/troubleshooting) page.
 :::
 
 ## Access
@@ -77,7 +77,7 @@ Above the grid, summary cards show counts for the displayed date range:
 
 ## See also
 
-- [In-House](/docs/operations/front-desk/in-house) — Manage currently checked-in guests.
-- [Housekeeping → Room Chart](/docs/operations/housekeeping/room-chart) — Visual floor-by-floor room status grid; walk-in from vacant rooms.
-- [Reservations → Arrivals](/docs/operations/reservations/arrivals) — Guests arriving today.
-- [Housekeeping → Out of Order](/docs/operations/housekeeping/out-of-order) — Mark rooms unavailable.
+- [In-House](/operations/front-desk/in-house) — Manage currently checked-in guests.
+- [Housekeeping → Room Chart](/operations/housekeeping/room-chart) — Visual floor-by-floor room status grid; walk-in from vacant rooms.
+- [Reservations → Arrivals](/operations/reservations/arrivals) — Guests arriving today.
+- [Housekeeping → Out of Order](/operations/housekeeping/out-of-order) — Mark rooms unavailable.

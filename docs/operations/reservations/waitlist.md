@@ -4,43 +4,40 @@ sidebar_position: 4
 
 # Waitlist
 
-The **Waitlist** holds reservation requests when no suitable room or rate is available. When space opens, convert the entry to a full reservation.
+**Waitlist** is not a separate booking queue — it is a **status you place on an existing reservation** when it can't be confirmed yet (no suitable room/rate available). There is no separate "waitlist request" record independent of a reservation; you must create the reservation first, then mark it Waitlist.
 
 ## Access
 
-From the sidebar: **Reservation** → **Waitlist** tab.
+From the sidebar: **Reservation** → **Waitlist** tab. From an individual reservation, the action to place it on the waitlist is available from the reservation's actions.
 
 ## When to Use
 
-Use the waitlist when:
+Mark a reservation as waitlisted when:
 - The requested room type is fully booked for the dates.
 - The requested rate is closed or unavailable.
-- You want to hold the guest's interest without confirming a room.
+- You want to hold the guest's interest without a confirmed room.
 
-## Adding a Waitlist Entry
+## Placing a Reservation on the Waitlist
 
-1. Go to **Reservation → Waitlist**.
-2. Click **Add** or **New Waitlist**.
-3. Fill in the requested dates, room type, guest profile, and contact details.
-4. Select a **Waitlist Reason** (from [Configuration → Reservation Setup → Waitlist Reasons](/docs/configuration/reservation-setup/waitlist-reasons)).
-5. Save. The entry is held with status **Waitlist**.
+1. Create the reservation as normal (or open an existing one).
+2. Use the waitlist action on that reservation.
+3. Select a **Waitlist Reason** (from [Configuration → Reservation Setup → Waitlist Reasons](/configuration/reservation-setup/waitlist-reasons)) and an optional note.
+4. Save. The reservation's status becomes **Waitlist** and it now appears on the **Waitlist** tab.
 
-## Converting to a Reservation
+A reservation that is already on the waitlist cannot be waitlisted again.
 
-When a room or rate becomes available:
+## Moving Off the Waitlist
 
-1. Open the waitlist entry.
-2. Click **Convert** (or equivalent action).
-3. Assign a room and rate.
-4. The entry becomes a full reservation with status **Reserved/Confirmed**.
-5. Notify the guest.
+There is no dedicated "Convert" button. When a room or rate becomes available, open the reservation from [All Reservations](/operations/reservations/list) and edit it as normal (assign room/rate, change status) the same way you would edit any reservation — this updates its status off Waitlist.
+
+The **Delete** action on the Waitlist tab only removes the waitlist record/reason — it does not change the reservation's status. Use it to clear a stale or mistaken waitlist entry.
 
 ## Waitlist List
 
-The waitlist shows all pending entries with guest name, requested dates, room type, reason, and date added. Filter by date range or status to manage the queue.
+The waitlist shows all waitlisted reservations with guest name, requested dates, room type, reason, and the date/user that placed it on the waitlist. Filter by reservation ID or active status to manage the queue.
 
 ## See also
 
-- [All Reservations](/docs/operations/reservations/list) — Full reservation list; converted waitlist entries appear here.
-- [Reservations Overview](/docs/operations/reservations/overview) — Statuses and workflow.
-- [Configuration → Waitlist Reasons](/docs/configuration/reservation-setup/waitlist-reasons) — Set up waitlist reason codes.
+- [All Reservations](/operations/reservations/list) — Full reservation list; converted waitlist entries appear here.
+- [Reservations Overview](/operations/reservations/overview) — Statuses and workflow.
+- [Configuration → Waitlist Reasons](/configuration/reservation-setup/waitlist-reasons) — Set up waitlist reason codes.
