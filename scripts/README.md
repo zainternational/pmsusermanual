@@ -250,13 +250,12 @@ Update documentation links on the marketing site from `/docs/` to the subdomain:
 <a href="https://docs.hotelium.com.mm/" target="_blank" rel="noopener noreferrer">Documentation</a>
 ```
 
-Use the site sync scripts:
-
-```bash
-npm run site:download
-# edit scripts/local/site-index.html — replace /docs/ links
-npm run site:upload
-```
+Make this edit in the **`pmswebsite-html` repo** and deploy from there — that
+repo owns `index.html`. Editing it through `site:download` / `site:upload`
+here leaves the change untracked, and the next website deploy reverts it. That
+is exactly what happened when these links were first moved to `/docs/` in May
+2026: the live site kept the edit, the repo never learned about it, and the
+two drifted apart for three months.
 
 ### Step 7 — Optional cleanup
 
