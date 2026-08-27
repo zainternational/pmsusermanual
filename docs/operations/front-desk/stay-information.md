@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# Room &amp; Stay Information (Reservation Form Sections)
+# Room & Stay Information
 
 These are not separate screens — they are two field groups on the **reservation form** (Room Plan cell click, Room Chart, or Reservations → New): **Room Information** (room, dates, rate) and **Stay Information** (market, source, purpose of stay, transportation). This page explains both. For the guest lists (currently in-house, departed), see [Room Plan](/operations/front-desk/room-plan), [In-House](/operations/front-desk/in-house), and [Checked-Out](/operations/front-desk/checked-out).
 

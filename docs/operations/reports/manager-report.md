@@ -96,7 +96,7 @@ A further breakdown of how today's room inventory moved, including:
 | Extended / Early Departure | Stays extended or departing earlier than originally booked. |
 | No-Show | Reservations marked no-show. |
 | Cancelled Today | Reservations cancelled on the audit date. |
-| Arrivals / Departures — Today &amp; Tomorrow (Rooms/Persons) | Arrival and departure counts, split by room and by person, for today and the next business date. |
+| Arrivals / Departures — Today & Tomorrow (Rooms/Persons) | Arrival and departure counts, split by room and by person, for today and the next business date. |
 | Maintenance OOO/OOS | Rooms currently out of order / out of service. |
 
 ## Export
