@@ -6,6 +6,10 @@ sidebar_position: 0
 
 Short guide to **finding your way** and **using** the Hotelium PMS manual.
 
+:::note
+Looking for shortcuts and search **inside the PMS application** rather than in this manual? See [Screen Basics](/general/screen-basics).
+:::
+
 ## Search
 
 Use the **search** bar in the top-right of the navbar (or **Ctrl+K** / **Cmd+K**) to search all docs. Type terms like “folio”, “night audit”, “cash register”, “reservation”, or “check-in” to jump to the right page.

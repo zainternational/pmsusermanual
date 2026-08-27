@@ -8,6 +8,8 @@ Welcome to the **Hotelium Property Management System (PMS)** user manual. This g
 
 :::tip **New to this manual?**  
 [Using this manual](/general/using-this-manual) explains search, keyboard shortcuts, print/PDF, and how to find your way.
+
+New to the **application**? [Screen Basics](/general/screen-basics) covers Quick Search (Ctrl+K), app keyboard shortcuts, table column control, and light/dark mode.
 :::
 
 :::tip **Having a problem?**  

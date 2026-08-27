@@ -19,11 +19,11 @@ From the sidebar: **Housekeeping** → **Room Chart**.
 | Filter | Description |
 |--------|-------------|
 | Date | The date to view room status for. Defaults to the current business date. |
-| Room Type | Filter to show only rooms of a specific type. |
-| Floor | Filter to show only a specific floor. |
-| Status | Filter by housekeeping status (e.g. Vacant Clean, Occupied, Out of Order). |
+| Floor | Filter to a single floor, or leave as **All Floors**. |
+| Room Type | Filter to a single room type, or leave as **All Types**. |
+| Room No | Search for a specific room number. |
 
-Use the **Refresh** button to reload the latest data.
+Use the **Refresh** button to reload the latest data. There is no housekeeping-status filter on this screen — use the summary bar above the grid to see counts per status, or [Housekeeping → Management → Room Status](/operations/housekeeping/room-status) to filter by status.
 
 ## Room Grid
 

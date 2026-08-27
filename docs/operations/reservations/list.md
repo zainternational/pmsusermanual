@@ -163,10 +163,17 @@ From the reservation detail, two additional documents can be printed:
 
 | Document | Contents | When to Use |
 |----------|----------|--------------|
-| Message Print | A printable list of all guest messages logged on the reservation (from, phone, date/time, content). | Hand a printed copy of phone/guest messages to the guest, e.g. at check-in or when they return to the front desk. |
+| Message Print | A printable copy of the guest messages you select on the reservation (from, phone, date/time, content). | Hand a printed copy of phone/guest messages to the guest, e.g. at check-in or when they return to the front desk. |
 | Deposit Print (Payment Receipt) | A receipt of payments recorded against the reservation, with a guest-signature line. | Print a receipt for the guest after taking a deposit or other payment on the reservation. |
 
-Both are generated from the reservation detail page and open as a printable PDF.
+**To print messages:**
+
+1. Open the **Message** panel — from the reservation's Activity card, or from **Cashiering → Transaction → Message** for an in-house guest.
+2. Tick the messages you want to print. Printing without a selection is refused with a warning.
+3. Click **Print**. A preview window opens showing exactly what will be printed.
+4. From the preview, use **Print**, **Download PDF**, or **Email** (Email attaches the PDF to a compose window).
+
+**To print a deposit receipt**, open the [Deposit Ledger](/operations/cashiering/overview#deposit-ledger) and click **Receipt**. The same preview actions (Print, Download, Email) are available.
 
 ## Guest Record
 

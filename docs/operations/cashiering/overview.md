@@ -33,7 +33,24 @@ Before using cashier functions:
 
 ## Deposit Ledger
 
-Deposits taken against a reservation are tracked separately from the regular folio transaction list, in a **Deposit Ledger**. It is not a Cashiering menu screen — it is opened from the reservation itself, via **Front Desk → In-House → Deposit Ledger** (requires the Deposit Ledger permission). See [In-House](/operations/front-desk/in-house) for how to open it.
+Deposits taken against a reservation are tracked separately from the regular folio transaction list, in a **Deposit Ledger**. It is not a Cashiering menu screen — it is opened from the reservation itself (requires the Deposit Ledger permission), from any of:
+
+- **Reservation → All Reservations** — the **Deposit** action on a reservation row. Not offered on checked-out reservations.
+- **Reservation detail page** — the same Deposit action.
+- **Front Desk → In-House → Deposit Ledger** — see [In-House](/operations/front-desk/in-house).
+
+### Inside the Deposit Ledger
+
+| Element | Description |
+|---------|-------------|
+| Deposit Amount | The deposit total agreed on the reservation, shown at the top with the hotel currency. Click **Edit** to change it and **Done** to save (requires the change permission). |
+| Ledger table | One row per deposit entry: **No.**, **Payment Code** (from [Transaction Codes](/configuration/cashiering-setup/transaction-codes)), **Amount**, **Reference**, **Remark**. |
+| Add Deposit | Adds a new ledger row inline. Payment code and amount are required before the row can be saved. Requires the add permission. |
+| Receipt | Opens the **Payment Receipt** preview for the reservation — the printable deposit receipt with a guest-signature line. |
+
+The Payment Receipt preview offers **Download**, **Print**, and **Email** (the Email action opens a compose window pre-filled with the guest's email address and attaches the PDF).
+
+Users without the view permission see a permission message instead of the ledger.
 
 ## Common FAQs
 

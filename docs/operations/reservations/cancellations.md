@@ -12,12 +12,35 @@ From the sidebar: **Reservation** → **Cancellations** tab.
 
 ## What You See
 
-Cancelled reservations with:
-- Reservation ID and guest name
-- Original arrival and departure dates
-- Cancellation date
-- Cancellation reason
-- Room type and rate
+Cancelled reservations with these columns:
+
+| Column | Description |
+|--------|-------------|
+| Reservation ID | The cancelled reservation's ID. |
+| Guest Name | Name on the cancelled booking. |
+| Email | Guest email — used as the default recipient when emailing the cancellation letter. |
+| Room Type | Room type of the original booking. |
+| Arrival / Departure | The original stay dates. |
+| Cancellation Reason | The reason chosen when cancelling. |
+| Note | Free-text note entered with the cancellation. |
+| Cancelled By | The user who cancelled the reservation. |
+| Cancelled At | Date and time of the cancellation. |
+| Actions | View the cancellation letter, or delete the record (permission-controlled). |
+
+## Cancellation Letter
+
+Click the view action on a cancellation row to open the **Cancellation Letter** — a printable confirmation that the booking was cancelled, generated from the reservation's details.
+
+From the preview window you can:
+
+| Action | Description |
+|--------|-------------|
+| Print | Opens the print dialog for the letter. |
+| Download | Saves the letter as a PDF. |
+| Email | Opens a compose window with the guest's email address and a cancellation subject pre-filled, and attaches the letter as a PDF. Edit the recipient, subject, or message before sending. |
+| Close | Closes the preview without sending anything. |
+
+Send the letter to the guest when they ask for written confirmation of a cancellation, or keep a printed copy for the property's records.
 
 ## Cancelling a Reservation
 
@@ -45,13 +68,11 @@ Cancellation reasons are required when cancelling. Common examples:
 
 Add or manage reasons in **Configuration → Reservation Setup → Cancellation Reasons**.
 
-## Filtering Cancellations
+## Searching Cancellations
 
-Use filters to narrow the list by:
-- Date range (cancellation date or original arrival date)
-- Cancellation reason
-- Guest name or reservation ID
-- Room type
+The Cancellations tab has a single **Search cancellations…** box above the list. Typing filters the list across the cancellation records — use it to find a booking by reservation ID or guest name. There are no separate date, reason, or room-type filter dropdowns on this tab.
+
+Use the column toggle beside the search box to hide columns you don't need — see [Screen Basics](/general/screen-basics#showing-and-hiding-table-columns).
 
 ## See also
 
