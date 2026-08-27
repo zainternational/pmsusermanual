@@ -32,7 +32,11 @@ const config = {
   // deploymentBranch: 'gh-pages',
 
   // Option B: hotelium.com.mm/docs/ (subfolder on main site)
-  url: 'https://hotelium.com.mm',
+  //
+  // Must include `www.`: the site 301s the apex to www, so an apex `url` makes
+  // every canonical tag and every sitemap entry point at a URL that redirects.
+  // Google reports those as "Page with redirect" instead of indexing them.
+  url: 'https://www.hotelium.com.mm',
   baseUrl: '/docs/',
 
   // Explicit trailingSlash for GitHub Pages (avoids redirects and SEO issues)
@@ -96,7 +100,7 @@ const config = {
         logo: {
           alt: 'Hotelium Logo',
           src: 'img/logo.jpg',
-          href: 'https://hotelium.com.mm/',
+          href: 'https://www.hotelium.com.mm/',
           target: '_self',
         },
         items: [

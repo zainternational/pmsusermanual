@@ -14,7 +14,7 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero', styles.heroHotelium)}>
       <div className={clsx('container', styles.heroInner)}>
-        <a href="https://hotelium.com.mm/" className={styles.heroLogoLink}>
+        <a href="https://www.hotelium.com.mm/" className={styles.heroLogoLink}>
           <img src={logoSrc} alt="Hotelium" className={styles.heroLogo} />
         </a>
         <Heading as="h1" className={styles.heroTitle}>
