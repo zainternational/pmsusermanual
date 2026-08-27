@@ -38,6 +38,27 @@ Thumbs.db
 *.log
 .cache
 
-# Deploy scripts (local overrides and downloaded site files)
-scripts/deploy-config.local.ps1
-scripts/local/
+# Deploy scripts — NOT tracked.
+# This repository is public. The deploy tooling names a live server, its SSH
+# user, the path to a private key, and the remote webroot paths. None of that
+# belongs in a public repo, so the whole folder stays local. Keep a copy in
+# your own backups: git will not.
+scripts/
+
+# Key material — never commit, under any name
+*.ppk
+*.pem
+*.key
+id_rsa*
+*.p12
+*.pfx
+
+# Server/deploy config, whatever it ends up being called
+deploy-config*.ps1
+!scripts/deploy-config.example.ps1
+.deploy-tmp/
+
+# Working copies of live site files (they go stale and get uploaded by mistake)
+site-index.html
+*.bak
+*.bak.*

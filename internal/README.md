@@ -6,4 +6,4 @@ Files here are for **maintainers and developers only**. They are **not** include
 |------|---------|
 | [technical/maintenance.md](./technical/maintenance.md) | Build, links, CI, deploy notes |
 
-For deploy scripts, see [scripts/README.md](../scripts/README.md).
+Deploy scripts live in `scripts/`, which is not tracked in this public repo — see the CI and deployment section of the root README.
