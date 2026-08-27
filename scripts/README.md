@@ -15,6 +15,18 @@ These scripts use **PuTTY** (`plink` / `pscp`) with a `.ppk` SSH key — the sam
 
 ## Server layout
 
+`/var/www/hotelium` is a **shared webroot**: this repo owns the `docs/`
+subtree, and the separate `pmswebsite-html` repo owns everything else. Two
+consequences that are easy to get wrong:
+
+- The website deploy (`rsync --delete` from `pmswebsite-html`) must keep
+  `--exclude 'docs'`, or it erases the manual. That exclude is documented in
+  that repo's README.
+- The manual's nginx rules (`location ^~ /docs/`, its own CSP snippet, the
+  `/docs` → `/docs/` redirect) live in `pmswebsite-html/deploy/nginx/`, not
+  here — a Docusaurus build needs inline script/style, which the marketing
+  site's stricter CSP blocks.
+
 ### Current setup — subfolder (`/docs/`)
 
 | Path on server | Purpose |
@@ -96,8 +108,23 @@ npm run deploy:manual:upload
 
 ### Update the main website (index.html)
 
+> **The website is not maintained here.** Its source of truth is the separate
+> `pmswebsite-html` repo, which deploys the whole webroot (`index.html`, CSS,
+> JS, images, nginx config). These two commands exist only as a shortcut for
+> touching the live `index.html` without a full site deploy.
+>
+> `scripts/local/site-index.html` is a gitignored cache, and nothing keeps it
+> in sync. If it is older than the last website deploy, `site:upload` silently
+> reverts the live site to whatever that stale copy holds — this is exactly how
+> the site ended up four commits behind between May and August 2026.
+>
+> Always `site:download` immediately before editing, never upload a copy you
+> did not just download, and mirror any change you make back into
+> `pmswebsite-html/index.html` — otherwise the next website deploy overwrites
+> it right back.
+
 ```bash
-npm run site:download
+npm run site:download          # ALWAYS start here — never trust the local copy
 # Edit scripts/local/site-index.html
 npm run site:upload
 ```
@@ -105,6 +132,11 @@ npm run site:upload
 Each upload creates a timestamped backup on the server, e.g.:
 
 `/var/www/hotelium/index.html.bak.20260523-143000`
+
+Those backups land **inside the public webroot**. The nginx config in
+`pmswebsite-html` returns 404 for `*.bak*`, but clean them up anyway — one from
+May sat there readable at `https://www.hotelium.com.mm/index.html.bak.20260523`
+until August 2026.
 
 ## Subdomain deployment (`docs.hotelium.com.mm`)
 
@@ -127,7 +159,7 @@ Add an **A record** at your domain registrar:
 
 | Type | Name | Value |
 |------|------|-------|
-| A | `docs` | `18.140.234.167` |
+| A | `docs` | `13.229.150.25` |
 
 Wait for DNS to propagate, then continue.
 
@@ -254,7 +286,7 @@ Example `deploy-config.local.ps1`:
 
 ```powershell
 @{
-    ServerHost = '18.140.234.167'
+    ServerHost = '13.229.150.25'
     ServerUser = 'ubuntu'
     PpkPath    = 'D:\ZA\Documents - Hotelium\7.Key\7CHotelium\hotelium_key.ppk'
 
@@ -293,7 +325,7 @@ Example `deploy-config.local.ps1`:
 **`Permission denied (publickey)`**
 
 - Check the `.ppk` path and that the key matches the server user (`ubuntu`).
-- Confirm PuTTY can connect: `plink -i "path\to\key.ppk" ubuntu@18.140.234.167`
+- Confirm PuTTY can connect: `plink -i "path\to\key.ppk" ubuntu@13.229.150.25`
 
 **PowerShell execution policy**
 

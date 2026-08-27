@@ -2,7 +2,7 @@
 # deploy-config.local.ps1 is gitignored.
 
 @{
-    ServerHost   = '18.140.234.167'
+    ServerHost   = '13.229.150.25'  # the host serving www.hotelium.com.mm
     ServerUser   = 'ubuntu'
     PpkPath      = 'D:\ZA\Documents - Hotelium\7.Key\7CHotelium\hotelium_key.ppk'
     PlinkPath    = 'C:\Program Files\PuTTY\plink.exe'

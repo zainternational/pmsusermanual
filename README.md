@@ -64,9 +64,20 @@ After cloning, run `npm install` once. To build with “Last updated” dates fr
 
 ## CI and deployment
 
+**Production is the `/docs/` subfolder of hotelium.com.mm**, published with
+`npm run deploy:manual` (see [scripts/README.md](scripts/README.md)). The
+GitHub Pages workflow below still runs but no longer feeds the live manual —
+`docusaurus.config.js` targets `https://hotelium.com.mm` with
+`baseUrl: '/docs/'`, and `docs.hotelium.com.mm` no longer resolves in DNS.
+
+The manual shares its webroot with the marketing site, which is a separate
+repo (`pmswebsite-html`). See
+[scripts/README.md § Server layout](scripts/README.md#server-layout) for what
+each repo owns and the two ways they can overwrite each other.
+
 - **Build = link check:** `npm run build` fails if any doc link is broken.
-- **GitHub Actions:** The **Deploy to GitHub Pages** workflow runs on push to `main` — it builds the site and deploys the `build` output to the `gh-pages` branch automatically. See [.github/workflows/docs.yml](.github/workflows/docs.yml).
-- **Manual deploy** (local): `USE_SSH=true npm run deploy` or `GIT_USER=<username> npm run deploy`
+- **GitHub Actions:** The **Deploy to GitHub Pages** workflow runs on push to `main` — it builds the site and deploys the `build` output to the `gh-pages` branch automatically. See [.github/workflows/docs.yml](.github/workflows/docs.yml). It publishes to `gh-pages`, *not* to the live site.
+- **Manual deploy** (local): `USE_SSH=true npm run deploy` or `GIT_USER=<username> npm run deploy` — also GitHub Pages, not the live site.
 
 ## Deploying to your own server
 

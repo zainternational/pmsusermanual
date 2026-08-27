@@ -4,7 +4,9 @@ function Get-DeployConfig {
     $scriptRoot = Split-Path -Parent $MyInvocation.PSCommandPath
     $repoRoot = (Resolve-Path (Join-Path $scriptRoot '..')).Path
     $defaults = @{
-        ServerHost          = '18.140.234.167'
+        # www.hotelium.com.mm resolves here. Deploying to any other host looks
+        # like it succeeded and publishes nothing.
+        ServerHost          = '13.229.150.25'
         ServerUser          = 'ubuntu'
         PpkPath             = 'D:\ZA\Documents - Hotelium\7.Key\7CHotelium\hotelium_key.ppk'
         PlinkPath           = 'C:\Program Files\PuTTY\plink.exe'
