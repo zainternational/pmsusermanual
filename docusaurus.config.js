@@ -72,6 +72,13 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        sitemap: {
+          // The local-search results page has no content of its own — it is
+          // rendered client-side from the search index. Keep it out of the
+          // sitemap. Nginx also sends `X-Robots-Tag: noindex` for it; the two
+          // work together, and crawling stays allowed so that header is seen.
+          ignorePatterns: ['/docs/search/**', '/docs/search'],
+        },
       }),
     ],
   ],
